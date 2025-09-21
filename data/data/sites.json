@@ -1,0 +1,91 @@
+[
+  {
+    "id": "site-001",
+    "name": "Rocky Mountain Quarry",
+    "location": {
+      "lat": 39.7392,
+      "lng": -104.9903,
+      "elevation": 1620
+    },
+    "area_hectares": 45.2,
+    "description": "Open-pit limestone quarry with steep walls and high rockfall risk",
+    "safety_protocols": [
+      "Daily visual inspections",
+      "Restricted access zones",
+      "Emergency evacuation procedures",
+      "Weather monitoring"
+    ],
+    "emergency_contacts": [
+      {
+        "name": "John Smith",
+        "role": "Site Manager",
+        "phone": "+1234567890",
+        "email": "john.smith@mining.com"
+      },
+      {
+        "name": "Sarah Johnson",
+        "role": "Safety Officer",
+        "phone": "+1234567891",
+        "email": "sarah.johnson@mining.com"
+      }
+    ],
+    "status": "active"
+  },
+  {
+    "id": "site-002",
+    "name": "Sierra Nevada Mine",
+    "location": {
+      "lat": 39.1612,
+      "lng": -119.7674,
+      "elevation": 1380
+    },
+    "area_hectares": 78.6,
+    "description": "Large-scale copper mine with multiple extraction zones",
+    "safety_protocols": [
+      "Continuous seismic monitoring",
+      "Real-time weather alerts",
+      "Automated evacuation systems",
+      "Regular geotechnical assessments"
+    ],
+    "emergency_contacts": [
+      {
+        "name": "Mike Wilson",
+        "role": "Operations Director",
+        "phone": "+1234567892",
+        "email": "mike.wilson@mining.com"
+      },
+      {
+        "name": "Lisa Brown",
+        "role": "Emergency Coordinator",
+        "phone": "+1234567893",
+        "email": "lisa.brown@mining.com"
+      }
+    ],
+    "status": "active"
+  },
+  {
+    "id": "site-003",
+    "name": "Desert Valley Pit",
+    "location": {
+      "lat": 36.1699,
+      "lng": -115.1398,
+      "elevation": 610
+    },
+    "area_hectares": 32.1,
+    "description": "Sand and gravel extraction site with moderate risk profile",
+    "safety_protocols": [
+      "Weekly safety briefings",
+      "Equipment maintenance checks",
+      "Weather condition monitoring"
+    ],
+    "emergency_contacts": [
+      {
+        "name": "Robert Davis",
+        "role": "Site Supervisor",
+        "phone": "+1234567894",
+        "email": "robert.davis@mining.com"
+      }
+    ],
+    "status": "active"
+  }
+]

@@ -1,0 +1,204 @@
+[
+  {
+    "id": "sensor-001-01",
+    "site_id": "site-001",
+    "name": "Rocky Mountain Quarry Sensor 1",
+    "location": {
+      "lat": 39.73973494777115,
+      "lng": -104.9914696359497,
+      "elevation": 1614
+    },
+    "sensor_types": [
+      "seismometer",
+      "weather_station"
+    ],
+    "status": "active",
+    "installation_date": "2025-01-21T09:14:30.679986",
+    "last_reading": "2025-09-21T08:19:30.679986"
+  },
+  {
+    "id": "sensor-001-02",
+    "site_id": "site-001",
+    "name": "Rocky Mountain Quarry Sensor 2",
+    "location": {
+      "lat": 39.73937514325575,
+      "lng": -104.9917363880459,
+      "elevation": 1612
+    },
+    "sensor_types": [
+      "temperature",
+      "inclinometer",
+      "seismometer"
+    ],
+    "status": "active",
+    "installation_date": "2025-01-16T09:14:30.722528",
+    "last_reading": "2025-09-21T09:11:30.722528"
+  },
+  {
+    "id": "sensor-001-03",
+    "site_id": "site-001",
+    "name": "Rocky Mountain Quarry Sensor 3",
+    "location": {
+      "lat": 39.740403225174305,
+      "lng": -104.9886301362003,
+      "elevation": 1644
+    },
+    "sensor_types": [
+      "accelerometer",
+      "temperature",
+      "weather_station",
+      "humidity"
+    ],
+    "status": "active",
+    "installation_date": "2025-07-24T09:14:30.756409",
+    "last_reading": "2025-09-21T08:39:30.756409"
+  },
+  {
+    "id": "sensor-001-04",
+    "site_id": "site-001",
+    "name": "Rocky Mountain Quarry Sensor 4",
+    "location": {
+      "lat": 39.737841885318545,
+      "lng": -104.99095619808735,
+      "elevation": 1621
+    },
+    "sensor_types": [
+      "seismometer",
+      "pressure",
+      "inclinometer",
+      "gps"
+    ],
+    "status": "active",
+    "installation_date": "2025-06-09T09:14:30.818225",
+    "last_reading": "2025-09-21T08:54:30.818225"
+  },
+  {
+    "id": "sensor-002-01",
+    "site_id": "site-002",
+    "name": "Sierra Nevada Mine Sensor 1",
+    "location": {
+      "lat": 39.15933602147218,
+      "lng": -119.7690344065103,
+      "elevation": 1362
+    },
+    "sensor_types": [
+      "gps",
+      "humidity"
+    ],
+    "status": "maintenance",
+    "installation_date": "2025-06-07T09:14:30.859941",
+    "last_reading": "2025-09-21T09:12:30.859941"
+  },
+  {
+    "id": "sensor-002-02",
+    "site_id": "site-002",
+    "name": "Sierra Nevada Mine Sensor 2",
+    "location": {
+      "lat": 39.159572466624404,
+      "lng": -119.76760741395744,
+      "elevation": 1406
+    },
+    "sensor_types": [
+      "humidity",
+      "seismometer",
+      "inclinometer",
+      "weather_station"
+    ],
+    "status": "active",
+    "installation_date": "2025-01-12T09:14:30.887130",
+    "last_reading": "2025-09-21T08:15:30.887130"
+  },
+  {
+    "id": "sensor-002-03",
+    "site_id": "site-002",
+    "name": "Sierra Nevada Mine Sensor 3",
+    "location": {
+      "lat": 39.16187702844784,
+      "lng": -119.7675817907851,
+      "elevation": 1405
+    },
+    "sensor_types": [
+      "temperature",
+      "gps",
+      "accelerometer",
+      "pressure"
+    ],
+    "status": "active",
+    "installation_date": "2025-08-20T09:14:30.940369",
+    "last_reading": "2025-09-21T08:33:30.940369"
+  },
+  {
+    "id": "sensor-003-01",
+    "site_id": "site-003",
+    "name": "Desert Valley Pit Sensor 1",
+    "location": {
+      "lat": 36.16951855926397,
+      "lng": -115.14010469470196,
+      "elevation": 608
+    },
+    "sensor_types": [
+      "weather_station",
+      "seismometer",
+      "temperature",
+      "inclinometer"
+    ],
+    "status": "maintenance",
+    "installation_date": "2025-06-13T09:14:31.000173",
+    "last_reading": "2025-09-21T08:38:31.000173"
+  },
+  {
+    "id": "sensor-003-02",
+    "site_id": "site-003",
+    "name": "Desert Valley Pit Sensor 2",
+    "location": {
+      "lat": 36.17148387401883,
+      "lng": -115.14014656164994,
+      "elevation": 591
+    },
+    "sensor_types": [
+      "seismometer",
+      "accelerometer",
+      "weather_station",
+      "temperature"
+    ],
+    "status": "active",
+    "installation_date": "2024-10-19T09:14:31.061426",
+    "last_reading": "2025-09-21T08:47:31.061426"
+  },
+  {
+    "id": "sensor-003-03",
+    "site_id": "site-003",
+    "name": "Desert Valley Pit Sensor 3",
+    "location": {
+      "lat": 36.16803947570642,
+      "lng": -115.13957960956495,
+      "elevation": 607
+    },
+    "sensor_types": [
+      "weather_station",
+      "temperature",
+      "humidity"
+    ],
+    "status": "active",
+    "installation_date": "2025-02-18T09:14:31.134513",
+    "last_reading": "2025-09-21T09:13:31.134513"
+  },
+  {
+    "id": "sensor-003-04",
+    "site_id": "site-003",
+    "name": "Desert Valley Pit Sensor 4",
+    "location": {
+      "lat": 36.16888236551363,
+      "lng": -115.14128285948567,
+      "elevation": 644
+    },
+    "sensor_types": [
+      "temperature",
+      "pressure",
+      "gps"
+    ],
+    "status": "maintenance",
+    "installation_date": "2025-06-19T09:14:31.188290",
+    "last_reading": "2025-09-21T08:14:31.188290"
+  }
+]

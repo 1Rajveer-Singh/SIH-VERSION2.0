@@ -1,0 +1,1712 @@
+[
+  {
+    "id": "drone_site-001_flight_001",
+    "site_id": "site-001",
+    "flight_number": 1,
+    "flight_date": "2025-09-12T09:14:31.837397",
+    "pilot": "Jane Smith",
+    "drone_model": "DJI Mavic 3",
+    "camera_specs": {
+      "resolution": "20MP",
+      "sensor_size": "Four Thirds",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 107,
+      "ground_resolution_cm": 2.26,
+      "overlap_percent": 82,
+      "flight_speed_ms": 5.3,
+      "flight_duration_min": 37
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 11.5,
+      "visibility_km": 17.2,
+      "cloud_cover_percent": 6,
+      "temperature_c": 24.5
+    },
+    "captured_images": {
+      "total_images": 353,
+      "rgb_images": 326,
+      "thermal_images": 64,
+      "multispectral_images": 36
+    },
+    "analysis_results": {
+      "cracks_detected": 6,
+      "loose_rocks_identified": 12,
+      "vegetation_coverage_percent": 1.53,
+      "erosion_areas_m2": 96.2,
+      "overall_risk_score": 0.119
+    },
+    "file_info": {
+      "raw_images_gb": 18.64,
+      "processed_orthomosaic_gb": 6.66,
+      "point_cloud_gb": 8.08,
+      "storage_location": "/data/drone_imagery/site-001/flight_001/"
+    }
+  },
+  {
+    "id": "drone_site-001_flight_002",
+    "site_id": "site-001",
+    "flight_number": 2,
+    "flight_date": "2025-09-04T09:14:31.837397",
+    "pilot": "Mike Johnson",
+    "drone_model": "DJI Mavic 3",
+    "camera_specs": {
+      "resolution": "20MP",
+      "sensor_size": "APS-C",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 141,
+      "ground_resolution_cm": 7.38,
+      "overlap_percent": 80,
+      "flight_speed_ms": 6.8,
+      "flight_duration_min": 40
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 0.8,
+      "visibility_km": 17.9,
+      "cloud_cover_percent": 23,
+      "temperature_c": 10.1
+    },
+    "captured_images": {
+      "total_images": 273,
+      "rgb_images": 471,
+      "thermal_images": 0,
+      "multispectral_images": 5
+    },
+    "analysis_results": {
+      "cracks_detected": 20,
+      "loose_rocks_identified": 4,
+      "vegetation_coverage_percent": 5.58,
+      "erosion_areas_m2": 64.38,
+      "overall_risk_score": 0.611
+    },
+    "file_info": {
+      "raw_images_gb": 30.47,
+      "processed_orthomosaic_gb": 2.66,
+      "point_cloud_gb": 14.29,
+      "storage_location": "/data/drone_imagery/site-001/flight_002/"
+    }
+  },
+  {
+    "id": "drone_site-001_flight_003",
+    "site_id": "site-001",
+    "flight_number": 3,
+    "flight_date": "2025-09-03T09:14:31.838405",
+    "pilot": "John Doe",
+    "drone_model": "DJI Phantom 4 RTK",
+    "camera_specs": {
+      "resolution": "48MP",
+      "sensor_size": "APS-C",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 118,
+      "ground_resolution_cm": 3.08,
+      "overlap_percent": 84,
+      "flight_speed_ms": 5.8,
+      "flight_duration_min": 16
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 7.6,
+      "visibility_km": 16.4,
+      "cloud_cover_percent": 23,
+      "temperature_c": 16.0
+    },
+    "captured_images": {
+      "total_images": 457,
+      "rgb_images": 302,
+      "thermal_images": 28,
+      "multispectral_images": 31
+    },
+    "analysis_results": {
+      "cracks_detected": 9,
+      "loose_rocks_identified": 6,
+      "vegetation_coverage_percent": 17.35,
+      "erosion_areas_m2": 8.72,
+      "overall_risk_score": 0.248
+    },
+    "file_info": {
+      "raw_images_gb": 18.75,
+      "processed_orthomosaic_gb": 6.93,
+      "point_cloud_gb": 8.85,
+      "storage_location": "/data/drone_imagery/site-001/flight_003/"
+    }
+  },
+  {
+    "id": "drone_site-001_flight_004",
+    "site_id": "site-001",
+    "flight_number": 4,
+    "flight_date": "2025-07-14T09:14:31.838405",
+    "pilot": "John Doe",
+    "drone_model": "DJI Mavic 3",
+    "camera_specs": {
+      "resolution": "48MP",
+      "sensor_size": "Four Thirds",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 113,
+      "ground_resolution_cm": 5.25,
+      "overlap_percent": 74,
+      "flight_speed_ms": 7.8,
+      "flight_duration_min": 36
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 10.4,
+      "visibility_km": 13.8,
+      "cloud_cover_percent": 15,
+      "temperature_c": 12.6
+    },
+    "captured_images": {
+      "total_images": 270,
+      "rgb_images": 481,
+      "thermal_images": 35,
+      "multispectral_images": 42
+    },
+    "analysis_results": {
+      "cracks_detected": 14,
+      "loose_rocks_identified": 2,
+      "vegetation_coverage_percent": 6.88,
+      "erosion_areas_m2": 47.43,
+      "overall_risk_score": 0.719
+    },
+    "file_info": {
+      "raw_images_gb": 32.53,
+      "processed_orthomosaic_gb": 5.85,
+      "point_cloud_gb": 15.07,
+      "storage_location": "/data/drone_imagery/site-001/flight_004/"
+    }
+  },
+  {
+    "id": "drone_site-001_flight_005",
+    "site_id": "site-001",
+    "flight_number": 5,
+    "flight_date": "2025-08-03T09:14:31.838405",
+    "pilot": "Mike Johnson",
+    "drone_model": "DJI Mavic 3",
+    "camera_specs": {
+      "resolution": "24MP",
+      "sensor_size": "Four Thirds",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 94,
+      "ground_resolution_cm": 6.73,
+      "overlap_percent": 73,
+      "flight_speed_ms": 6.9,
+      "flight_duration_min": 17
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 7.0,
+      "visibility_km": 14.3,
+      "cloud_cover_percent": 26,
+      "temperature_c": 20.8
+    },
+    "captured_images": {
+      "total_images": 331,
+      "rgb_images": 433,
+      "thermal_images": 94,
+      "multispectral_images": 33
+    },
+    "analysis_results": {
+      "cracks_detected": 9,
+      "loose_rocks_identified": 15,
+      "vegetation_coverage_percent": 28.36,
+      "erosion_areas_m2": 64.51,
+      "overall_risk_score": 0.288
+    },
+    "file_info": {
+      "raw_images_gb": 40.59,
+      "processed_orthomosaic_gb": 9.95,
+      "point_cloud_gb": 5.65,
+      "storage_location": "/data/drone_imagery/site-001/flight_005/"
+    }
+  },
+  {
+    "id": "drone_site-001_flight_006",
+    "site_id": "site-001",
+    "flight_number": 6,
+    "flight_date": "2025-08-16T09:14:31.838405",
+    "pilot": "John Doe",
+    "drone_model": "DJI Phantom 4 RTK",
+    "camera_specs": {
+      "resolution": "48MP",
+      "sensor_size": "1 inch",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 97,
+      "ground_resolution_cm": 5.89,
+      "overlap_percent": 72,
+      "flight_speed_ms": 4.1,
+      "flight_duration_min": 22
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 5.0,
+      "visibility_km": 11.1,
+      "cloud_cover_percent": 7,
+      "temperature_c": 11.2
+    },
+    "captured_images": {
+      "total_images": 378,
+      "rgb_images": 295,
+      "thermal_images": 12,
+      "multispectral_images": 26
+    },
+    "analysis_results": {
+      "cracks_detected": 13,
+      "loose_rocks_identified": 10,
+      "vegetation_coverage_percent": 22.54,
+      "erosion_areas_m2": 22.85,
+      "overall_risk_score": 0.855
+    },
+    "file_info": {
+      "raw_images_gb": 25.04,
+      "processed_orthomosaic_gb": 3.17,
+      "point_cloud_gb": 16.67,
+      "storage_location": "/data/drone_imagery/site-001/flight_006/"
+    }
+  },
+  {
+    "id": "drone_site-001_flight_007",
+    "site_id": "site-001",
+    "flight_number": 7,
+    "flight_date": "2025-08-25T09:14:31.838405",
+    "pilot": "Mike Johnson",
+    "drone_model": "Autel EVO II Pro",
+    "camera_specs": {
+      "resolution": "20MP",
+      "sensor_size": "APS-C",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 76,
+      "ground_resolution_cm": 3.0,
+      "overlap_percent": 78,
+      "flight_speed_ms": 5.4,
+      "flight_duration_min": 17
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 3.8,
+      "visibility_km": 8.3,
+      "cloud_cover_percent": 10,
+      "temperature_c": 21.0
+    },
+    "captured_images": {
+      "total_images": 426,
+      "rgb_images": 267,
+      "thermal_images": 95,
+      "multispectral_images": 30
+    },
+    "analysis_results": {
+      "cracks_detected": 6,
+      "loose_rocks_identified": 1,
+      "vegetation_coverage_percent": 29.62,
+      "erosion_areas_m2": 0.45,
+      "overall_risk_score": 0.387
+    },
+    "file_info": {
+      "raw_images_gb": 34.28,
+      "processed_orthomosaic_gb": 8.57,
+      "point_cloud_gb": 6.87,
+      "storage_location": "/data/drone_imagery/site-001/flight_007/"
+    }
+  },
+  {
+    "id": "drone_site-001_flight_008",
+    "site_id": "site-001",
+    "flight_number": 8,
+    "flight_date": "2025-08-15T09:14:31.838405",
+    "pilot": "Mike Johnson",
+    "drone_model": "Autel EVO II Pro",
+    "camera_specs": {
+      "resolution": "24MP",
+      "sensor_size": "APS-C",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 128,
+      "ground_resolution_cm": 5.42,
+      "overlap_percent": 82,
+      "flight_speed_ms": 3.4,
+      "flight_duration_min": 31
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 3.3,
+      "visibility_km": 11.8,
+      "cloud_cover_percent": 30,
+      "temperature_c": 8.6
+    },
+    "captured_images": {
+      "total_images": 290,
+      "rgb_images": 291,
+      "thermal_images": 25,
+      "multispectral_images": 44
+    },
+    "analysis_results": {
+      "cracks_detected": 13,
+      "loose_rocks_identified": 14,
+      "vegetation_coverage_percent": 10.92,
+      "erosion_areas_m2": 45.69,
+      "overall_risk_score": 0.191
+    },
+    "file_info": {
+      "raw_images_gb": 46.52,
+      "processed_orthomosaic_gb": 1.72,
+      "point_cloud_gb": 7.33,
+      "storage_location": "/data/drone_imagery/site-001/flight_008/"
+    }
+  },
+  {
+    "id": "drone_site-001_flight_009",
+    "site_id": "site-001",
+    "flight_number": 9,
+    "flight_date": "2025-06-24T09:14:31.838405",
+    "pilot": "Mike Johnson",
+    "drone_model": "DJI Mavic 3",
+    "camera_specs": {
+      "resolution": "20MP",
+      "sensor_size": "Four Thirds",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 95,
+      "ground_resolution_cm": 3.76,
+      "overlap_percent": 82,
+      "flight_speed_ms": 7.2,
+      "flight_duration_min": 22
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 6.7,
+      "visibility_km": 14.9,
+      "cloud_cover_percent": 23,
+      "temperature_c": 12.4
+    },
+    "captured_images": {
+      "total_images": 485,
+      "rgb_images": 486,
+      "thermal_images": 27,
+      "multispectral_images": 3
+    },
+    "analysis_results": {
+      "cracks_detected": 1,
+      "loose_rocks_identified": 7,
+      "vegetation_coverage_percent": 8.64,
+      "erosion_areas_m2": 71.73,
+      "overall_risk_score": 0.861
+    },
+    "file_info": {
+      "raw_images_gb": 44.09,
+      "processed_orthomosaic_gb": 6.74,
+      "point_cloud_gb": 7.09,
+      "storage_location": "/data/drone_imagery/site-001/flight_009/"
+    }
+  },
+  {
+    "id": "drone_site-001_flight_010",
+    "site_id": "site-001",
+    "flight_number": 10,
+    "flight_date": "2025-06-28T09:14:31.838405",
+    "pilot": "John Doe",
+    "drone_model": "DJI Phantom 4 RTK",
+    "camera_specs": {
+      "resolution": "20MP",
+      "sensor_size": "Four Thirds",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 137,
+      "ground_resolution_cm": 6.44,
+      "overlap_percent": 74,
+      "flight_speed_ms": 3.9,
+      "flight_duration_min": 23
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 11.3,
+      "visibility_km": 8.9,
+      "cloud_cover_percent": 11,
+      "temperature_c": 8.0
+    },
+    "captured_images": {
+      "total_images": 450,
+      "rgb_images": 223,
+      "thermal_images": 98,
+      "multispectral_images": 19
+    },
+    "analysis_results": {
+      "cracks_detected": 16,
+      "loose_rocks_identified": 12,
+      "vegetation_coverage_percent": 8.61,
+      "erosion_areas_m2": 65.91,
+      "overall_risk_score": 0.602
+    },
+    "file_info": {
+      "raw_images_gb": 39.19,
+      "processed_orthomosaic_gb": 1.44,
+      "point_cloud_gb": 6.36,
+      "storage_location": "/data/drone_imagery/site-001/flight_010/"
+    }
+  },
+  {
+    "id": "drone_site-001_flight_011",
+    "site_id": "site-001",
+    "flight_number": 11,
+    "flight_date": "2025-09-12T09:14:31.838405",
+    "pilot": "John Doe",
+    "drone_model": "DJI Phantom 4 RTK",
+    "camera_specs": {
+      "resolution": "20MP",
+      "sensor_size": "APS-C",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 71,
+      "ground_resolution_cm": 4.97,
+      "overlap_percent": 79,
+      "flight_speed_ms": 6.6,
+      "flight_duration_min": 44
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 11.7,
+      "visibility_km": 16.0,
+      "cloud_cover_percent": 8,
+      "temperature_c": 16.1
+    },
+    "captured_images": {
+      "total_images": 461,
+      "rgb_images": 476,
+      "thermal_images": 20,
+      "multispectral_images": 39
+    },
+    "analysis_results": {
+      "cracks_detected": 5,
+      "loose_rocks_identified": 15,
+      "vegetation_coverage_percent": 10.39,
+      "erosion_areas_m2": 25.34,
+      "overall_risk_score": 0.172
+    },
+    "file_info": {
+      "raw_images_gb": 17.76,
+      "processed_orthomosaic_gb": 4.74,
+      "point_cloud_gb": 19.56,
+      "storage_location": "/data/drone_imagery/site-001/flight_011/"
+    }
+  },
+  {
+    "id": "drone_site-001_flight_012",
+    "site_id": "site-001",
+    "flight_number": 12,
+    "flight_date": "2025-09-19T09:14:31.838405",
+    "pilot": "John Doe",
+    "drone_model": "DJI Mavic 3",
+    "camera_specs": {
+      "resolution": "48MP",
+      "sensor_size": "APS-C",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 104,
+      "ground_resolution_cm": 5.63,
+      "overlap_percent": 77,
+      "flight_speed_ms": 5.9,
+      "flight_duration_min": 36
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 3.6,
+      "visibility_km": 17.1,
+      "cloud_cover_percent": 11,
+      "temperature_c": 19.9
+    },
+    "captured_images": {
+      "total_images": 260,
+      "rgb_images": 463,
+      "thermal_images": 27,
+      "multispectral_images": 8
+    },
+    "analysis_results": {
+      "cracks_detected": 3,
+      "loose_rocks_identified": 0,
+      "vegetation_coverage_percent": 18.78,
+      "erosion_areas_m2": 18.83,
+      "overall_risk_score": 0.553
+    },
+    "file_info": {
+      "raw_images_gb": 26.85,
+      "processed_orthomosaic_gb": 5.13,
+      "point_cloud_gb": 5.01,
+      "storage_location": "/data/drone_imagery/site-001/flight_012/"
+    }
+  },
+  {
+    "id": "drone_site-002_flight_001",
+    "site_id": "site-002",
+    "flight_number": 1,
+    "flight_date": "2025-08-09T09:14:31.838405",
+    "pilot": "Mike Johnson",
+    "drone_model": "DJI Mavic 3",
+    "camera_specs": {
+      "resolution": "20MP",
+      "sensor_size": "Four Thirds",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 96,
+      "ground_resolution_cm": 3.26,
+      "overlap_percent": 81,
+      "flight_speed_ms": 5.0,
+      "flight_duration_min": 30
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 11.8,
+      "visibility_km": 8.3,
+      "cloud_cover_percent": 13,
+      "temperature_c": 17.4
+    },
+    "captured_images": {
+      "total_images": 267,
+      "rgb_images": 277,
+      "thermal_images": 35,
+      "multispectral_images": 3
+    },
+    "analysis_results": {
+      "cracks_detected": 19,
+      "loose_rocks_identified": 2,
+      "vegetation_coverage_percent": 0.97,
+      "erosion_areas_m2": 31.43,
+      "overall_risk_score": 0.473
+    },
+    "file_info": {
+      "raw_images_gb": 9.11,
+      "processed_orthomosaic_gb": 1.57,
+      "point_cloud_gb": 5.2,
+      "storage_location": "/data/drone_imagery/site-002/flight_001/"
+    }
+  },
+  {
+    "id": "drone_site-002_flight_002",
+    "site_id": "site-002",
+    "flight_number": 2,
+    "flight_date": "2025-08-01T09:14:31.838405",
+    "pilot": "Jane Smith",
+    "drone_model": "DJI Phantom 4 RTK",
+    "camera_specs": {
+      "resolution": "24MP",
+      "sensor_size": "Four Thirds",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 112,
+      "ground_resolution_cm": 5.39,
+      "overlap_percent": 72,
+      "flight_speed_ms": 6.4,
+      "flight_duration_min": 35
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 10.0,
+      "visibility_km": 9.0,
+      "cloud_cover_percent": 8,
+      "temperature_c": 14.2
+    },
+    "captured_images": {
+      "total_images": 280,
+      "rgb_images": 157,
+      "thermal_images": 7,
+      "multispectral_images": 18
+    },
+    "analysis_results": {
+      "cracks_detected": 7,
+      "loose_rocks_identified": 6,
+      "vegetation_coverage_percent": 20.2,
+      "erosion_areas_m2": 96.31,
+      "overall_risk_score": 0.283
+    },
+    "file_info": {
+      "raw_images_gb": 19.63,
+      "processed_orthomosaic_gb": 3.19,
+      "point_cloud_gb": 17.04,
+      "storage_location": "/data/drone_imagery/site-002/flight_002/"
+    }
+  },
+  {
+    "id": "drone_site-002_flight_003",
+    "site_id": "site-002",
+    "flight_number": 3,
+    "flight_date": "2025-08-28T09:14:31.838405",
+    "pilot": "Mike Johnson",
+    "drone_model": "DJI Mavic 3",
+    "camera_specs": {
+      "resolution": "20MP",
+      "sensor_size": "APS-C",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 105,
+      "ground_resolution_cm": 5.67,
+      "overlap_percent": 85,
+      "flight_speed_ms": 6.9,
+      "flight_duration_min": 37
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 7.4,
+      "visibility_km": 14.4,
+      "cloud_cover_percent": 25,
+      "temperature_c": 17.7
+    },
+    "captured_images": {
+      "total_images": 160,
+      "rgb_images": 368,
+      "thermal_images": 30,
+      "multispectral_images": 26
+    },
+    "analysis_results": {
+      "cracks_detected": 21,
+      "loose_rocks_identified": 6,
+      "vegetation_coverage_percent": 22.33,
+      "erosion_areas_m2": 3.78,
+      "overall_risk_score": 0.781
+    },
+    "file_info": {
+      "raw_images_gb": 46.26,
+      "processed_orthomosaic_gb": 2.85,
+      "point_cloud_gb": 13.05,
+      "storage_location": "/data/drone_imagery/site-002/flight_003/"
+    }
+  },
+  {
+    "id": "drone_site-002_flight_004",
+    "site_id": "site-002",
+    "flight_number": 4,
+    "flight_date": "2025-09-07T09:14:31.838405",
+    "pilot": "John Doe",
+    "drone_model": "DJI Phantom 4 RTK",
+    "camera_specs": {
+      "resolution": "24MP",
+      "sensor_size": "Four Thirds",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 125,
+      "ground_resolution_cm": 3.86,
+      "overlap_percent": 70,
+      "flight_speed_ms": 5.2,
+      "flight_duration_min": 17
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 4.7,
+      "visibility_km": 13.1,
+      "cloud_cover_percent": 20,
+      "temperature_c": 19.4
+    },
+    "captured_images": {
+      "total_images": 174,
+      "rgb_images": 326,
+      "thermal_images": 83,
+      "multispectral_images": 27
+    },
+    "analysis_results": {
+      "cracks_detected": 5,
+      "loose_rocks_identified": 3,
+      "vegetation_coverage_percent": 2.15,
+      "erosion_areas_m2": 13.78,
+      "overall_risk_score": 0.137
+    },
+    "file_info": {
+      "raw_images_gb": 32.88,
+      "processed_orthomosaic_gb": 5.39,
+      "point_cloud_gb": 16.77,
+      "storage_location": "/data/drone_imagery/site-002/flight_004/"
+    }
+  },
+  {
+    "id": "drone_site-002_flight_005",
+    "site_id": "site-002",
+    "flight_number": 5,
+    "flight_date": "2025-09-13T09:14:31.838405",
+    "pilot": "Mike Johnson",
+    "drone_model": "DJI Phantom 4 RTK",
+    "camera_specs": {
+      "resolution": "48MP",
+      "sensor_size": "APS-C",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 81,
+      "ground_resolution_cm": 4.22,
+      "overlap_percent": 79,
+      "flight_speed_ms": 3.1,
+      "flight_duration_min": 26
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 10.5,
+      "visibility_km": 9.0,
+      "cloud_cover_percent": 19,
+      "temperature_c": 15.0
+    },
+    "captured_images": {
+      "total_images": 312,
+      "rgb_images": 464,
+      "thermal_images": 78,
+      "multispectral_images": 20
+    },
+    "analysis_results": {
+      "cracks_detected": 25,
+      "loose_rocks_identified": 7,
+      "vegetation_coverage_percent": 0.75,
+      "erosion_areas_m2": 10.35,
+      "overall_risk_score": 0.819
+    },
+    "file_info": {
+      "raw_images_gb": 23.52,
+      "processed_orthomosaic_gb": 2.53,
+      "point_cloud_gb": 2.43,
+      "storage_location": "/data/drone_imagery/site-002/flight_005/"
+    }
+  },
+  {
+    "id": "drone_site-002_flight_006",
+    "site_id": "site-002",
+    "flight_number": 6,
+    "flight_date": "2025-08-25T09:14:31.838405",
+    "pilot": "John Doe",
+    "drone_model": "Autel EVO II Pro",
+    "camera_specs": {
+      "resolution": "20MP",
+      "sensor_size": "APS-C",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 54,
+      "ground_resolution_cm": 4.39,
+      "overlap_percent": 80,
+      "flight_speed_ms": 5.7,
+      "flight_duration_min": 25
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 9.7,
+      "visibility_km": 15.4,
+      "cloud_cover_percent": 20,
+      "temperature_c": 5.6
+    },
+    "captured_images": {
+      "total_images": 180,
+      "rgb_images": 204,
+      "thermal_images": 87,
+      "multispectral_images": 10
+    },
+    "analysis_results": {
+      "cracks_detected": 12,
+      "loose_rocks_identified": 4,
+      "vegetation_coverage_percent": 4.58,
+      "erosion_areas_m2": 22.69,
+      "overall_risk_score": 0.245
+    },
+    "file_info": {
+      "raw_images_gb": 38.18,
+      "processed_orthomosaic_gb": 4.78,
+      "point_cloud_gb": 17.78,
+      "storage_location": "/data/drone_imagery/site-002/flight_006/"
+    }
+  },
+  {
+    "id": "drone_site-002_flight_007",
+    "site_id": "site-002",
+    "flight_number": 7,
+    "flight_date": "2025-07-20T09:14:31.838405",
+    "pilot": "Mike Johnson",
+    "drone_model": "DJI Mavic 3",
+    "camera_specs": {
+      "resolution": "20MP",
+      "sensor_size": "APS-C",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 119,
+      "ground_resolution_cm": 4.75,
+      "overlap_percent": 73,
+      "flight_speed_ms": 6.4,
+      "flight_duration_min": 30
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 0.8,
+      "visibility_km": 12.1,
+      "cloud_cover_percent": 14,
+      "temperature_c": 6.5
+    },
+    "captured_images": {
+      "total_images": 500,
+      "rgb_images": 373,
+      "thermal_images": 71,
+      "multispectral_images": 17
+    },
+    "analysis_results": {
+      "cracks_detected": 6,
+      "loose_rocks_identified": 8,
+      "vegetation_coverage_percent": 22.41,
+      "erosion_areas_m2": 57.24,
+      "overall_risk_score": 0.39
+    },
+    "file_info": {
+      "raw_images_gb": 7.11,
+      "processed_orthomosaic_gb": 7.57,
+      "point_cloud_gb": 7.58,
+      "storage_location": "/data/drone_imagery/site-002/flight_007/"
+    }
+  },
+  {
+    "id": "drone_site-002_flight_008",
+    "site_id": "site-002",
+    "flight_number": 8,
+    "flight_date": "2025-08-25T09:14:31.838405",
+    "pilot": "Jane Smith",
+    "drone_model": "DJI Phantom 4 RTK",
+    "camera_specs": {
+      "resolution": "48MP",
+      "sensor_size": "1 inch",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 54,
+      "ground_resolution_cm": 3.13,
+      "overlap_percent": 81,
+      "flight_speed_ms": 7.9,
+      "flight_duration_min": 40
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 6.8,
+      "visibility_km": 11.0,
+      "cloud_cover_percent": 3,
+      "temperature_c": 23.3
+    },
+    "captured_images": {
+      "total_images": 250,
+      "rgb_images": 440,
+      "thermal_images": 33,
+      "multispectral_images": 11
+    },
+    "analysis_results": {
+      "cracks_detected": 14,
+      "loose_rocks_identified": 9,
+      "vegetation_coverage_percent": 10.08,
+      "erosion_areas_m2": 29.44,
+      "overall_risk_score": 0.841
+    },
+    "file_info": {
+      "raw_images_gb": 49.64,
+      "processed_orthomosaic_gb": 7.36,
+      "point_cloud_gb": 5.32,
+      "storage_location": "/data/drone_imagery/site-002/flight_008/"
+    }
+  },
+  {
+    "id": "drone_site-002_flight_009",
+    "site_id": "site-002",
+    "flight_number": 9,
+    "flight_date": "2025-09-14T09:14:31.838405",
+    "pilot": "John Doe",
+    "drone_model": "DJI Mavic 3",
+    "camera_specs": {
+      "resolution": "20MP",
+      "sensor_size": "1 inch",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 53,
+      "ground_resolution_cm": 5.11,
+      "overlap_percent": 72,
+      "flight_speed_ms": 3.1,
+      "flight_duration_min": 40
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 7.6,
+      "visibility_km": 15.8,
+      "cloud_cover_percent": 28,
+      "temperature_c": 17.4
+    },
+    "captured_images": {
+      "total_images": 281,
+      "rgb_images": 174,
+      "thermal_images": 49,
+      "multispectral_images": 37
+    },
+    "analysis_results": {
+      "cracks_detected": 13,
+      "loose_rocks_identified": 8,
+      "vegetation_coverage_percent": 29.2,
+      "erosion_areas_m2": 28.01,
+      "overall_risk_score": 0.254
+    },
+    "file_info": {
+      "raw_images_gb": 6.79,
+      "processed_orthomosaic_gb": 7.25,
+      "point_cloud_gb": 5.18,
+      "storage_location": "/data/drone_imagery/site-002/flight_009/"
+    }
+  },
+  {
+    "id": "drone_site-002_flight_010",
+    "site_id": "site-002",
+    "flight_number": 10,
+    "flight_date": "2025-07-05T09:14:31.838405",
+    "pilot": "Mike Johnson",
+    "drone_model": "Autel EVO II Pro",
+    "camera_specs": {
+      "resolution": "24MP",
+      "sensor_size": "Four Thirds",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 94,
+      "ground_resolution_cm": 6.3,
+      "overlap_percent": 80,
+      "flight_speed_ms": 3.6,
+      "flight_duration_min": 32
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 1.8,
+      "visibility_km": 18.6,
+      "cloud_cover_percent": 13,
+      "temperature_c": 22.0
+    },
+    "captured_images": {
+      "total_images": 172,
+      "rgb_images": 294,
+      "thermal_images": 7,
+      "multispectral_images": 18
+    },
+    "analysis_results": {
+      "cracks_detected": 6,
+      "loose_rocks_identified": 9,
+      "vegetation_coverage_percent": 26.06,
+      "erosion_areas_m2": 80.87,
+      "overall_risk_score": 0.138
+    },
+    "file_info": {
+      "raw_images_gb": 38.54,
+      "processed_orthomosaic_gb": 4.81,
+      "point_cloud_gb": 15.49,
+      "storage_location": "/data/drone_imagery/site-002/flight_010/"
+    }
+  },
+  {
+    "id": "drone_site-002_flight_011",
+    "site_id": "site-002",
+    "flight_number": 11,
+    "flight_date": "2025-08-11T09:14:31.838405",
+    "pilot": "Jane Smith",
+    "drone_model": "DJI Phantom 4 RTK",
+    "camera_specs": {
+      "resolution": "24MP",
+      "sensor_size": "1 inch",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 72,
+      "ground_resolution_cm": 7.35,
+      "overlap_percent": 74,
+      "flight_speed_ms": 4.2,
+      "flight_duration_min": 16
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 1.0,
+      "visibility_km": 18.1,
+      "cloud_cover_percent": 14,
+      "temperature_c": 23.3
+    },
+    "captured_images": {
+      "total_images": 150,
+      "rgb_images": 199,
+      "thermal_images": 93,
+      "multispectral_images": 41
+    },
+    "analysis_results": {
+      "cracks_detected": 24,
+      "loose_rocks_identified": 13,
+      "vegetation_coverage_percent": 4.8,
+      "erosion_areas_m2": 61.99,
+      "overall_risk_score": 0.495
+    },
+    "file_info": {
+      "raw_images_gb": 32.67,
+      "processed_orthomosaic_gb": 4.51,
+      "point_cloud_gb": 19.17,
+      "storage_location": "/data/drone_imagery/site-002/flight_011/"
+    }
+  },
+  {
+    "id": "drone_site-002_flight_012",
+    "site_id": "site-002",
+    "flight_number": 12,
+    "flight_date": "2025-07-03T09:14:31.838405",
+    "pilot": "Jane Smith",
+    "drone_model": "DJI Mavic 3",
+    "camera_specs": {
+      "resolution": "24MP",
+      "sensor_size": "APS-C",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 123,
+      "ground_resolution_cm": 2.36,
+      "overlap_percent": 71,
+      "flight_speed_ms": 6.6,
+      "flight_duration_min": 36
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 6.8,
+      "visibility_km": 10.4,
+      "cloud_cover_percent": 14,
+      "temperature_c": 13.2
+    },
+    "captured_images": {
+      "total_images": 256,
+      "rgb_images": 226,
+      "thermal_images": 54,
+      "multispectral_images": 4
+    },
+    "analysis_results": {
+      "cracks_detected": 0,
+      "loose_rocks_identified": 14,
+      "vegetation_coverage_percent": 4.35,
+      "erosion_areas_m2": 48.29,
+      "overall_risk_score": 0.315
+    },
+    "file_info": {
+      "raw_images_gb": 34.92,
+      "processed_orthomosaic_gb": 7.92,
+      "point_cloud_gb": 6.91,
+      "storage_location": "/data/drone_imagery/site-002/flight_012/"
+    }
+  },
+  {
+    "id": "drone_site-002_flight_013",
+    "site_id": "site-002",
+    "flight_number": 13,
+    "flight_date": "2025-09-04T09:14:31.838405",
+    "pilot": "Jane Smith",
+    "drone_model": "DJI Mavic 3",
+    "camera_specs": {
+      "resolution": "48MP",
+      "sensor_size": "APS-C",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 61,
+      "ground_resolution_cm": 7.62,
+      "overlap_percent": 76,
+      "flight_speed_ms": 6.8,
+      "flight_duration_min": 22
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 2.4,
+      "visibility_km": 18.3,
+      "cloud_cover_percent": 16,
+      "temperature_c": 6.6
+    },
+    "captured_images": {
+      "total_images": 261,
+      "rgb_images": 401,
+      "thermal_images": 2,
+      "multispectral_images": 7
+    },
+    "analysis_results": {
+      "cracks_detected": 13,
+      "loose_rocks_identified": 14,
+      "vegetation_coverage_percent": 17.4,
+      "erosion_areas_m2": 45.76,
+      "overall_risk_score": 0.296
+    },
+    "file_info": {
+      "raw_images_gb": 37.47,
+      "processed_orthomosaic_gb": 2.24,
+      "point_cloud_gb": 19.4,
+      "storage_location": "/data/drone_imagery/site-002/flight_013/"
+    }
+  },
+  {
+    "id": "drone_site-002_flight_014",
+    "site_id": "site-002",
+    "flight_number": 14,
+    "flight_date": "2025-06-28T09:14:31.838405",
+    "pilot": "Mike Johnson",
+    "drone_model": "DJI Mavic 3",
+    "camera_specs": {
+      "resolution": "24MP",
+      "sensor_size": "1 inch",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 64,
+      "ground_resolution_cm": 6.92,
+      "overlap_percent": 85,
+      "flight_speed_ms": 7.9,
+      "flight_duration_min": 16
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 8.7,
+      "visibility_km": 18.5,
+      "cloud_cover_percent": 1,
+      "temperature_c": 5.2
+    },
+    "captured_images": {
+      "total_images": 233,
+      "rgb_images": 466,
+      "thermal_images": 16,
+      "multispectral_images": 49
+    },
+    "analysis_results": {
+      "cracks_detected": 12,
+      "loose_rocks_identified": 5,
+      "vegetation_coverage_percent": 6.33,
+      "erosion_areas_m2": 45.49,
+      "overall_risk_score": 0.709
+    },
+    "file_info": {
+      "raw_images_gb": 29.57,
+      "processed_orthomosaic_gb": 4.65,
+      "point_cloud_gb": 6.34,
+      "storage_location": "/data/drone_imagery/site-002/flight_014/"
+    }
+  },
+  {
+    "id": "drone_site-003_flight_001",
+    "site_id": "site-003",
+    "flight_number": 1,
+    "flight_date": "2025-07-12T09:14:31.838405",
+    "pilot": "Jane Smith",
+    "drone_model": "Autel EVO II Pro",
+    "camera_specs": {
+      "resolution": "20MP",
+      "sensor_size": "Four Thirds",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 133,
+      "ground_resolution_cm": 2.76,
+      "overlap_percent": 72,
+      "flight_speed_ms": 3.5,
+      "flight_duration_min": 45
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 4.9,
+      "visibility_km": 17.7,
+      "cloud_cover_percent": 23,
+      "temperature_c": 5.8
+    },
+    "captured_images": {
+      "total_images": 449,
+      "rgb_images": 423,
+      "thermal_images": 78,
+      "multispectral_images": 12
+    },
+    "analysis_results": {
+      "cracks_detected": 10,
+      "loose_rocks_identified": 13,
+      "vegetation_coverage_percent": 17.13,
+      "erosion_areas_m2": 15.99,
+      "overall_risk_score": 0.558
+    },
+    "file_info": {
+      "raw_images_gb": 41.54,
+      "processed_orthomosaic_gb": 1.97,
+      "point_cloud_gb": 15.58,
+      "storage_location": "/data/drone_imagery/site-003/flight_001/"
+    }
+  },
+  {
+    "id": "drone_site-003_flight_002",
+    "site_id": "site-003",
+    "flight_number": 2,
+    "flight_date": "2025-07-27T09:14:31.838405",
+    "pilot": "John Doe",
+    "drone_model": "DJI Phantom 4 RTK",
+    "camera_specs": {
+      "resolution": "24MP",
+      "sensor_size": "APS-C",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 115,
+      "ground_resolution_cm": 6.79,
+      "overlap_percent": 84,
+      "flight_speed_ms": 4.8,
+      "flight_duration_min": 22
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 8.3,
+      "visibility_km": 8.5,
+      "cloud_cover_percent": 3,
+      "temperature_c": 16.6
+    },
+    "captured_images": {
+      "total_images": 429,
+      "rgb_images": 296,
+      "thermal_images": 99,
+      "multispectral_images": 29
+    },
+    "analysis_results": {
+      "cracks_detected": 1,
+      "loose_rocks_identified": 11,
+      "vegetation_coverage_percent": 17.47,
+      "erosion_areas_m2": 61.03,
+      "overall_risk_score": 0.3
+    },
+    "file_info": {
+      "raw_images_gb": 29.7,
+      "processed_orthomosaic_gb": 8.03,
+      "point_cloud_gb": 7.82,
+      "storage_location": "/data/drone_imagery/site-003/flight_002/"
+    }
+  },
+  {
+    "id": "drone_site-003_flight_003",
+    "site_id": "site-003",
+    "flight_number": 3,
+    "flight_date": "2025-08-12T09:14:31.838405",
+    "pilot": "Jane Smith",
+    "drone_model": "Autel EVO II Pro",
+    "camera_specs": {
+      "resolution": "20MP",
+      "sensor_size": "APS-C",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 117,
+      "ground_resolution_cm": 2.42,
+      "overlap_percent": 78,
+      "flight_speed_ms": 3.5,
+      "flight_duration_min": 27
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 6.1,
+      "visibility_km": 8.2,
+      "cloud_cover_percent": 6,
+      "temperature_c": 12.2
+    },
+    "captured_images": {
+      "total_images": 420,
+      "rgb_images": 349,
+      "thermal_images": 49,
+      "multispectral_images": 39
+    },
+    "analysis_results": {
+      "cracks_detected": 13,
+      "loose_rocks_identified": 12,
+      "vegetation_coverage_percent": 4.9,
+      "erosion_areas_m2": 37.92,
+      "overall_risk_score": 0.748
+    },
+    "file_info": {
+      "raw_images_gb": 26.68,
+      "processed_orthomosaic_gb": 5.45,
+      "point_cloud_gb": 13.49,
+      "storage_location": "/data/drone_imagery/site-003/flight_003/"
+    }
+  },
+  {
+    "id": "drone_site-003_flight_004",
+    "site_id": "site-003",
+    "flight_number": 4,
+    "flight_date": "2025-07-25T09:14:31.838405",
+    "pilot": "Jane Smith",
+    "drone_model": "Autel EVO II Pro",
+    "camera_specs": {
+      "resolution": "48MP",
+      "sensor_size": "1 inch",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 88,
+      "ground_resolution_cm": 6.87,
+      "overlap_percent": 74,
+      "flight_speed_ms": 3.8,
+      "flight_duration_min": 45
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 3.1,
+      "visibility_km": 9.0,
+      "cloud_cover_percent": 28,
+      "temperature_c": 24.7
+    },
+    "captured_images": {
+      "total_images": 276,
+      "rgb_images": 358,
+      "thermal_images": 61,
+      "multispectral_images": 23
+    },
+    "analysis_results": {
+      "cracks_detected": 17,
+      "loose_rocks_identified": 9,
+      "vegetation_coverage_percent": 8.09,
+      "erosion_areas_m2": 0.73,
+      "overall_risk_score": 0.484
+    },
+    "file_info": {
+      "raw_images_gb": 43.24,
+      "processed_orthomosaic_gb": 4.64,
+      "point_cloud_gb": 9.15,
+      "storage_location": "/data/drone_imagery/site-003/flight_004/"
+    }
+  },
+  {
+    "id": "drone_site-003_flight_005",
+    "site_id": "site-003",
+    "flight_number": 5,
+    "flight_date": "2025-09-19T09:14:31.838405",
+    "pilot": "Jane Smith",
+    "drone_model": "DJI Mavic 3",
+    "camera_specs": {
+      "resolution": "48MP",
+      "sensor_size": "APS-C",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 74,
+      "ground_resolution_cm": 2.5,
+      "overlap_percent": 81,
+      "flight_speed_ms": 4.6,
+      "flight_duration_min": 37
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 4.1,
+      "visibility_km": 15.0,
+      "cloud_cover_percent": 2,
+      "temperature_c": 7.3
+    },
+    "captured_images": {
+      "total_images": 261,
+      "rgb_images": 163,
+      "thermal_images": 1,
+      "multispectral_images": 8
+    },
+    "analysis_results": {
+      "cracks_detected": 2,
+      "loose_rocks_identified": 12,
+      "vegetation_coverage_percent": 25.67,
+      "erosion_areas_m2": 37.47,
+      "overall_risk_score": 0.597
+    },
+    "file_info": {
+      "raw_images_gb": 43.3,
+      "processed_orthomosaic_gb": 1.97,
+      "point_cloud_gb": 3.72,
+      "storage_location": "/data/drone_imagery/site-003/flight_005/"
+    }
+  },
+  {
+    "id": "drone_site-003_flight_006",
+    "site_id": "site-003",
+    "flight_number": 6,
+    "flight_date": "2025-08-29T09:14:31.838405",
+    "pilot": "Mike Johnson",
+    "drone_model": "DJI Mavic 3",
+    "camera_specs": {
+      "resolution": "20MP",
+      "sensor_size": "APS-C",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 51,
+      "ground_resolution_cm": 6.75,
+      "overlap_percent": 82,
+      "flight_speed_ms": 6.1,
+      "flight_duration_min": 20
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 9.7,
+      "visibility_km": 17.7,
+      "cloud_cover_percent": 20,
+      "temperature_c": 16.4
+    },
+    "captured_images": {
+      "total_images": 447,
+      "rgb_images": 490,
+      "thermal_images": 14,
+      "multispectral_images": 38
+    },
+    "analysis_results": {
+      "cracks_detected": 18,
+      "loose_rocks_identified": 11,
+      "vegetation_coverage_percent": 17.99,
+      "erosion_areas_m2": 91.39,
+      "overall_risk_score": 0.86
+    },
+    "file_info": {
+      "raw_images_gb": 36.14,
+      "processed_orthomosaic_gb": 8.91,
+      "point_cloud_gb": 10.29,
+      "storage_location": "/data/drone_imagery/site-003/flight_006/"
+    }
+  },
+  {
+    "id": "drone_site-003_flight_007",
+    "site_id": "site-003",
+    "flight_number": 7,
+    "flight_date": "2025-08-05T09:14:31.838405",
+    "pilot": "John Doe",
+    "drone_model": "Autel EVO II Pro",
+    "camera_specs": {
+      "resolution": "24MP",
+      "sensor_size": "Four Thirds",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 119,
+      "ground_resolution_cm": 4.54,
+      "overlap_percent": 81,
+      "flight_speed_ms": 4.0,
+      "flight_duration_min": 15
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 7.6,
+      "visibility_km": 16.8,
+      "cloud_cover_percent": 26,
+      "temperature_c": 12.0
+    },
+    "captured_images": {
+      "total_images": 476,
+      "rgb_images": 278,
+      "thermal_images": 48,
+      "multispectral_images": 24
+    },
+    "analysis_results": {
+      "cracks_detected": 12,
+      "loose_rocks_identified": 14,
+      "vegetation_coverage_percent": 7.22,
+      "erosion_areas_m2": 91.35,
+      "overall_risk_score": 0.309
+    },
+    "file_info": {
+      "raw_images_gb": 22.52,
+      "processed_orthomosaic_gb": 1.02,
+      "point_cloud_gb": 16.22,
+      "storage_location": "/data/drone_imagery/site-003/flight_007/"
+    }
+  },
+  {
+    "id": "drone_site-003_flight_008",
+    "site_id": "site-003",
+    "flight_number": 8,
+    "flight_date": "2025-08-29T09:14:31.838405",
+    "pilot": "Mike Johnson",
+    "drone_model": "DJI Phantom 4 RTK",
+    "camera_specs": {
+      "resolution": "24MP",
+      "sensor_size": "APS-C",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 69,
+      "ground_resolution_cm": 2.55,
+      "overlap_percent": 71,
+      "flight_speed_ms": 5.9,
+      "flight_duration_min": 34
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 4.9,
+      "visibility_km": 16.8,
+      "cloud_cover_percent": 16,
+      "temperature_c": 17.9
+    },
+    "captured_images": {
+      "total_images": 412,
+      "rgb_images": 187,
+      "thermal_images": 72,
+      "multispectral_images": 24
+    },
+    "analysis_results": {
+      "cracks_detected": 20,
+      "loose_rocks_identified": 14,
+      "vegetation_coverage_percent": 29.9,
+      "erosion_areas_m2": 38.94,
+      "overall_risk_score": 0.115
+    },
+    "file_info": {
+      "raw_images_gb": 19.06,
+      "processed_orthomosaic_gb": 5.53,
+      "point_cloud_gb": 3.58,
+      "storage_location": "/data/drone_imagery/site-003/flight_008/"
+    }
+  },
+  {
+    "id": "drone_site-003_flight_009",
+    "site_id": "site-003",
+    "flight_number": 9,
+    "flight_date": "2025-08-15T09:14:31.838405",
+    "pilot": "John Doe",
+    "drone_model": "DJI Mavic 3",
+    "camera_specs": {
+      "resolution": "20MP",
+      "sensor_size": "1 inch",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 72,
+      "ground_resolution_cm": 7.09,
+      "overlap_percent": 70,
+      "flight_speed_ms": 3.7,
+      "flight_duration_min": 20
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 4.7,
+      "visibility_km": 15.7,
+      "cloud_cover_percent": 12,
+      "temperature_c": 18.9
+    },
+    "captured_images": {
+      "total_images": 189,
+      "rgb_images": 323,
+      "thermal_images": 85,
+      "multispectral_images": 50
+    },
+    "analysis_results": {
+      "cracks_detected": 4,
+      "loose_rocks_identified": 7,
+      "vegetation_coverage_percent": 19.86,
+      "erosion_areas_m2": 33.43,
+      "overall_risk_score": 0.813
+    },
+    "file_info": {
+      "raw_images_gb": 31.39,
+      "processed_orthomosaic_gb": 6.29,
+      "point_cloud_gb": 7.87,
+      "storage_location": "/data/drone_imagery/site-003/flight_009/"
+    }
+  },
+  {
+    "id": "drone_site-003_flight_010",
+    "site_id": "site-003",
+    "flight_number": 10,
+    "flight_date": "2025-08-09T09:14:31.838405",
+    "pilot": "Mike Johnson",
+    "drone_model": "DJI Mavic 3",
+    "camera_specs": {
+      "resolution": "20MP",
+      "sensor_size": "Four Thirds",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 125,
+      "ground_resolution_cm": 7.02,
+      "overlap_percent": 80,
+      "flight_speed_ms": 3.0,
+      "flight_duration_min": 18
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 10.4,
+      "visibility_km": 8.6,
+      "cloud_cover_percent": 14,
+      "temperature_c": 10.5
+    },
+    "captured_images": {
+      "total_images": 334,
+      "rgb_images": 368,
+      "thermal_images": 7,
+      "multispectral_images": 16
+    },
+    "analysis_results": {
+      "cracks_detected": 16,
+      "loose_rocks_identified": 8,
+      "vegetation_coverage_percent": 22.39,
+      "erosion_areas_m2": 84.94,
+      "overall_risk_score": 0.809
+    },
+    "file_info": {
+      "raw_images_gb": 12.15,
+      "processed_orthomosaic_gb": 1.32,
+      "point_cloud_gb": 3.01,
+      "storage_location": "/data/drone_imagery/site-003/flight_010/"
+    }
+  },
+  {
+    "id": "drone_site-003_flight_011",
+    "site_id": "site-003",
+    "flight_number": 11,
+    "flight_date": "2025-07-01T09:14:31.838405",
+    "pilot": "Mike Johnson",
+    "drone_model": "Autel EVO II Pro",
+    "camera_specs": {
+      "resolution": "24MP",
+      "sensor_size": "APS-C",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 124,
+      "ground_resolution_cm": 3.7,
+      "overlap_percent": 70,
+      "flight_speed_ms": 7.9,
+      "flight_duration_min": 30
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 0.9,
+      "visibility_km": 17.3,
+      "cloud_cover_percent": 19,
+      "temperature_c": 16.0
+    },
+    "captured_images": {
+      "total_images": 369,
+      "rgb_images": 374,
+      "thermal_images": 56,
+      "multispectral_images": 17
+    },
+    "analysis_results": {
+      "cracks_detected": 15,
+      "loose_rocks_identified": 10,
+      "vegetation_coverage_percent": 15.17,
+      "erosion_areas_m2": 13.49,
+      "overall_risk_score": 0.44
+    },
+    "file_info": {
+      "raw_images_gb": 36.06,
+      "processed_orthomosaic_gb": 1.25,
+      "point_cloud_gb": 5.08,
+      "storage_location": "/data/drone_imagery/site-003/flight_011/"
+    }
+  },
+  {
+    "id": "drone_site-003_flight_012",
+    "site_id": "site-003",
+    "flight_number": 12,
+    "flight_date": "2025-07-31T09:14:31.838405",
+    "pilot": "John Doe",
+    "drone_model": "DJI Mavic 3",
+    "camera_specs": {
+      "resolution": "24MP",
+      "sensor_size": "1 inch",
+      "lens": "24-70mm equivalent"
+    },
+    "flight_parameters": {
+      "altitude_agl_m": 104,
+      "ground_resolution_cm": 5.18,
+      "overlap_percent": 77,
+      "flight_speed_ms": 6.7,
+      "flight_duration_min": 18
+    },
+    "weather_conditions": {
+      "wind_speed_ms": 9.3,
+      "visibility_km": 18.3,
+      "cloud_cover_percent": 9,
+      "temperature_c": 20.8
+    },
+    "captured_images": {
+      "total_images": 306,
+      "rgb_images": 375,
+      "thermal_images": 96,
+      "multispectral_images": 34
+    },
+    "analysis_results": {
+      "cracks_detected": 1,
+      "loose_rocks_identified": 7,
+      "vegetation_coverage_percent": 25.59,
+      "erosion_areas_m2": 43.81,
+      "overall_risk_score": 0.602
+    },
+    "file_info": {
+      "raw_images_gb": 18.46,
+      "processed_orthomosaic_gb": 2.47,
+      "point_cloud_gb": 19.4,
+      "storage_location": "/data/drone_imagery/site-003/flight_012/"
+    }
+  }
+]

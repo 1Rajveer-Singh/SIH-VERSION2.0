@@ -1,0 +1,837 @@
+import React, { useState, useEffect, useCallback } from 'react'
+import Navbar from '../components/Navbar'
+
+// Interfaces
+interface DroneImage {
+  file: File
+  type: 'DEM' | 'orthophoto' | 'pointcloud' | 'aerial_photo'
+  id: string
+  preview?: string
+}
+
+interface SensorData {
+  device_id: string
+  timestamp: string
+  pore_pressure?: number
+  displacement?: number
+  acceleration?: number
+  rmr?: number
+  ucs?: number
+  rainfall?: number
+  temperature?: number
+  seismic_activity?: number
+}
+
+interface ProcessingStage {
+  id: string
+  name: string
+  status: 'pending' | 'running' | 'completed' | 'error'
+  progress: number
+  output?: any
+  error?: string
+}
+
+interface PredictionMetadata {
+  siteId: string
+  benchId: string
+  timestamp: string
+  droneMissionId: string
+}
+
+interface PredictionResult {
+  id: string
+  riskScore: number
+  riskLevel: 'LOW' | 'MEDIUM' | 'HIGH' | 'CRITICAL'
+  estimatedVolume: number
+  landingZone: {
+    coordinates: number[][]
+    area: number
+  }
+  confidence: number
+  preventiveActions: string[]
+  presentTime: {
+    probability: number
+    timestamp: string
+  }
+  shortTermFuture: {
+    probability: number
+    timeWindow: number // hours
+    predictedTime?: string
+  }
+  featureImportance: Record<string, number>
+}
+
+const PROCESSING_STAGES: ProcessingStage[] = [
+  { id: 'image_preprocessing', name: 'Image Preprocessing', status: 'pending', progress: 0 },
+  { id: 'dem_generation', name: 'DEM & 3D Model Generation', status: 'pending', progress: 0 },
+  { id: 'feature_extraction', name: 'Structural Feature Extraction', status: 'pending', progress: 0 },
+  { id: 'sensor_validation', name: 'Sensor Data Validation', status: 'pending', progress: 0 },
+  { id: 'data_fusion', name: 'Data Fusion', status: 'pending', progress: 0 },
+  { id: 'ai_prediction', name: 'AI/ML Prediction', status: 'pending', progress: 0 },
+  { id: 'final_result', name: 'Final Prediction Result', status: 'pending', progress: 0 }
+]
+
+function PredictionsPage() {
+  // State management
+  const [droneImages, setDroneImages] = useState<DroneImage[]>([])
+  const [sensorData, setSensorData] = useState<SensorData[]>([])
+  const [metadata, setMetadata] = useState<PredictionMetadata>({
+    siteId: '',
+    benchId: '',
+    timestamp: new Date().toISOString(),
+    droneMissionId: ''
+  })
+  const [processingStages, setProcessingStages] = useState<ProcessingStage[]>(PROCESSING_STAGES)
+  const [isProcessing, setIsProcessing] = useState(false)
+  const [predictionResult, setPredictionResult] = useState<PredictionResult | null>(null)
+  const [currentStageIndex, setCurrentStageIndex] = useState(-1)
+  const [sites, setSites] = useState<any[]>([])
+  const [devices, setDevices] = useState<any[]>([])
+
+  // Fetch sites and devices on component mount
+  useEffect(() => {
+    fetchSites()
+    fetchDevices()
+  }, [])
+
+  const fetchSites = async () => {
+    try {
+      const response = await fetch('/api/sites', {
+        headers: {
+          'Authorization': `Bearer ${localStorage.getItem('token')}`
+        }
+      })
+      if (response.ok) {
+        const data = await response.json()
+        setSites(data)
+      }
+    } catch (error) {
+      console.error('Error fetching sites:', error)
+    }
+  }
+
+  const fetchDevices = async () => {
+    try {
+      const response = await fetch('/api/devices', {
+        headers: {
+          'Authorization': `Bearer ${localStorage.getItem('token')}`
+        }
+      })
+      if (response.ok) {
+        const data = await response.json()
+        setDevices(data)
+      }
+    } catch (error) {
+      console.error('Error fetching devices:', error)
+    }
+  }
+
+  const fetchSensorData = async () => {
+    if (!metadata.siteId) return
+
+    try {
+      const response = await fetch(`/api/devices?site_id=${metadata.siteId}`, {
+        headers: {
+          'Authorization': `Bearer ${localStorage.getItem('token')}`
+        }
+      })
+      if (response.ok) {
+        const devices = await response.json()
+        // Fetch latest sensor readings for each device
+        const sensorDataPromises = devices.map(async (device: any) => {
+          const readingsResponse = await fetch(`/api/devices/${device.id}/readings/latest`, {
+            headers: {
+              'Authorization': `Bearer ${localStorage.getItem('token')}`
+            }
+          })
+          if (readingsResponse.ok) {
+            const readings = await readingsResponse.json()
+            return {
+              device_id: device.id,
+              timestamp: new Date().toISOString(),
+              ...readings
+            }
+          }
+          return null
+        })
+        
+        const sensorDataResults = await Promise.all(sensorDataPromises)
+        setSensorData(sensorDataResults.filter(Boolean))
+      }
+    } catch (error) {
+      console.error('Error fetching sensor data:', error)
+    }
+  }
+
+  const handleImageUpload = useCallback((files: FileList | null) => {
+    if (!files) return
+
+    const newImages: DroneImage[] = Array.from(files).slice(0, 10 - droneImages.length).map(file => ({
+      file,
+      type: 'aerial_photo', // Default type, user can change
+      id: Math.random().toString(36).substr(2, 9),
+      preview: URL.createObjectURL(file)
+    }))
+
+    setDroneImages(prev => [...prev, ...newImages])
+  }, [droneImages.length])
+
+  const removeImage = (id: string) => {
+    setDroneImages(prev => {
+      const imageToRemove = prev.find(img => img.id === id)
+      if (imageToRemove?.preview) {
+        URL.revokeObjectURL(imageToRemove.preview)
+      }
+      return prev.filter(img => img.id !== id)
+    })
+  }
+
+  const updateImageType = (id: string, type: DroneImage['type']) => {
+    setDroneImages(prev => prev.map(img => img.id === id ? { ...img, type } : img))
+  }
+
+  const startPrediction = async () => {
+    if (droneImages.length === 0) {
+      alert('Please upload at least one drone image')
+      return
+    }
+
+    if (!metadata.siteId || !metadata.benchId) {
+      alert('Please fill in all metadata fields')
+      return
+    }
+
+    setIsProcessing(true)
+    setCurrentStageIndex(0)
+    setPredictionResult(null)
+
+    // Reset stages
+    setProcessingStages(PROCESSING_STAGES.map(stage => ({ ...stage, status: 'pending', progress: 0 })))
+
+    try {
+      // Create FormData for file upload
+      const formData = new FormData()
+      
+      // Add images
+      droneImages.forEach((image, index) => {
+        formData.append('drone_images', image.file)
+        formData.append(`image_${index}_type`, image.type)
+      })
+
+      // Add metadata
+      formData.append('site_id', metadata.siteId)
+      formData.append('bench_id', metadata.benchId)
+      formData.append('drone_mission_id', metadata.droneMissionId)
+
+      // Add sensor data
+      formData.append('sensor_data', JSON.stringify(sensorData))
+
+      // Start prediction analysis
+      const response = await fetch('/api/predictions/enhanced/comprehensive-analysis', {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${localStorage.getItem('token')}`
+        },
+        body: formData
+      })
+
+      if (!response.ok) {
+        throw new Error('Failed to start prediction analysis')
+      }
+
+      const { analysis_id } = await response.json()
+
+      // Poll for progress
+      pollProgress(analysis_id)
+
+    } catch (error) {
+      console.error('Error starting prediction:', error)
+      setIsProcessing(false)
+      alert('Error starting prediction analysis')
+    }
+  }
+
+  const pollProgress = async (analysisId: string) => {
+    const maxAttempts = 120 // 2 minutes with 1-second intervals
+    let attempts = 0
+
+    const checkProgress = async () => {
+      try {
+        const response = await fetch(`/api/predictions/enhanced/analysis-progress/${analysisId}`, {
+          headers: {
+            'Authorization': `Bearer ${localStorage.getItem('token')}`
+          }
+        })
+
+        if (response.ok) {
+          const progress = await response.json()
+          
+          // Update processing stages
+          setProcessingStages(prev => prev.map(stage => {
+            const stageProgress = progress.stages?.[stage.id]
+            if (stageProgress) {
+              return {
+                ...stage,
+                status: stageProgress.status,
+                progress: stageProgress.progress,
+                output: stageProgress.output,
+                error: stageProgress.error
+              }
+            }
+            return stage
+          }))
+
+          // Update current stage index
+          const runningStageIndex = processingStages.findIndex(stage => 
+            progress.stages?.[stage.id]?.status === 'running'
+          )
+          setCurrentStageIndex(runningStageIndex)
+
+          if (progress.status === 'completed') {
+            setPredictionResult(progress.result)
+            setIsProcessing(false)
+            return
+          } else if (progress.status === 'error') {
+            setIsProcessing(false)
+            alert('Prediction analysis failed: ' + progress.error)
+            return
+          }
+        }
+
+        attempts++
+        if (attempts < maxAttempts) {
+          setTimeout(checkProgress, 1000)
+        } else {
+          setIsProcessing(false)
+          alert('Prediction analysis timed out')
+        }
+      } catch (error) {
+        console.error('Error checking progress:', error)
+        setIsProcessing(false)
+        alert('Error monitoring prediction progress')
+      }
+    }
+
+    checkProgress()
+  }
+
+  const resetAnalysis = () => {
+    setProcessingStages(PROCESSING_STAGES.map(stage => ({ ...stage, status: 'pending', progress: 0 })))
+    setPredictionResult(null)
+    setCurrentStageIndex(-1)
+    setIsProcessing(false)
+  }
+
+  const resetAll = () => {
+    setDroneImages([])
+    setSensorData([])
+    setMetadata({
+      siteId: '',
+      benchId: '',
+      timestamp: new Date().toISOString(),
+      droneMissionId: ''
+    })
+    resetAnalysis()
+  }
+
+  // Fetch sensor data when site changes
+  useEffect(() => {
+    if (metadata.siteId) {
+      fetchSensorData()
+    }
+  }, [metadata.siteId])
+
+  return (
+    <div className="min-h-screen bg-gray-50">
+      <Navbar />
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {/* Header */}
+        <div className="text-center mb-8">
+          <h1 className="text-3xl font-bold text-gray-900 mb-4">🔬 Real-World Rockfall Prediction System</h1>
+          <p className="text-lg text-gray-600">
+            Advanced AI-powered analysis using drone imagery and real-time sensor data
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
+          {/* Left Column - Data Input */}
+          <div className="xl:col-span-1">
+            <DataInputPanel
+              droneImages={droneImages}
+              onImageUpload={handleImageUpload}
+              onRemoveImage={removeImage}
+              onUpdateImageType={updateImageType}
+              sensorData={sensorData}
+              metadata={metadata}
+              onMetadataChange={setMetadata}
+              sites={sites}
+              devices={devices}
+              onStartPrediction={startPrediction}
+              onResetAll={resetAll}
+              isProcessing={isProcessing}
+            />
+          </div>
+
+          {/* Middle Column - Processing Pipeline */}
+          <div className="xl:col-span-1">
+            <ProcessingPipeline
+              stages={processingStages}
+              currentStageIndex={currentStageIndex}
+              isProcessing={isProcessing}
+            />
+          </div>
+
+          {/* Right Column - Results Dashboard */}
+          <div className="xl:col-span-1">
+            <ResultsDashboard
+              predictionResult={predictionResult}
+              onReset={resetAnalysis}
+              isProcessing={isProcessing}
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+// Data Input Panel Component
+interface DataInputPanelProps {
+  droneImages: DroneImage[]
+  onImageUpload: (files: FileList | null) => void
+  onRemoveImage: (id: string) => void
+  onUpdateImageType: (id: string, type: DroneImage['type']) => void
+  sensorData: SensorData[]
+  metadata: PredictionMetadata
+  onMetadataChange: (metadata: PredictionMetadata) => void
+  sites: any[]
+  devices: any[]
+  onStartPrediction: () => void
+  onResetAll: () => void
+  isProcessing: boolean
+}
+
+function DataInputPanel({ 
+  droneImages, 
+  onImageUpload, 
+  onRemoveImage, 
+  onUpdateImageType,
+  sensorData, 
+  metadata, 
+  onMetadataChange, 
+  sites,
+  devices,
+  onStartPrediction, 
+  onResetAll,
+  isProcessing 
+}: DataInputPanelProps) {
+  return (
+    <div className="bg-white rounded-lg shadow-lg p-6">
+      <h2 className="text-xl font-semibold text-gray-900 mb-6">📥 Data Input</h2>
+      
+      {/* Metadata Section */}
+      <div className="mb-6">
+        <h3 className="text-lg font-medium text-gray-700 mb-4">Metadata</h3>
+        <div className="grid grid-cols-1 gap-4">
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Site ID</label>
+            <select
+              value={metadata.siteId}
+              onChange={(e) => onMetadataChange({ ...metadata, siteId: e.target.value })}
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              disabled={isProcessing}
+            >
+              <option value="">Select Site</option>
+              {sites.map(site => (
+                <option key={site.id} value={site.id}>{site.name}</option>
+              ))}
+            </select>
+          </div>
+          
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Bench ID</label>
+            <input
+              type="text"
+              value={metadata.benchId}
+              onChange={(e) => onMetadataChange({ ...metadata, benchId: e.target.value })}
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Enter bench ID"
+              disabled={isProcessing}
+            />
+          </div>
+          
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Drone Mission ID</label>
+            <input
+              type="text"
+              value={metadata.droneMissionId}
+              onChange={(e) => onMetadataChange({ ...metadata, droneMissionId: e.target.value })}
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Enter mission ID"
+              disabled={isProcessing}
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Drone Images Section */}
+      <div className="mb-6">
+        <h3 className="text-lg font-medium text-gray-700 mb-4">
+          Drone Images ({droneImages.length}/10)
+        </h3>
+        
+        {/* Upload Area */}
+        <div className="border-2 border-dashed border-gray-300 rounded-lg p-6 mb-4">
+          <input
+            type="file"
+            multiple
+            accept="image/*"
+            onChange={(e) => onImageUpload(e.target.files)}
+            className="hidden"
+            id="drone-images-upload"
+            disabled={isProcessing || droneImages.length >= 10}
+          />
+          <label
+            htmlFor="drone-images-upload"
+            className={`cursor-pointer flex flex-col items-center justify-center ${
+              isProcessing || droneImages.length >= 10 ? 'cursor-not-allowed opacity-50' : ''
+            }`}
+          >
+            <div className="text-3xl mb-2">📸</div>
+            <p className="text-sm text-gray-600 text-center">
+              {droneImages.length >= 10 
+                ? 'Maximum 10 images reached' 
+                : 'Click to upload drone images (JPG, PNG)'
+              }
+            </p>
+          </label>
+        </div>
+
+        {/* Image Grid */}
+        {droneImages.length > 0 && (
+          <div className="grid grid-cols-2 gap-3">
+            {droneImages.map((image) => (
+              <div key={image.id} className="relative">
+                <img
+                  src={image.preview}
+                  alt="Drone"
+                  className="w-full h-24 object-cover rounded border"
+                />
+                <button
+                  onClick={() => onRemoveImage(image.id)}
+                  className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs hover:bg-red-600"
+                  disabled={isProcessing}
+                >
+                  ×
+                </button>
+                <select
+                  value={image.type}
+                  onChange={(e) => onUpdateImageType(image.id, e.target.value as DroneImage['type'])}
+                  className="mt-1 w-full text-xs px-1 py-1 border border-gray-300 rounded"
+                  disabled={isProcessing}
+                >
+                  <option value="aerial_photo">Aerial Photo</option>
+                  <option value="DEM">DEM</option>
+                  <option value="orthophoto">Orthophoto</option>
+                  <option value="pointcloud">Point Cloud</option>
+                </select>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+
+      {/* Sensor Data Section */}
+      <div className="mb-6">
+        <h3 className="text-lg font-medium text-gray-700 mb-4">
+          Sensor Data ({sensorData.length} devices)
+        </h3>
+        
+        {sensorData.length > 0 ? (
+          <div className="max-h-40 overflow-y-auto border rounded-lg">
+            <table className="w-full text-xs">
+              <thead className="bg-gray-50">
+                <tr>
+                  <th className="px-2 py-1 text-left">Device</th>
+                  <th className="px-2 py-1 text-left">Pressure</th>
+                  <th className="px-2 py-1 text-left">Temp</th>
+                  <th className="px-2 py-1 text-left">Seismic</th>
+                </tr>
+              </thead>
+              <tbody>
+                {sensorData.map((sensor, index) => (
+                  <tr key={index} className="border-t">
+                    <td className="px-2 py-1">{sensor.device_id.slice(-6)}</td>
+                    <td className="px-2 py-1">{sensor.pore_pressure?.toFixed(1) || '-'}</td>
+                    <td className="px-2 py-1">{sensor.temperature?.toFixed(1) || '-'}</td>
+                    <td className="px-2 py-1">{sensor.seismic_activity?.toFixed(2) || '-'}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        ) : (
+          <div className="text-sm text-gray-500 text-center py-4 border rounded-lg bg-gray-50">
+            {metadata.siteId ? 'No sensor data available' : 'Select a site to load sensor data'}
+          </div>
+        )}
+      </div>
+
+      {/* Action Buttons */}
+      <div className="flex gap-3">
+        <button
+          onClick={onStartPrediction}
+          disabled={isProcessing || droneImages.length === 0 || !metadata.siteId || !metadata.benchId}
+          className="flex-1 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed font-medium"
+        >
+          {isProcessing ? 'Processing...' : '🚀 Start Prediction'}
+        </button>
+        
+        <button
+          onClick={onResetAll}
+          disabled={isProcessing}
+          className="bg-gray-500 text-white py-2 px-4 rounded-md hover:bg-gray-600 disabled:bg-gray-400 disabled:cursor-not-allowed"
+        >
+          🔄 Reset
+        </button>
+      </div>
+    </div>
+  )
+}
+
+// Processing Pipeline Component
+interface ProcessingPipelineProps {
+  stages: ProcessingStage[]
+  currentStageIndex: number
+  isProcessing: boolean
+}
+
+function ProcessingPipeline({ stages, currentStageIndex, isProcessing }: ProcessingPipelineProps) {
+  return (
+    <div className="bg-white rounded-lg shadow-lg p-6">
+      <h2 className="text-xl font-semibold text-gray-900 mb-6">⚙️ Processing Pipeline</h2>
+      
+      <div className="space-y-4">
+        {stages.map((stage, index) => {
+          const isActive = index === currentStageIndex
+          const isCompleted = stage.status === 'completed'
+          const isError = stage.status === 'error'
+          const isRunning = stage.status === 'running'
+          
+          return (
+            <div key={stage.id} className={`border rounded-lg p-4 ${
+              isActive ? 'border-blue-500 bg-blue-50' : 
+              isCompleted ? 'border-green-500 bg-green-50' : 
+              isError ? 'border-red-500 bg-red-50' : 
+              'border-gray-200'
+            }`}>
+              <div className="flex items-center justify-between mb-2">
+                <h3 className="font-medium text-gray-900">{stage.name}</h3>
+                <div className="flex items-center">
+                  {isCompleted && <span className="text-green-600">✅</span>}
+                  {isError && <span className="text-red-600">❌</span>}
+                  {isRunning && <span className="text-blue-600">⚡</span>}
+                  {stage.status === 'pending' && <span className="text-gray-400">⏳</span>}
+                </div>
+              </div>
+              
+              {/* Progress Bar */}
+              {(isRunning || isCompleted) && (
+                <div className="w-full bg-gray-200 rounded-full h-2 mb-2">
+                  <div 
+                    className={`h-2 rounded-full transition-all duration-300 ${
+                      isCompleted ? 'bg-green-500' : isError ? 'bg-red-500' : 'bg-blue-500'
+                    }`}
+                    style={{ width: `${stage.progress}%` }}
+                  />
+                </div>
+              )}
+              
+              {/* Stage Output Preview */}
+              {stage.output && (
+                <div className="mt-3 p-3 bg-gray-100 rounded text-sm">
+                  <div className="font-medium text-gray-700 mb-1">Output Preview:</div>
+                  {typeof stage.output === 'string' ? (
+                    <div className="text-gray-600">{stage.output}</div>
+                  ) : (
+                    <pre className="text-xs text-gray-600 overflow-hidden">
+                      {JSON.stringify(stage.output, null, 2).substring(0, 200)}...
+                    </pre>
+                  )}
+                </div>
+              )}
+              
+              {/* Error Display */}
+              {stage.error && (
+                <div className="mt-3 p-3 bg-red-100 rounded text-sm">
+                  <div className="font-medium text-red-700 mb-1">Error:</div>
+                  <div className="text-red-600">{stage.error}</div>
+                </div>
+              )}
+            </div>
+          )
+        })}
+      </div>
+    </div>
+  )
+}
+
+// Results Dashboard Component
+interface ResultsDashboardProps {
+  predictionResult: PredictionResult | null
+  onReset: () => void
+  isProcessing: boolean
+}
+
+function ResultsDashboard({ predictionResult, onReset, isProcessing }: ResultsDashboardProps) {
+  if (!predictionResult) {
+    return (
+      <div className="bg-white rounded-lg shadow-lg p-6">
+        <h2 className="text-xl font-semibold text-gray-900 mb-6">📊 Results Dashboard</h2>
+        
+        <div className="text-center py-12">
+          <div className="text-6xl mb-4">📈</div>
+          <h3 className="text-lg font-medium text-gray-700 mb-2">No Results Yet</h3>
+          <p className="text-gray-500">
+            {isProcessing 
+              ? 'Analysis in progress...' 
+              : 'Upload drone images and start prediction to see results'
+            }
+          </p>
+        </div>
+      </div>
+    )
+  }
+
+  const getRiskColor = (riskLevel: string) => {
+    switch (riskLevel) {
+      case 'LOW': return 'text-green-600 bg-green-100'
+      case 'MEDIUM': return 'text-yellow-600 bg-yellow-100'
+      case 'HIGH': return 'text-orange-600 bg-orange-100'
+      case 'CRITICAL': return 'text-red-600 bg-red-100'
+      default: return 'text-gray-600 bg-gray-100'
+    }
+  }
+
+  return (
+    <div className="bg-white rounded-lg shadow-lg p-6">
+      <div className="flex items-center justify-between mb-6">
+        <h2 className="text-xl font-semibold text-gray-900">📊 Prediction Results</h2>
+        <button
+          onClick={onReset}
+          className="text-gray-500 hover:text-gray-700 text-sm"
+        >
+          🔄 Reset
+        </button>
+      </div>
+      
+      {/* Risk Gauge */}
+      <div className="mb-6">
+        <div className="text-center">
+          <div className={`inline-flex items-center px-4 py-2 rounded-full text-sm font-medium ${getRiskColor(predictionResult.riskLevel)}`}>
+            {predictionResult.riskLevel} RISK
+          </div>
+          <div className="mt-2 text-3xl font-bold text-gray-900">
+            {(predictionResult.riskScore * 100).toFixed(1)}%
+          </div>
+          <div className="text-sm text-gray-500">Risk Probability</div>
+        </div>
+        
+        {/* Risk Gauge Visual */}
+        <div className="mt-4">
+          <div className="w-full bg-gray-200 rounded-full h-3">
+            <div 
+              className={`h-3 rounded-full transition-all duration-500 ${
+                predictionResult.riskLevel === 'LOW' ? 'bg-green-500' :
+                predictionResult.riskLevel === 'MEDIUM' ? 'bg-yellow-500' :
+                predictionResult.riskLevel === 'HIGH' ? 'bg-orange-500' : 'bg-red-500'
+              }`}
+              style={{ width: `${predictionResult.riskScore * 100}%` }}
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Present vs Future Predictions */}
+      <div className="grid grid-cols-2 gap-4 mb-6">
+        <div className="bg-blue-50 p-4 rounded-lg">
+          <h4 className="font-medium text-blue-900 mb-2">Present Time</h4>
+          <div className="text-2xl font-bold text-blue-700">
+            {(predictionResult.presentTime.probability * 100).toFixed(1)}%
+          </div>
+          <div className="text-xs text-blue-600">Current Risk</div>
+        </div>
+        
+        <div className="bg-purple-50 p-4 rounded-lg">
+          <h4 className="font-medium text-purple-900 mb-2">Next {predictionResult.shortTermFuture.timeWindow}h</h4>
+          <div className="text-2xl font-bold text-purple-700">
+            {(predictionResult.shortTermFuture.probability * 100).toFixed(1)}%
+          </div>
+          <div className="text-xs text-purple-600">Future Risk</div>
+        </div>
+      </div>
+
+      {/* Key Metrics */}
+      <div className="space-y-4 mb-6">
+        <div className="flex justify-between items-center">
+          <span className="text-sm text-gray-600">Estimated Volume</span>
+          <span className="font-medium">{predictionResult.estimatedVolume.toFixed(1)} m³</span>
+        </div>
+        
+        <div className="flex justify-between items-center">
+          <span className="text-sm text-gray-600">Landing Zone Area</span>
+          <span className="font-medium">{predictionResult.landingZone.area.toFixed(0)} m²</span>
+        </div>
+        
+        <div className="flex justify-between items-center">
+          <span className="text-sm text-gray-600">Confidence</span>
+          <span className="font-medium">{(predictionResult.confidence * 100).toFixed(1)}%</span>
+        </div>
+      </div>
+
+      {/* Feature Importance */}
+      <div className="mb-6">
+        <h4 className="font-medium text-gray-900 mb-3">Feature Importance</h4>
+        <div className="space-y-2">
+          {Object.entries(predictionResult.featureImportance)
+            .sort(([,a], [,b]) => b - a)
+            .slice(0, 5)
+            .map(([feature, importance]) => (
+              <div key={feature} className="flex items-center justify-between">
+                <span className="text-sm text-gray-600 capitalize">
+                  {feature.replace(/_/g, ' ')}
+                </span>
+                <div className="flex items-center">
+                  <div className="w-16 bg-gray-200 rounded-full h-2 mr-2">
+                    <div 
+                      className="bg-blue-500 h-2 rounded-full"
+                      style={{ width: `${importance * 100}%` }}
+                    />
+                  </div>
+                  <span className="text-xs text-gray-500 w-8">
+                    {(importance * 100).toFixed(0)}%
+                  </span>
+                </div>
+              </div>
+            ))}
+        </div>
+      </div>
+
+      {/* Preventive Actions */}
+      <div>
+        <h4 className="font-medium text-gray-900 mb-3">Recommended Actions</h4>
+        <div className="space-y-2">
+          {predictionResult.preventiveActions.map((action, index) => (
+            <div key={index} className="flex items-start">
+              <span className="text-blue-500 mr-2">•</span>
+              <span className="text-sm text-gray-700">{action}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default PredictionsPage

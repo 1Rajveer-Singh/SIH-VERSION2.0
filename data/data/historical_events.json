@@ -1,0 +1,1680 @@
+[
+  {
+    "id": "event_0039",
+    "date": "2023-09-26T09:14:31.843354",
+    "site_id": "site-001",
+    "event_type": "geological_activity",
+    "severity": "low",
+    "description": "Seismic activity detected affecting slope stability",
+    "location": {
+      "zone": "C",
+      "coordinates": {
+        "lat": 39.741747470328974,
+        "lng": -104.99051439539265
+      }
+    },
+    "impact": {
+      "area_affected_m2": 568,
+      "volume_displaced_m3": 15.45,
+      "personnel_evacuated": 3,
+      "equipment_damaged": true,
+      "production_hours_lost": 7
+    },
+    "weather_conditions": {
+      "temperature_c": 12.6,
+      "wind_speed_ms": 17.1,
+      "precipitation_mm": 35.3,
+      "conditions": "cloudy"
+    },
+    "response_actions": [
+      "Seismic monitoring enhanced",
+      "Structural stability assessment",
+      "Emergency protocols reviewed"
+    ],
+    "lessons_learned": "Analysis of geological_activity event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0003",
+    "date": "2023-11-05T09:14:31.843354",
+    "site_id": "site-001",
+    "event_type": "weather_related",
+    "severity": "medium",
+    "description": "Weather-induced slope instability requiring safety measures",
+    "location": {
+      "zone": "A",
+      "coordinates": {
+        "lat": 39.73970369293903,
+        "lng": -104.98910454975956
+      }
+    },
+    "impact": {
+      "area_affected_m2": 973,
+      "volume_displaced_m3": 38.05,
+      "personnel_evacuated": 8,
+      "equipment_damaged": false,
+      "production_hours_lost": 24
+    },
+    "weather_conditions": {
+      "temperature_c": -8.9,
+      "wind_speed_ms": 5.6,
+      "precipitation_mm": 6.9,
+      "conditions": "windy"
+    },
+    "response_actions": [
+      "Weather monitoring increased",
+      "Preventive safety measures implemented",
+      "Personnel advised of conditions"
+    ],
+    "lessons_learned": "Analysis of weather_related event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0017",
+    "date": "2023-12-07T09:14:31.843354",
+    "site_id": "site-002",
+    "event_type": "rockfall_major",
+    "severity": "medium",
+    "description": "Significant rockfall involving large boulder displacement",
+    "location": {
+      "zone": "B",
+      "coordinates": {
+        "lat": 39.73832384279562,
+        "lng": -104.98676825748458
+      }
+    },
+    "impact": {
+      "area_affected_m2": 906,
+      "volume_displaced_m3": 58.81,
+      "personnel_evacuated": 8,
+      "equipment_damaged": false,
+      "production_hours_lost": 29
+    },
+    "weather_conditions": {
+      "temperature_c": 32.9,
+      "wind_speed_ms": 3.0,
+      "precipitation_mm": 15.5,
+      "conditions": "windy"
+    },
+    "response_actions": [
+      "Immediate area evacuation",
+      "Emergency response team deployed",
+      "Geotechnical assessment initiated",
+      "Production suspended in affected zone"
+    ],
+    "lessons_learned": "Analysis of rockfall_major event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0034",
+    "date": "2023-12-22T09:14:31.843354",
+    "site_id": "site-001",
+    "event_type": "geological_activity",
+    "severity": "medium",
+    "description": "Seismic activity detected affecting slope stability",
+    "location": {
+      "zone": "C",
+      "coordinates": {
+        "lat": 39.74390137966323,
+        "lng": -104.98818957240756
+      }
+    },
+    "impact": {
+      "area_affected_m2": 805,
+      "volume_displaced_m3": 31.36,
+      "personnel_evacuated": 10,
+      "equipment_damaged": false,
+      "production_hours_lost": 15
+    },
+    "weather_conditions": {
+      "temperature_c": 22.9,
+      "wind_speed_ms": 1.0,
+      "precipitation_mm": 4.8,
+      "conditions": "snowy"
+    },
+    "response_actions": [
+      "Seismic monitoring enhanced",
+      "Structural stability assessment",
+      "Emergency protocols reviewed"
+    ],
+    "lessons_learned": "Analysis of geological_activity event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0004",
+    "date": "2024-01-22T09:14:31.843354",
+    "site_id": "site-001",
+    "event_type": "rockfall_major",
+    "severity": "low",
+    "description": "Significant rockfall involving large boulder displacement",
+    "location": {
+      "zone": "D",
+      "coordinates": {
+        "lat": 39.741259820649056,
+        "lng": -104.98881651531072
+      }
+    },
+    "impact": {
+      "area_affected_m2": 570,
+      "volume_displaced_m3": 4.7,
+      "personnel_evacuated": 12,
+      "equipment_damaged": true,
+      "production_hours_lost": 20
+    },
+    "weather_conditions": {
+      "temperature_c": 6.1,
+      "wind_speed_ms": 8.3,
+      "precipitation_mm": 8.2,
+      "conditions": "snowy"
+    },
+    "response_actions": [
+      "Immediate area evacuation",
+      "Emergency response team deployed",
+      "Geotechnical assessment initiated",
+      "Production suspended in affected zone"
+    ],
+    "lessons_learned": "Analysis of rockfall_major event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0005",
+    "date": "2024-02-14T09:14:31.843354",
+    "site_id": "site-002",
+    "event_type": "equipment_failure",
+    "severity": "low",
+    "description": "Sensor equipment malfunction affecting monitoring capabilities",
+    "location": {
+      "zone": "B",
+      "coordinates": {
+        "lat": 39.74256776006579,
+        "lng": -104.99206694415537
+      }
+    },
+    "impact": {
+      "area_affected_m2": 348,
+      "volume_displaced_m3": 73.65,
+      "personnel_evacuated": 3,
+      "equipment_damaged": true,
+      "production_hours_lost": 12
+    },
+    "weather_conditions": {
+      "temperature_c": 5.2,
+      "wind_speed_ms": 6.3,
+      "precipitation_mm": 3.0,
+      "conditions": "snowy"
+    },
+    "response_actions": [
+      "Equipment inspection and repair",
+      "Backup monitoring systems activated",
+      "Technical support contacted"
+    ],
+    "lessons_learned": "Analysis of equipment_failure event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0015",
+    "date": "2024-03-12T09:14:31.843354",
+    "site_id": "site-002",
+    "event_type": "safety_incident",
+    "severity": "low",
+    "description": "Safety protocol activation due to elevated risk conditions",
+    "location": {
+      "zone": "C",
+      "coordinates": {
+        "lat": 39.73738424016532,
+        "lng": -104.98797808594352
+      }
+    },
+    "impact": {
+      "area_affected_m2": 748,
+      "volume_displaced_m3": 76.68,
+      "personnel_evacuated": 2,
+      "equipment_damaged": false,
+      "production_hours_lost": 17
+    },
+    "weather_conditions": {
+      "temperature_c": 30.3,
+      "wind_speed_ms": 6.1,
+      "precipitation_mm": 25.0,
+      "conditions": "snowy"
+    },
+    "response_actions": [
+      "Safety protocols activated",
+      "Personnel briefing conducted",
+      "Risk assessment updated"
+    ],
+    "lessons_learned": "Analysis of safety_incident event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0042",
+    "date": "2024-04-12T09:14:31.843354",
+    "site_id": "site-001",
+    "event_type": "weather_related",
+    "severity": "high",
+    "description": "Weather-induced slope instability requiring safety measures",
+    "location": {
+      "zone": "D",
+      "coordinates": {
+        "lat": 39.73586730434089,
+        "lng": -104.98758316236915
+      }
+    },
+    "impact": {
+      "area_affected_m2": 760,
+      "volume_displaced_m3": 77.24,
+      "personnel_evacuated": 11,
+      "equipment_damaged": false,
+      "production_hours_lost": 1
+    },
+    "weather_conditions": {
+      "temperature_c": 13.5,
+      "wind_speed_ms": 2.9,
+      "precipitation_mm": 42.5,
+      "conditions": "windy"
+    },
+    "response_actions": [
+      "Weather monitoring increased",
+      "Preventive safety measures implemented",
+      "Personnel advised of conditions"
+    ],
+    "lessons_learned": "Analysis of weather_related event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0001",
+    "date": "2024-04-24T09:14:31.843354",
+    "site_id": "site-003",
+    "event_type": "rockfall_minor",
+    "severity": "low",
+    "description": "Small rockfall event with loose debris falling from slope face",
+    "location": {
+      "zone": "C",
+      "coordinates": {
+        "lat": 39.74428122016597,
+        "lng": -104.99292358321057
+      }
+    },
+    "impact": {
+      "area_affected_m2": 698,
+      "volume_displaced_m3": 63.08,
+      "personnel_evacuated": 5,
+      "equipment_damaged": false,
+      "production_hours_lost": 30
+    },
+    "weather_conditions": {
+      "temperature_c": 6.6,
+      "wind_speed_ms": 11.2,
+      "precipitation_mm": 9.2,
+      "conditions": "snowy"
+    },
+    "response_actions": [
+      "Area inspection conducted",
+      "Debris cleared from access roads",
+      "Increased monitoring frequency"
+    ],
+    "lessons_learned": "Analysis of rockfall_minor event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0026",
+    "date": "2024-05-05T09:14:31.843354",
+    "site_id": "site-003",
+    "event_type": "geological_activity",
+    "severity": "critical",
+    "description": "Seismic activity detected affecting slope stability",
+    "location": {
+      "zone": "B",
+      "coordinates": {
+        "lat": 39.73919177702489,
+        "lng": -104.9900160087882
+      }
+    },
+    "impact": {
+      "area_affected_m2": 941,
+      "volume_displaced_m3": 0.55,
+      "personnel_evacuated": 8,
+      "equipment_damaged": true,
+      "production_hours_lost": 46
+    },
+    "weather_conditions": {
+      "temperature_c": -7.5,
+      "wind_speed_ms": 7.8,
+      "precipitation_mm": 3.3,
+      "conditions": "clear"
+    },
+    "response_actions": [
+      "Seismic monitoring enhanced",
+      "Structural stability assessment",
+      "Emergency protocols reviewed"
+    ],
+    "lessons_learned": "Analysis of geological_activity event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0048",
+    "date": "2024-05-16T09:14:31.843354",
+    "site_id": "site-001",
+    "event_type": "rockfall_major",
+    "severity": "high",
+    "description": "Significant rockfall involving large boulder displacement",
+    "location": {
+      "zone": "A",
+      "coordinates": {
+        "lat": 39.73590939753529,
+        "lng": -104.99122332671153
+      }
+    },
+    "impact": {
+      "area_affected_m2": 155,
+      "volume_displaced_m3": 83.22,
+      "personnel_evacuated": 6,
+      "equipment_damaged": true,
+      "production_hours_lost": 5
+    },
+    "weather_conditions": {
+      "temperature_c": 29.4,
+      "wind_speed_ms": 5.9,
+      "precipitation_mm": 10.4,
+      "conditions": "windy"
+    },
+    "response_actions": [
+      "Immediate area evacuation",
+      "Emergency response team deployed",
+      "Geotechnical assessment initiated",
+      "Production suspended in affected zone"
+    ],
+    "lessons_learned": "Analysis of rockfall_major event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0009",
+    "date": "2024-05-22T09:14:31.843354",
+    "site_id": "site-001",
+    "event_type": "rockfall_major",
+    "severity": "high",
+    "description": "Significant rockfall involving large boulder displacement",
+    "location": {
+      "zone": "C",
+      "coordinates": {
+        "lat": 39.74001996413008,
+        "lng": -104.9937358315369
+      }
+    },
+    "impact": {
+      "area_affected_m2": 854,
+      "volume_displaced_m3": 80.07,
+      "personnel_evacuated": 5,
+      "equipment_damaged": true,
+      "production_hours_lost": 4
+    },
+    "weather_conditions": {
+      "temperature_c": 3.6,
+      "wind_speed_ms": 10.2,
+      "precipitation_mm": 25.5,
+      "conditions": "rainy"
+    },
+    "response_actions": [
+      "Immediate area evacuation",
+      "Emergency response team deployed",
+      "Geotechnical assessment initiated",
+      "Production suspended in affected zone"
+    ],
+    "lessons_learned": "Analysis of rockfall_major event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0046",
+    "date": "2024-05-29T09:14:31.843354",
+    "site_id": "site-001",
+    "event_type": "rockfall_major",
+    "severity": "critical",
+    "description": "Significant rockfall involving large boulder displacement",
+    "location": {
+      "zone": "C",
+      "coordinates": {
+        "lat": 39.741019807931565,
+        "lng": -104.98542330346395
+      }
+    },
+    "impact": {
+      "area_affected_m2": 136,
+      "volume_displaced_m3": 78.41,
+      "personnel_evacuated": 14,
+      "equipment_damaged": false,
+      "production_hours_lost": 48
+    },
+    "weather_conditions": {
+      "temperature_c": 28.8,
+      "wind_speed_ms": 9.9,
+      "precipitation_mm": 28.2,
+      "conditions": "windy"
+    },
+    "response_actions": [
+      "Immediate area evacuation",
+      "Emergency response team deployed",
+      "Geotechnical assessment initiated",
+      "Production suspended in affected zone"
+    ],
+    "lessons_learned": "Analysis of rockfall_major event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0002",
+    "date": "2024-06-01T09:14:31.843354",
+    "site_id": "site-001",
+    "event_type": "rockfall_major",
+    "severity": "high",
+    "description": "Significant rockfall involving large boulder displacement",
+    "location": {
+      "zone": "C",
+      "coordinates": {
+        "lat": 39.73627500095776,
+        "lng": -104.98925369042276
+      }
+    },
+    "impact": {
+      "area_affected_m2": 377,
+      "volume_displaced_m3": 28.77,
+      "personnel_evacuated": 15,
+      "equipment_damaged": false,
+      "production_hours_lost": 24
+    },
+    "weather_conditions": {
+      "temperature_c": 16.5,
+      "wind_speed_ms": 7.3,
+      "precipitation_mm": 20.5,
+      "conditions": "rainy"
+    },
+    "response_actions": [
+      "Immediate area evacuation",
+      "Emergency response team deployed",
+      "Geotechnical assessment initiated",
+      "Production suspended in affected zone"
+    ],
+    "lessons_learned": "Analysis of rockfall_major event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0020",
+    "date": "2024-06-01T09:14:31.843354",
+    "site_id": "site-001",
+    "event_type": "equipment_failure",
+    "severity": "medium",
+    "description": "Sensor equipment malfunction affecting monitoring capabilities",
+    "location": {
+      "zone": "B",
+      "coordinates": {
+        "lat": 39.73632843111933,
+        "lng": -104.99367996376985
+      }
+    },
+    "impact": {
+      "area_affected_m2": 887,
+      "volume_displaced_m3": 58.13,
+      "personnel_evacuated": 7,
+      "equipment_damaged": false,
+      "production_hours_lost": 48
+    },
+    "weather_conditions": {
+      "temperature_c": -6.3,
+      "wind_speed_ms": 10.4,
+      "precipitation_mm": 12.3,
+      "conditions": "windy"
+    },
+    "response_actions": [
+      "Equipment inspection and repair",
+      "Backup monitoring systems activated",
+      "Technical support contacted"
+    ],
+    "lessons_learned": "Analysis of equipment_failure event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0032",
+    "date": "2024-06-08T09:14:31.843354",
+    "site_id": "site-003",
+    "event_type": "equipment_failure",
+    "severity": "low",
+    "description": "Sensor equipment malfunction affecting monitoring capabilities",
+    "location": {
+      "zone": "C",
+      "coordinates": {
+        "lat": 39.73625829277295,
+        "lng": -104.99317155618589
+      }
+    },
+    "impact": {
+      "area_affected_m2": 987,
+      "volume_displaced_m3": 71.44,
+      "personnel_evacuated": 11,
+      "equipment_damaged": true,
+      "production_hours_lost": 37
+    },
+    "weather_conditions": {
+      "temperature_c": -1.4,
+      "wind_speed_ms": 7.5,
+      "precipitation_mm": 0.6,
+      "conditions": "windy"
+    },
+    "response_actions": [
+      "Equipment inspection and repair",
+      "Backup monitoring systems activated",
+      "Technical support contacted"
+    ],
+    "lessons_learned": "Analysis of equipment_failure event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0035",
+    "date": "2024-06-15T09:14:31.843354",
+    "site_id": "site-003",
+    "event_type": "weather_related",
+    "severity": "medium",
+    "description": "Weather-induced slope instability requiring safety measures",
+    "location": {
+      "zone": "C",
+      "coordinates": {
+        "lat": 39.74007605305392,
+        "lng": -104.99445723329849
+      }
+    },
+    "impact": {
+      "area_affected_m2": 230,
+      "volume_displaced_m3": 50.58,
+      "personnel_evacuated": 8,
+      "equipment_damaged": true,
+      "production_hours_lost": 15
+    },
+    "weather_conditions": {
+      "temperature_c": 13.1,
+      "wind_speed_ms": 3.3,
+      "precipitation_mm": 29.1,
+      "conditions": "windy"
+    },
+    "response_actions": [
+      "Weather monitoring increased",
+      "Preventive safety measures implemented",
+      "Personnel advised of conditions"
+    ],
+    "lessons_learned": "Analysis of weather_related event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0011",
+    "date": "2024-06-20T09:14:31.843354",
+    "site_id": "site-003",
+    "event_type": "equipment_failure",
+    "severity": "critical",
+    "description": "Sensor equipment malfunction affecting monitoring capabilities",
+    "location": {
+      "zone": "B",
+      "coordinates": {
+        "lat": 39.74195331943809,
+        "lng": -104.98763705552028
+      }
+    },
+    "impact": {
+      "area_affected_m2": 928,
+      "volume_displaced_m3": 34.29,
+      "personnel_evacuated": 5,
+      "equipment_damaged": false,
+      "production_hours_lost": 8
+    },
+    "weather_conditions": {
+      "temperature_c": 23.3,
+      "wind_speed_ms": 8.6,
+      "precipitation_mm": 12.1,
+      "conditions": "cloudy"
+    },
+    "response_actions": [
+      "Equipment inspection and repair",
+      "Backup monitoring systems activated",
+      "Technical support contacted"
+    ],
+    "lessons_learned": "Analysis of equipment_failure event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0006",
+    "date": "2024-06-22T09:14:31.843354",
+    "site_id": "site-002",
+    "event_type": "rockfall_minor",
+    "severity": "critical",
+    "description": "Small rockfall event with loose debris falling from slope face",
+    "location": {
+      "zone": "D",
+      "coordinates": {
+        "lat": 39.74061552873802,
+        "lng": -104.99402685156768
+      }
+    },
+    "impact": {
+      "area_affected_m2": 332,
+      "volume_displaced_m3": 52.17,
+      "personnel_evacuated": 0,
+      "equipment_damaged": true,
+      "production_hours_lost": 14
+    },
+    "weather_conditions": {
+      "temperature_c": 19.4,
+      "wind_speed_ms": 19.7,
+      "precipitation_mm": 23.8,
+      "conditions": "clear"
+    },
+    "response_actions": [
+      "Area inspection conducted",
+      "Debris cleared from access roads",
+      "Increased monitoring frequency"
+    ],
+    "lessons_learned": "Analysis of rockfall_minor event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0036",
+    "date": "2024-06-23T09:14:31.843354",
+    "site_id": "site-002",
+    "event_type": "rockfall_minor",
+    "severity": "high",
+    "description": "Small rockfall event with loose debris falling from slope face",
+    "location": {
+      "zone": "C",
+      "coordinates": {
+        "lat": 39.7390996535918,
+        "lng": -104.98653609209342
+      }
+    },
+    "impact": {
+      "area_affected_m2": 216,
+      "volume_displaced_m3": 13.28,
+      "personnel_evacuated": 13,
+      "equipment_damaged": false,
+      "production_hours_lost": 23
+    },
+    "weather_conditions": {
+      "temperature_c": 16.0,
+      "wind_speed_ms": 10.1,
+      "precipitation_mm": 3.4,
+      "conditions": "rainy"
+    },
+    "response_actions": [
+      "Area inspection conducted",
+      "Debris cleared from access roads",
+      "Increased monitoring frequency"
+    ],
+    "lessons_learned": "Analysis of rockfall_minor event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0040",
+    "date": "2024-07-05T09:14:31.843354",
+    "site_id": "site-001",
+    "event_type": "rockfall_minor",
+    "severity": "low",
+    "description": "Small rockfall event with loose debris falling from slope face",
+    "location": {
+      "zone": "B",
+      "coordinates": {
+        "lat": 39.73633923232346,
+        "lng": -104.98654475979018
+      }
+    },
+    "impact": {
+      "area_affected_m2": 773,
+      "volume_displaced_m3": 77.76,
+      "personnel_evacuated": 14,
+      "equipment_damaged": true,
+      "production_hours_lost": 48
+    },
+    "weather_conditions": {
+      "temperature_c": 7.2,
+      "wind_speed_ms": 0.4,
+      "precipitation_mm": 12.5,
+      "conditions": "snowy"
+    },
+    "response_actions": [
+      "Area inspection conducted",
+      "Debris cleared from access roads",
+      "Increased monitoring frequency"
+    ],
+    "lessons_learned": "Analysis of rockfall_minor event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0010",
+    "date": "2024-07-15T09:14:31.843354",
+    "site_id": "site-003",
+    "event_type": "equipment_failure",
+    "severity": "high",
+    "description": "Sensor equipment malfunction affecting monitoring capabilities",
+    "location": {
+      "zone": "B",
+      "coordinates": {
+        "lat": 39.74067145253067,
+        "lng": -104.992962906786
+      }
+    },
+    "impact": {
+      "area_affected_m2": 289,
+      "volume_displaced_m3": 79.25,
+      "personnel_evacuated": 6,
+      "equipment_damaged": true,
+      "production_hours_lost": 5
+    },
+    "weather_conditions": {
+      "temperature_c": 2.7,
+      "wind_speed_ms": 17.3,
+      "precipitation_mm": 39.0,
+      "conditions": "snowy"
+    },
+    "response_actions": [
+      "Equipment inspection and repair",
+      "Backup monitoring systems activated",
+      "Technical support contacted"
+    ],
+    "lessons_learned": "Analysis of equipment_failure event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0024",
+    "date": "2024-07-24T09:14:31.843354",
+    "site_id": "site-003",
+    "event_type": "rockfall_minor",
+    "severity": "critical",
+    "description": "Small rockfall event with loose debris falling from slope face",
+    "location": {
+      "zone": "C",
+      "coordinates": {
+        "lat": 39.74011144917083,
+        "lng": -104.99305885330858
+      }
+    },
+    "impact": {
+      "area_affected_m2": 167,
+      "volume_displaced_m3": 17.96,
+      "personnel_evacuated": 3,
+      "equipment_damaged": true,
+      "production_hours_lost": 28
+    },
+    "weather_conditions": {
+      "temperature_c": -6.0,
+      "wind_speed_ms": 4.7,
+      "precipitation_mm": 9.3,
+      "conditions": "windy"
+    },
+    "response_actions": [
+      "Area inspection conducted",
+      "Debris cleared from access roads",
+      "Increased monitoring frequency"
+    ],
+    "lessons_learned": "Analysis of rockfall_minor event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0031",
+    "date": "2024-08-18T09:14:31.843354",
+    "site_id": "site-002",
+    "event_type": "geological_activity",
+    "severity": "high",
+    "description": "Seismic activity detected affecting slope stability",
+    "location": {
+      "zone": "A",
+      "coordinates": {
+        "lat": 39.741014465254786,
+        "lng": -104.99054960811834
+      }
+    },
+    "impact": {
+      "area_affected_m2": 60,
+      "volume_displaced_m3": 8.16,
+      "personnel_evacuated": 14,
+      "equipment_damaged": false,
+      "production_hours_lost": 34
+    },
+    "weather_conditions": {
+      "temperature_c": 16.5,
+      "wind_speed_ms": 0.2,
+      "precipitation_mm": 34.5,
+      "conditions": "rainy"
+    },
+    "response_actions": [
+      "Seismic monitoring enhanced",
+      "Structural stability assessment",
+      "Emergency protocols reviewed"
+    ],
+    "lessons_learned": "Analysis of geological_activity event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0029",
+    "date": "2024-09-27T09:14:31.843354",
+    "site_id": "site-002",
+    "event_type": "weather_related",
+    "severity": "high",
+    "description": "Weather-induced slope instability requiring safety measures",
+    "location": {
+      "zone": "D",
+      "coordinates": {
+        "lat": 39.74407979014817,
+        "lng": -104.98889675407779
+      }
+    },
+    "impact": {
+      "area_affected_m2": 684,
+      "volume_displaced_m3": 95.99,
+      "personnel_evacuated": 16,
+      "equipment_damaged": false,
+      "production_hours_lost": 27
+    },
+    "weather_conditions": {
+      "temperature_c": 28.3,
+      "wind_speed_ms": 12.7,
+      "precipitation_mm": 3.2,
+      "conditions": "rainy"
+    },
+    "response_actions": [
+      "Weather monitoring increased",
+      "Preventive safety measures implemented",
+      "Personnel advised of conditions"
+    ],
+    "lessons_learned": "Analysis of weather_related event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0037",
+    "date": "2024-12-03T09:14:31.843354",
+    "site_id": "site-003",
+    "event_type": "rockfall_major",
+    "severity": "critical",
+    "description": "Significant rockfall involving large boulder displacement",
+    "location": {
+      "zone": "C",
+      "coordinates": {
+        "lat": 39.73943171147093,
+        "lng": -104.98827339970862
+      }
+    },
+    "impact": {
+      "area_affected_m2": 635,
+      "volume_displaced_m3": 12.78,
+      "personnel_evacuated": 5,
+      "equipment_damaged": false,
+      "production_hours_lost": 19
+    },
+    "weather_conditions": {
+      "temperature_c": 23.9,
+      "wind_speed_ms": 7.9,
+      "precipitation_mm": 7.6,
+      "conditions": "clear"
+    },
+    "response_actions": [
+      "Immediate area evacuation",
+      "Emergency response team deployed",
+      "Geotechnical assessment initiated",
+      "Production suspended in affected zone"
+    ],
+    "lessons_learned": "Analysis of rockfall_major event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0044",
+    "date": "2024-12-04T09:14:31.843354",
+    "site_id": "site-001",
+    "event_type": "equipment_failure",
+    "severity": "critical",
+    "description": "Sensor equipment malfunction affecting monitoring capabilities",
+    "location": {
+      "zone": "A",
+      "coordinates": {
+        "lat": 39.739974201747245,
+        "lng": -104.98978421361316
+      }
+    },
+    "impact": {
+      "area_affected_m2": 688,
+      "volume_displaced_m3": 35.12,
+      "personnel_evacuated": 17,
+      "equipment_damaged": false,
+      "production_hours_lost": 20
+    },
+    "weather_conditions": {
+      "temperature_c": 21.3,
+      "wind_speed_ms": 12.4,
+      "precipitation_mm": 7.0,
+      "conditions": "snowy"
+    },
+    "response_actions": [
+      "Equipment inspection and repair",
+      "Backup monitoring systems activated",
+      "Technical support contacted"
+    ],
+    "lessons_learned": "Analysis of equipment_failure event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0045",
+    "date": "2025-01-05T09:14:31.843354",
+    "site_id": "site-003",
+    "event_type": "rockfall_minor",
+    "severity": "low",
+    "description": "Small rockfall event with loose debris falling from slope face",
+    "location": {
+      "zone": "C",
+      "coordinates": {
+        "lat": 39.735535736094306,
+        "lng": -104.99005239841924
+      }
+    },
+    "impact": {
+      "area_affected_m2": 589,
+      "volume_displaced_m3": 50.71,
+      "personnel_evacuated": 5,
+      "equipment_damaged": false,
+      "production_hours_lost": 6
+    },
+    "weather_conditions": {
+      "temperature_c": -8.7,
+      "wind_speed_ms": 9.2,
+      "precipitation_mm": 31.1,
+      "conditions": "rainy"
+    },
+    "response_actions": [
+      "Area inspection conducted",
+      "Debris cleared from access roads",
+      "Increased monitoring frequency"
+    ],
+    "lessons_learned": "Analysis of rockfall_minor event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0007",
+    "date": "2025-01-09T09:14:31.843354",
+    "site_id": "site-003",
+    "event_type": "rockfall_major",
+    "severity": "critical",
+    "description": "Significant rockfall involving large boulder displacement",
+    "location": {
+      "zone": "D",
+      "coordinates": {
+        "lat": 39.73693353653237,
+        "lng": -104.98515894900143
+      }
+    },
+    "impact": {
+      "area_affected_m2": 563,
+      "volume_displaced_m3": 76.9,
+      "personnel_evacuated": 6,
+      "equipment_damaged": false,
+      "production_hours_lost": 8
+    },
+    "weather_conditions": {
+      "temperature_c": 11.7,
+      "wind_speed_ms": 18.4,
+      "precipitation_mm": 45.0,
+      "conditions": "rainy"
+    },
+    "response_actions": [
+      "Immediate area evacuation",
+      "Emergency response team deployed",
+      "Geotechnical assessment initiated",
+      "Production suspended in affected zone"
+    ],
+    "lessons_learned": "Analysis of rockfall_major event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0027",
+    "date": "2025-01-13T09:14:31.843354",
+    "site_id": "site-003",
+    "event_type": "safety_incident",
+    "severity": "critical",
+    "description": "Safety protocol activation due to elevated risk conditions",
+    "location": {
+      "zone": "D",
+      "coordinates": {
+        "lat": 39.736913288594415,
+        "lng": -104.98781932949379
+      }
+    },
+    "impact": {
+      "area_affected_m2": 472,
+      "volume_displaced_m3": 11.5,
+      "personnel_evacuated": 16,
+      "equipment_damaged": true,
+      "production_hours_lost": 18
+    },
+    "weather_conditions": {
+      "temperature_c": -2.9,
+      "wind_speed_ms": 12.1,
+      "precipitation_mm": 41.7,
+      "conditions": "rainy"
+    },
+    "response_actions": [
+      "Safety protocols activated",
+      "Personnel briefing conducted",
+      "Risk assessment updated"
+    ],
+    "lessons_learned": "Analysis of safety_incident event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0016",
+    "date": "2025-01-15T09:14:31.843354",
+    "site_id": "site-001",
+    "event_type": "weather_related",
+    "severity": "high",
+    "description": "Weather-induced slope instability requiring safety measures",
+    "location": {
+      "zone": "B",
+      "coordinates": {
+        "lat": 39.74380138467718,
+        "lng": -104.98704115093695
+      }
+    },
+    "impact": {
+      "area_affected_m2": 681,
+      "volume_displaced_m3": 2.43,
+      "personnel_evacuated": 5,
+      "equipment_damaged": false,
+      "production_hours_lost": 5
+    },
+    "weather_conditions": {
+      "temperature_c": 31.0,
+      "wind_speed_ms": 12.9,
+      "precipitation_mm": 15.8,
+      "conditions": "windy"
+    },
+    "response_actions": [
+      "Weather monitoring increased",
+      "Preventive safety measures implemented",
+      "Personnel advised of conditions"
+    ],
+    "lessons_learned": "Analysis of weather_related event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0033",
+    "date": "2025-02-08T09:14:31.843354",
+    "site_id": "site-003",
+    "event_type": "weather_related",
+    "severity": "critical",
+    "description": "Weather-induced slope instability requiring safety measures",
+    "location": {
+      "zone": "B",
+      "coordinates": {
+        "lat": 39.74408208052895,
+        "lng": -104.98539106453445
+      }
+    },
+    "impact": {
+      "area_affected_m2": 626,
+      "volume_displaced_m3": 94.75,
+      "personnel_evacuated": 12,
+      "equipment_damaged": true,
+      "production_hours_lost": 12
+    },
+    "weather_conditions": {
+      "temperature_c": 25.6,
+      "wind_speed_ms": 12.2,
+      "precipitation_mm": 45.5,
+      "conditions": "clear"
+    },
+    "response_actions": [
+      "Weather monitoring increased",
+      "Preventive safety measures implemented",
+      "Personnel advised of conditions"
+    ],
+    "lessons_learned": "Analysis of weather_related event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0047",
+    "date": "2025-03-06T09:14:31.843354",
+    "site_id": "site-002",
+    "event_type": "geological_activity",
+    "severity": "critical",
+    "description": "Seismic activity detected affecting slope stability",
+    "location": {
+      "zone": "D",
+      "coordinates": {
+        "lat": 39.735635748080995,
+        "lng": -104.9916267077784
+      }
+    },
+    "impact": {
+      "area_affected_m2": 990,
+      "volume_displaced_m3": 26.41,
+      "personnel_evacuated": 11,
+      "equipment_damaged": false,
+      "production_hours_lost": 46
+    },
+    "weather_conditions": {
+      "temperature_c": -0.3,
+      "wind_speed_ms": 9.0,
+      "precipitation_mm": 1.3,
+      "conditions": "clear"
+    },
+    "response_actions": [
+      "Seismic monitoring enhanced",
+      "Structural stability assessment",
+      "Emergency protocols reviewed"
+    ],
+    "lessons_learned": "Analysis of geological_activity event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0021",
+    "date": "2025-04-04T09:14:31.843354",
+    "site_id": "site-002",
+    "event_type": "geological_activity",
+    "severity": "medium",
+    "description": "Seismic activity detected affecting slope stability",
+    "location": {
+      "zone": "B",
+      "coordinates": {
+        "lat": 39.73748655919704,
+        "lng": -104.99353678015193
+      }
+    },
+    "impact": {
+      "area_affected_m2": 573,
+      "volume_displaced_m3": 12.86,
+      "personnel_evacuated": 4,
+      "equipment_damaged": true,
+      "production_hours_lost": 4
+    },
+    "weather_conditions": {
+      "temperature_c": 32.5,
+      "wind_speed_ms": 15.4,
+      "precipitation_mm": 7.5,
+      "conditions": "cloudy"
+    },
+    "response_actions": [
+      "Seismic monitoring enhanced",
+      "Structural stability assessment",
+      "Emergency protocols reviewed"
+    ],
+    "lessons_learned": "Analysis of geological_activity event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0038",
+    "date": "2025-04-05T09:14:31.843354",
+    "site_id": "site-003",
+    "event_type": "rockfall_major",
+    "severity": "critical",
+    "description": "Significant rockfall involving large boulder displacement",
+    "location": {
+      "zone": "D",
+      "coordinates": {
+        "lat": 39.74267888495384,
+        "lng": -104.99183193082162
+      }
+    },
+    "impact": {
+      "area_affected_m2": 948,
+      "volume_displaced_m3": 15.71,
+      "personnel_evacuated": 18,
+      "equipment_damaged": false,
+      "production_hours_lost": 28
+    },
+    "weather_conditions": {
+      "temperature_c": 1.1,
+      "wind_speed_ms": 7.9,
+      "precipitation_mm": 26.2,
+      "conditions": "cloudy"
+    },
+    "response_actions": [
+      "Immediate area evacuation",
+      "Emergency response team deployed",
+      "Geotechnical assessment initiated",
+      "Production suspended in affected zone"
+    ],
+    "lessons_learned": "Analysis of rockfall_major event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0018",
+    "date": "2025-04-14T09:14:31.843354",
+    "site_id": "site-002",
+    "event_type": "rockfall_major",
+    "severity": "high",
+    "description": "Significant rockfall involving large boulder displacement",
+    "location": {
+      "zone": "C",
+      "coordinates": {
+        "lat": 39.73727585641917,
+        "lng": -104.98920162600304
+      }
+    },
+    "impact": {
+      "area_affected_m2": 123,
+      "volume_displaced_m3": 47.62,
+      "personnel_evacuated": 12,
+      "equipment_damaged": true,
+      "production_hours_lost": 7
+    },
+    "weather_conditions": {
+      "temperature_c": 5.5,
+      "wind_speed_ms": 14.3,
+      "precipitation_mm": 28.6,
+      "conditions": "windy"
+    },
+    "response_actions": [
+      "Immediate area evacuation",
+      "Emergency response team deployed",
+      "Geotechnical assessment initiated",
+      "Production suspended in affected zone"
+    ],
+    "lessons_learned": "Analysis of rockfall_major event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0019",
+    "date": "2025-04-17T09:14:31.843354",
+    "site_id": "site-003",
+    "event_type": "rockfall_minor",
+    "severity": "medium",
+    "description": "Small rockfall event with loose debris falling from slope face",
+    "location": {
+      "zone": "C",
+      "coordinates": {
+        "lat": 39.741598343961805,
+        "lng": -104.99029822039385
+      }
+    },
+    "impact": {
+      "area_affected_m2": 649,
+      "volume_displaced_m3": 29.74,
+      "personnel_evacuated": 16,
+      "equipment_damaged": false,
+      "production_hours_lost": 39
+    },
+    "weather_conditions": {
+      "temperature_c": -6.3,
+      "wind_speed_ms": 6.7,
+      "precipitation_mm": 46.6,
+      "conditions": "cloudy"
+    },
+    "response_actions": [
+      "Area inspection conducted",
+      "Debris cleared from access roads",
+      "Increased monitoring frequency"
+    ],
+    "lessons_learned": "Analysis of rockfall_minor event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0049",
+    "date": "2025-04-19T09:14:31.843354",
+    "site_id": "site-003",
+    "event_type": "rockfall_major",
+    "severity": "low",
+    "description": "Significant rockfall involving large boulder displacement",
+    "location": {
+      "zone": "C",
+      "coordinates": {
+        "lat": 39.74104607077788,
+        "lng": -104.99326705117787
+      }
+    },
+    "impact": {
+      "area_affected_m2": 171,
+      "volume_displaced_m3": 58.55,
+      "personnel_evacuated": 10,
+      "equipment_damaged": false,
+      "production_hours_lost": 0
+    },
+    "weather_conditions": {
+      "temperature_c": 7.3,
+      "wind_speed_ms": 10.0,
+      "precipitation_mm": 9.6,
+      "conditions": "rainy"
+    },
+    "response_actions": [
+      "Immediate area evacuation",
+      "Emergency response team deployed",
+      "Geotechnical assessment initiated",
+      "Production suspended in affected zone"
+    ],
+    "lessons_learned": "Analysis of rockfall_major event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0022",
+    "date": "2025-05-21T09:14:31.843354",
+    "site_id": "site-001",
+    "event_type": "weather_related",
+    "severity": "high",
+    "description": "Weather-induced slope instability requiring safety measures",
+    "location": {
+      "zone": "B",
+      "coordinates": {
+        "lat": 39.74154057507813,
+        "lng": -104.99435160612076
+      }
+    },
+    "impact": {
+      "area_affected_m2": 983,
+      "volume_displaced_m3": 52.09,
+      "personnel_evacuated": 15,
+      "equipment_damaged": true,
+      "production_hours_lost": 21
+    },
+    "weather_conditions": {
+      "temperature_c": 17.2,
+      "wind_speed_ms": 2.1,
+      "precipitation_mm": 39.9,
+      "conditions": "cloudy"
+    },
+    "response_actions": [
+      "Weather monitoring increased",
+      "Preventive safety measures implemented",
+      "Personnel advised of conditions"
+    ],
+    "lessons_learned": "Analysis of weather_related event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0013",
+    "date": "2025-06-12T09:14:31.843354",
+    "site_id": "site-003",
+    "event_type": "safety_incident",
+    "severity": "critical",
+    "description": "Safety protocol activation due to elevated risk conditions",
+    "location": {
+      "zone": "C",
+      "coordinates": {
+        "lat": 39.74385349563431,
+        "lng": -104.98594779508245
+      }
+    },
+    "impact": {
+      "area_affected_m2": 66,
+      "volume_displaced_m3": 53.93,
+      "personnel_evacuated": 3,
+      "equipment_damaged": false,
+      "production_hours_lost": 8
+    },
+    "weather_conditions": {
+      "temperature_c": 3.8,
+      "wind_speed_ms": 4.1,
+      "precipitation_mm": 40.1,
+      "conditions": "snowy"
+    },
+    "response_actions": [
+      "Safety protocols activated",
+      "Personnel briefing conducted",
+      "Risk assessment updated"
+    ],
+    "lessons_learned": "Analysis of safety_incident event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0041",
+    "date": "2025-06-23T09:14:31.843354",
+    "site_id": "site-002",
+    "event_type": "equipment_failure",
+    "severity": "high",
+    "description": "Sensor equipment malfunction affecting monitoring capabilities",
+    "location": {
+      "zone": "D",
+      "coordinates": {
+        "lat": 39.73774527729703,
+        "lng": -104.98889826593084
+      }
+    },
+    "impact": {
+      "area_affected_m2": 693,
+      "volume_displaced_m3": 79.44,
+      "personnel_evacuated": 5,
+      "equipment_damaged": true,
+      "production_hours_lost": 25
+    },
+    "weather_conditions": {
+      "temperature_c": 18.8,
+      "wind_speed_ms": 5.1,
+      "precipitation_mm": 9.2,
+      "conditions": "rainy"
+    },
+    "response_actions": [
+      "Equipment inspection and repair",
+      "Backup monitoring systems activated",
+      "Technical support contacted"
+    ],
+    "lessons_learned": "Analysis of equipment_failure event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0043",
+    "date": "2025-07-01T09:14:31.843354",
+    "site_id": "site-002",
+    "event_type": "rockfall_major",
+    "severity": "low",
+    "description": "Significant rockfall involving large boulder displacement",
+    "location": {
+      "zone": "D",
+      "coordinates": {
+        "lat": 39.73746849703039,
+        "lng": -104.9920672205282
+      }
+    },
+    "impact": {
+      "area_affected_m2": 601,
+      "volume_displaced_m3": 9.08,
+      "personnel_evacuated": 12,
+      "equipment_damaged": true,
+      "production_hours_lost": 13
+    },
+    "weather_conditions": {
+      "temperature_c": 4.5,
+      "wind_speed_ms": 13.3,
+      "precipitation_mm": 36.1,
+      "conditions": "clear"
+    },
+    "response_actions": [
+      "Immediate area evacuation",
+      "Emergency response team deployed",
+      "Geotechnical assessment initiated",
+      "Production suspended in affected zone"
+    ],
+    "lessons_learned": "Analysis of rockfall_major event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0008",
+    "date": "2025-07-11T09:14:31.843354",
+    "site_id": "site-001",
+    "event_type": "geological_activity",
+    "severity": "low",
+    "description": "Seismic activity detected affecting slope stability",
+    "location": {
+      "zone": "A",
+      "coordinates": {
+        "lat": 39.7387326532165,
+        "lng": -104.98721047161722
+      }
+    },
+    "impact": {
+      "area_affected_m2": 973,
+      "volume_displaced_m3": 93.0,
+      "personnel_evacuated": 18,
+      "equipment_damaged": false,
+      "production_hours_lost": 3
+    },
+    "weather_conditions": {
+      "temperature_c": -7.3,
+      "wind_speed_ms": 14.7,
+      "precipitation_mm": 9.4,
+      "conditions": "clear"
+    },
+    "response_actions": [
+      "Seismic monitoring enhanced",
+      "Structural stability assessment",
+      "Emergency protocols reviewed"
+    ],
+    "lessons_learned": "Analysis of geological_activity event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0028",
+    "date": "2025-07-11T09:14:31.843354",
+    "site_id": "site-003",
+    "event_type": "safety_incident",
+    "severity": "medium",
+    "description": "Safety protocol activation due to elevated risk conditions",
+    "location": {
+      "zone": "D",
+      "coordinates": {
+        "lat": 39.742409507401184,
+        "lng": -104.9892762082489
+      }
+    },
+    "impact": {
+      "area_affected_m2": 989,
+      "volume_displaced_m3": 38.75,
+      "personnel_evacuated": 10,
+      "equipment_damaged": false,
+      "production_hours_lost": 27
+    },
+    "weather_conditions": {
+      "temperature_c": 19.2,
+      "wind_speed_ms": 9.3,
+      "precipitation_mm": 47.5,
+      "conditions": "clear"
+    },
+    "response_actions": [
+      "Safety protocols activated",
+      "Personnel briefing conducted",
+      "Risk assessment updated"
+    ],
+    "lessons_learned": "Analysis of safety_incident event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0023",
+    "date": "2025-07-30T09:14:31.843354",
+    "site_id": "site-001",
+    "event_type": "rockfall_minor",
+    "severity": "critical",
+    "description": "Small rockfall event with loose debris falling from slope face",
+    "location": {
+      "zone": "B",
+      "coordinates": {
+        "lat": 39.738217825708496,
+        "lng": -104.98933084710096
+      }
+    },
+    "impact": {
+      "area_affected_m2": 778,
+      "volume_displaced_m3": 87.36,
+      "personnel_evacuated": 19,
+      "equipment_damaged": false,
+      "production_hours_lost": 44
+    },
+    "weather_conditions": {
+      "temperature_c": 7.9,
+      "wind_speed_ms": 11.6,
+      "precipitation_mm": 49.8,
+      "conditions": "windy"
+    },
+    "response_actions": [
+      "Area inspection conducted",
+      "Debris cleared from access roads",
+      "Increased monitoring frequency"
+    ],
+    "lessons_learned": "Analysis of rockfall_minor event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0030",
+    "date": "2025-08-28T09:14:31.843354",
+    "site_id": "site-001",
+    "event_type": "rockfall_minor",
+    "severity": "low",
+    "description": "Small rockfall event with loose debris falling from slope face",
+    "location": {
+      "zone": "B",
+      "coordinates": {
+        "lat": 39.74132913261689,
+        "lng": -104.98945162471601
+      }
+    },
+    "impact": {
+      "area_affected_m2": 550,
+      "volume_displaced_m3": 44.14,
+      "personnel_evacuated": 7,
+      "equipment_damaged": true,
+      "production_hours_lost": 3
+    },
+    "weather_conditions": {
+      "temperature_c": 8.0,
+      "wind_speed_ms": 12.1,
+      "precipitation_mm": 3.0,
+      "conditions": "clear"
+    },
+    "response_actions": [
+      "Area inspection conducted",
+      "Debris cleared from access roads",
+      "Increased monitoring frequency"
+    ],
+    "lessons_learned": "Analysis of rockfall_minor event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0025",
+    "date": "2025-09-03T09:14:31.843354",
+    "site_id": "site-001",
+    "event_type": "weather_related",
+    "severity": "critical",
+    "description": "Weather-induced slope instability requiring safety measures",
+    "location": {
+      "zone": "D",
+      "coordinates": {
+        "lat": 39.73621428577358,
+        "lng": -104.99474084122629
+      }
+    },
+    "impact": {
+      "area_affected_m2": 352,
+      "volume_displaced_m3": 44.67,
+      "personnel_evacuated": 8,
+      "equipment_damaged": true,
+      "production_hours_lost": 4
+    },
+    "weather_conditions": {
+      "temperature_c": 30.0,
+      "wind_speed_ms": 1.2,
+      "precipitation_mm": 29.1,
+      "conditions": "rainy"
+    },
+    "response_actions": [
+      "Weather monitoring increased",
+      "Preventive safety measures implemented",
+      "Personnel advised of conditions"
+    ],
+    "lessons_learned": "Analysis of weather_related event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0014",
+    "date": "2025-09-06T09:14:31.843354",
+    "site_id": "site-003",
+    "event_type": "equipment_failure",
+    "severity": "medium",
+    "description": "Sensor equipment malfunction affecting monitoring capabilities",
+    "location": {
+      "zone": "C",
+      "coordinates": {
+        "lat": 39.74000230536535,
+        "lng": -104.99144436887933
+      }
+    },
+    "impact": {
+      "area_affected_m2": 27,
+      "volume_displaced_m3": 69.57,
+      "personnel_evacuated": 17,
+      "equipment_damaged": false,
+      "production_hours_lost": 4
+    },
+    "weather_conditions": {
+      "temperature_c": 15.0,
+      "wind_speed_ms": 7.9,
+      "precipitation_mm": 44.2,
+      "conditions": "windy"
+    },
+    "response_actions": [
+      "Equipment inspection and repair",
+      "Backup monitoring systems activated",
+      "Technical support contacted"
+    ],
+    "lessons_learned": "Analysis of equipment_failure event - improved monitoring protocols implemented"
+  },
+  {
+    "id": "event_0012",
+    "date": "2025-09-07T09:14:31.843354",
+    "site_id": "site-002",
+    "event_type": "equipment_failure",
+    "severity": "high",
+    "description": "Sensor equipment malfunction affecting monitoring capabilities",
+    "location": {
+      "zone": "D",
+      "coordinates": {
+        "lat": 39.740509955146024,
+        "lng": -104.99338117329322
+      }
+    },
+    "impact": {
+      "area_affected_m2": 381,
+      "volume_displaced_m3": 39.85,
+      "personnel_evacuated": 1,
+      "equipment_damaged": false,
+      "production_hours_lost": 25
+    },
+    "weather_conditions": {
+      "temperature_c": 3.2,
+      "wind_speed_ms": 18.8,
+      "precipitation_mm": 34.9,
+      "conditions": "rainy"
+    },
+    "response_actions": [
+      "Equipment inspection and repair",
+      "Backup monitoring systems activated",
+      "Technical support contacted"
+    ],
+    "lessons_learned": "Analysis of equipment_failure event - improved monitoring protocols implemented"
+  }
+]

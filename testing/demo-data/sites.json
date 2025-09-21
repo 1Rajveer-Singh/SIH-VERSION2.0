@@ -1,0 +1,180 @@
+[
+  {
+    "_id": "site-001",
+    "name": "Rocky Mountain Quarry",
+    "description": "Large limestone quarry in Colorado mountains",
+    "location": {
+      "latitude": 39.7392,
+      "longitude": -104.9903,
+      "elevation": 1620,
+      "address": "Denver, Colorado, USA"
+    },
+    "area_hectares": 45.2,
+    "rock_type": "Limestone",
+    "zones": [
+      {
+        "zone_id": "zone-A",
+        "name": "North Wall",
+        "risk_level": "low"
+      },
+      {
+        "zone_id": "zone-B",
+        "name": "South Wall",
+        "risk_level": "low"
+      },
+      {
+        "zone_id": "zone-C",
+        "name": "East Wall",
+        "risk_level": "high"
+      },
+      {
+        "zone_id": "zone-D",
+        "name": "West Wall",
+        "risk_level": "medium"
+      },
+      {
+        "zone_id": "zone-E",
+        "name": "Central Wall",
+        "risk_level": "low"
+      },
+      {
+        "zone_id": "zone-F",
+        "name": "Upper Wall",
+        "risk_level": "low"
+      }
+    ],
+    "emergency_contacts": [
+      {
+        "name": "Mike Williams",
+        "role": "Site Manager",
+        "phone": "+16481532333",
+        "email": "manager1@mining.com"
+      }
+    ],
+    "safety_protocols": [
+      "Daily visual inspections",
+      "Continuous sensor monitoring",
+      "Emergency evacuation procedures",
+      "Weather condition monitoring"
+    ],
+    "status": "active",
+    "created_at": "2025-04-22T20:01:32.625407"
+  },
+  {
+    "_id": "site-002",
+    "name": "Alpine Granite Mine",
+    "description": "Open-pit granite extraction facility",
+    "location": {
+      "latitude": 46.8772,
+      "longitude": -110.4382,
+      "elevation": 2100,
+      "address": "Montana, USA"
+    },
+    "area_hectares": 78.5,
+    "rock_type": "Granite",
+    "zones": [
+      {
+        "zone_id": "zone-A",
+        "name": "North Wall",
+        "risk_level": "high"
+      },
+      {
+        "zone_id": "zone-B",
+        "name": "South Wall",
+        "risk_level": "low"
+      },
+      {
+        "zone_id": "zone-C",
+        "name": "East Wall",
+        "risk_level": "high"
+      },
+      {
+        "zone_id": "zone-D",
+        "name": "West Wall",
+        "risk_level": "low"
+      },
+      {
+        "zone_id": "zone-E",
+        "name": "Central Wall",
+        "risk_level": "medium"
+      },
+      {
+        "zone_id": "zone-F",
+        "name": "Upper Wall",
+        "risk_level": "low"
+      }
+    ],
+    "emergency_contacts": [
+      {
+        "name": "Sarah Johnson",
+        "role": "Site Manager",
+        "phone": "+17181974562",
+        "email": "manager2@mining.com"
+      }
+    ],
+    "safety_protocols": [
+      "Daily visual inspections",
+      "Continuous sensor monitoring",
+      "Emergency evacuation procedures",
+      "Weather condition monitoring"
+    ],
+    "status": "active",
+    "created_at": "2025-06-17T20:01:32.625407"
+  },
+  {
+    "_id": "site-003",
+    "name": "Cascade Copper Mine",
+    "description": "Copper ore extraction with steep walls",
+    "location": {
+      "latitude": 47.0379,
+      "longitude": -122.9007,
+      "elevation": 890,
+      "address": "Washington, USA"
+    },
+    "area_hectares": 124.7,
+    "rock_type": "Sedimentary",
+    "zones": [
+      {
+        "zone_id": "zone-A",
+        "name": "North Wall",
+        "risk_level": "low"
+      },
+      {
+        "zone_id": "zone-B",
+        "name": "South Wall",
+        "risk_level": "low"
+      },
+      {
+        "zone_id": "zone-C",
+        "name": "East Wall",
+        "risk_level": "high"
+      },
+      {
+        "zone_id": "zone-D",
+        "name": "West Wall",
+        "risk_level": "low"
+      },
+      {
+        "zone_id": "zone-E",
+        "name": "Central Wall",
+        "risk_level": "high"
+      }
+    ],
+    "emergency_contacts": [
+      {
+        "name": "Sarah Brown",
+        "role": "Site Manager",
+        "phone": "+19557676247",
+        "email": "manager3@mining.com"
+      }
+    ],
+    "safety_protocols": [
+      "Daily visual inspections",
+      "Continuous sensor monitoring",
+      "Emergency evacuation procedures",
+      "Weather condition monitoring"
+    ],
+    "status": "active",
+    "created_at": "2025-01-30T20:01:32.625407"
+  }
+]

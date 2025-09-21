@@ -1,0 +1,1649 @@
+[
+  {
+    "_id": "device-0001",
+    "device_id": "DEV-0001",
+    "site_id": "site-001",
+    "name": "Temperature Sensor 1",
+    "type": "temperature",
+    "model": "TEMPERATURE-358",
+    "location": {
+      "zone": "zone-E",
+      "coordinates": {
+        "x": 64.8,
+        "y": -83.0,
+        "z": 35.26
+      }
+    },
+    "status": "maintenance",
+    "battery_level": 59,
+    "signal_strength": 65,
+    "last_reading": "2025-09-21T19:37:32.626390",
+    "calibration_date": "2025-09-13T20:01:32.626390",
+    "installation_date": "2025-06-21T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-186 \u00b0C",
+      "accuracy": "\u00b10.5%",
+      "resolution": "0.08 \u00b0C"
+    }
+  },
+  {
+    "_id": "device-0002",
+    "device_id": "DEV-0002",
+    "site_id": "site-001",
+    "name": "Weather Sensor 2",
+    "type": "weather",
+    "model": "WEATHER-663",
+    "location": {
+      "zone": "zone-B",
+      "coordinates": {
+        "x": -69.62,
+        "y": 48.87,
+        "z": 3.11
+      }
+    },
+    "status": "active",
+    "battery_level": 48,
+    "signal_strength": 86,
+    "last_reading": "2025-09-21T19:55:32.626390",
+    "calibration_date": "2025-08-23T20:01:32.626390",
+    "installation_date": "2025-03-15T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-312 various",
+      "accuracy": "\u00b10.9%",
+      "resolution": "0.02 various"
+    }
+  },
+  {
+    "_id": "device-0003",
+    "device_id": "DEV-0003",
+    "site_id": "site-001",
+    "name": "Humidity Sensor 3",
+    "type": "humidity",
+    "model": "HUMIDITY-369",
+    "location": {
+      "zone": "zone-D",
+      "coordinates": {
+        "x": -45.12,
+        "y": -4.55,
+        "z": 28.99
+      }
+    },
+    "status": "active",
+    "battery_level": 67,
+    "signal_strength": 61,
+    "last_reading": "2025-09-21T19:38:32.626390",
+    "calibration_date": "2025-07-16T20:01:32.626390",
+    "installation_date": "2025-03-27T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-278 %RH",
+      "accuracy": "\u00b11.6%",
+      "resolution": "0.09 %RH"
+    }
+  },
+  {
+    "_id": "device-0004",
+    "device_id": "DEV-0004",
+    "site_id": "site-001",
+    "name": "Vibration Sensor 4",
+    "type": "vibration",
+    "model": "VIBRATION-173",
+    "location": {
+      "zone": "zone-F",
+      "coordinates": {
+        "x": 87.76,
+        "y": -65.76,
+        "z": 2.48
+      }
+    },
+    "status": "offline",
+    "battery_level": 77,
+    "signal_strength": 64,
+    "last_reading": "2025-09-21T19:47:32.626390",
+    "calibration_date": "2025-07-24T20:01:32.626390",
+    "installation_date": "2024-10-24T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-380 mm/s",
+      "accuracy": "\u00b11.6%",
+      "resolution": "0.09 mm/s"
+    }
+  },
+  {
+    "_id": "device-0005",
+    "device_id": "DEV-0005",
+    "site_id": "site-001",
+    "name": "Tilt Sensor 5",
+    "type": "tilt",
+    "model": "TILT-956",
+    "location": {
+      "zone": "zone-F",
+      "coordinates": {
+        "x": -82.54,
+        "y": -65.43,
+        "z": 35.92
+      }
+    },
+    "status": "maintenance",
+    "battery_level": 100,
+    "signal_strength": 77,
+    "last_reading": "2025-09-21T19:49:32.626390",
+    "calibration_date": "2025-08-13T20:01:32.626390",
+    "installation_date": "2024-11-09T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-381 \u00b0",
+      "accuracy": "\u00b10.9%",
+      "resolution": "0.01 \u00b0"
+    }
+  },
+  {
+    "_id": "device-0006",
+    "device_id": "DEV-0006",
+    "site_id": "site-001",
+    "name": "Vibration Sensor 6",
+    "type": "vibration",
+    "model": "VIBRATION-999",
+    "location": {
+      "zone": "zone-C",
+      "coordinates": {
+        "x": 17.84,
+        "y": -52.41,
+        "z": 21.21
+      }
+    },
+    "status": "active",
+    "battery_level": 46,
+    "signal_strength": 69,
+    "last_reading": "2025-09-21T19:41:32.626390",
+    "calibration_date": "2025-09-05T20:01:32.626390",
+    "installation_date": "2025-03-11T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-112 mm/s",
+      "accuracy": "\u00b11.7%",
+      "resolution": "0.05 mm/s"
+    }
+  },
+  {
+    "_id": "device-0007",
+    "device_id": "DEV-0007",
+    "site_id": "site-001",
+    "name": "Temperature Sensor 7",
+    "type": "temperature",
+    "model": "TEMPERATURE-357",
+    "location": {
+      "zone": "zone-D",
+      "coordinates": {
+        "x": 75.46,
+        "y": 84.87,
+        "z": 27.13
+      }
+    },
+    "status": "active",
+    "battery_level": 38,
+    "signal_strength": 65,
+    "last_reading": "2025-09-21T19:49:32.626390",
+    "calibration_date": "2025-06-25T20:01:32.626390",
+    "installation_date": "2024-12-02T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-442 \u00b0C",
+      "accuracy": "\u00b11.8%",
+      "resolution": "0.02 \u00b0C"
+    }
+  },
+  {
+    "_id": "device-0008",
+    "device_id": "DEV-0008",
+    "site_id": "site-001",
+    "name": "Humidity Sensor 8",
+    "type": "humidity",
+    "model": "HUMIDITY-134",
+    "location": {
+      "zone": "zone-F",
+      "coordinates": {
+        "x": 4.86,
+        "y": 41.94,
+        "z": 3.57
+      }
+    },
+    "status": "active",
+    "battery_level": 56,
+    "signal_strength": 88,
+    "last_reading": "2025-09-21T19:49:32.626390",
+    "calibration_date": "2025-07-30T20:01:32.626390",
+    "installation_date": "2025-03-29T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-412 %RH",
+      "accuracy": "\u00b10.4%",
+      "resolution": "0.08 %RH"
+    }
+  },
+  {
+    "_id": "device-0009",
+    "device_id": "DEV-0009",
+    "site_id": "site-001",
+    "name": "Weather Sensor 9",
+    "type": "weather",
+    "model": "WEATHER-533",
+    "location": {
+      "zone": "zone-A",
+      "coordinates": {
+        "x": 35.37,
+        "y": -84.47,
+        "z": 11.1
+      }
+    },
+    "status": "active",
+    "battery_level": 64,
+    "signal_strength": 90,
+    "last_reading": "2025-09-21T19:31:32.626390",
+    "calibration_date": "2025-06-28T20:01:32.626390",
+    "installation_date": "2024-11-22T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-114 various",
+      "accuracy": "\u00b11.9%",
+      "resolution": "0.07 various"
+    }
+  },
+  {
+    "_id": "device-0010",
+    "device_id": "DEV-0010",
+    "site_id": "site-001",
+    "name": "Tilt Sensor 10",
+    "type": "tilt",
+    "model": "TILT-457",
+    "location": {
+      "zone": "zone-A",
+      "coordinates": {
+        "x": -94.52,
+        "y": -4.02,
+        "z": 0.19
+      }
+    },
+    "status": "active",
+    "battery_level": 81,
+    "signal_strength": 64,
+    "last_reading": "2025-09-21T19:46:32.626390",
+    "calibration_date": "2025-07-26T20:01:32.626390",
+    "installation_date": "2024-11-06T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-127 \u00b0",
+      "accuracy": "\u00b11.7%",
+      "resolution": "0.08 \u00b0"
+    }
+  },
+  {
+    "_id": "device-0011",
+    "device_id": "DEV-0011",
+    "site_id": "site-001",
+    "name": "Humidity Sensor 11",
+    "type": "humidity",
+    "model": "HUMIDITY-611",
+    "location": {
+      "zone": "zone-A",
+      "coordinates": {
+        "x": -6.86,
+        "y": -39.78,
+        "z": 27.49
+      }
+    },
+    "status": "offline",
+    "battery_level": 44,
+    "signal_strength": 85,
+    "last_reading": "2025-09-21T19:36:32.626390",
+    "calibration_date": "2025-09-17T20:01:32.626390",
+    "installation_date": "2024-10-06T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-362 %RH",
+      "accuracy": "\u00b11.1%",
+      "resolution": "0.03 %RH"
+    }
+  },
+  {
+    "_id": "device-0012",
+    "device_id": "DEV-0012",
+    "site_id": "site-001",
+    "name": "Vibration Sensor 12",
+    "type": "vibration",
+    "model": "VIBRATION-264",
+    "location": {
+      "zone": "zone-A",
+      "coordinates": {
+        "x": 78.44,
+        "y": -33.7,
+        "z": 40.97
+      }
+    },
+    "status": "maintenance",
+    "battery_level": 97,
+    "signal_strength": 93,
+    "last_reading": "2025-09-21T19:50:32.626390",
+    "calibration_date": "2025-08-17T20:01:32.626390",
+    "installation_date": "2024-10-17T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-54 mm/s",
+      "accuracy": "\u00b11.1%",
+      "resolution": "0.06 mm/s"
+    }
+  },
+  {
+    "_id": "device-0013",
+    "device_id": "DEV-0013",
+    "site_id": "site-001",
+    "name": "Strain Sensor 13",
+    "type": "strain",
+    "model": "STRAIN-558",
+    "location": {
+      "zone": "zone-C",
+      "coordinates": {
+        "x": -92.79,
+        "y": -26.79,
+        "z": 13.87
+      }
+    },
+    "status": "active",
+    "battery_level": 30,
+    "signal_strength": 71,
+    "last_reading": "2025-09-21T19:31:32.626390",
+    "calibration_date": "2025-08-03T20:01:32.626390",
+    "installation_date": "2025-05-16T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-176 \u03bc\u03b5",
+      "accuracy": "\u00b10.5%",
+      "resolution": "0.09 \u03bc\u03b5"
+    }
+  },
+  {
+    "_id": "device-0014",
+    "device_id": "DEV-0014",
+    "site_id": "site-001",
+    "name": "Humidity Sensor 14",
+    "type": "humidity",
+    "model": "HUMIDITY-412",
+    "location": {
+      "zone": "zone-C",
+      "coordinates": {
+        "x": -3.6,
+        "y": -76.66,
+        "z": 3.86
+      }
+    },
+    "status": "active",
+    "battery_level": 32,
+    "signal_strength": 80,
+    "last_reading": "2025-09-21T19:43:32.626390",
+    "calibration_date": "2025-09-20T20:01:32.626390",
+    "installation_date": "2025-04-11T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-132 %RH",
+      "accuracy": "\u00b11.5%",
+      "resolution": "0.08 %RH"
+    }
+  },
+  {
+    "_id": "device-0015",
+    "device_id": "DEV-0015",
+    "site_id": "site-001",
+    "name": "Tilt Sensor 15",
+    "type": "tilt",
+    "model": "TILT-677",
+    "location": {
+      "zone": "zone-B",
+      "coordinates": {
+        "x": -60.12,
+        "y": -40.68,
+        "z": 21.49
+      }
+    },
+    "status": "active",
+    "battery_level": 82,
+    "signal_strength": 92,
+    "last_reading": "2025-09-21T19:58:32.626390",
+    "calibration_date": "2025-06-30T20:01:32.626390",
+    "installation_date": "2025-06-12T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-203 \u00b0",
+      "accuracy": "\u00b11.3%",
+      "resolution": "0.02 \u00b0"
+    }
+  },
+  {
+    "_id": "device-0016",
+    "device_id": "DEV-0016",
+    "site_id": "site-001",
+    "name": "Weather Sensor 16",
+    "type": "weather",
+    "model": "WEATHER-660",
+    "location": {
+      "zone": "zone-B",
+      "coordinates": {
+        "x": 46.84,
+        "y": -31.17,
+        "z": 8.35
+      }
+    },
+    "status": "active",
+    "battery_level": 47,
+    "signal_strength": 86,
+    "last_reading": "2025-09-21T19:35:32.626390",
+    "calibration_date": "2025-07-03T20:01:32.626390",
+    "installation_date": "2025-01-21T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-184 various",
+      "accuracy": "\u00b10.6%",
+      "resolution": "0.08 various"
+    }
+  },
+  {
+    "_id": "device-0017",
+    "device_id": "DEV-0017",
+    "site_id": "site-001",
+    "name": "Vibration Sensor 17",
+    "type": "vibration",
+    "model": "VIBRATION-655",
+    "location": {
+      "zone": "zone-F",
+      "coordinates": {
+        "x": 74.89,
+        "y": -19.14,
+        "z": 22.16
+      }
+    },
+    "status": "maintenance",
+    "battery_level": 24,
+    "signal_strength": 66,
+    "last_reading": "2025-09-21T19:54:32.626390",
+    "calibration_date": "2025-07-21T20:01:32.626390",
+    "installation_date": "2024-10-27T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-79 mm/s",
+      "accuracy": "\u00b11.9%",
+      "resolution": "0.04 mm/s"
+    }
+  },
+  {
+    "_id": "device-0018",
+    "device_id": "DEV-0018",
+    "site_id": "site-001",
+    "name": "Temperature Sensor 18",
+    "type": "temperature",
+    "model": "TEMPERATURE-530",
+    "location": {
+      "zone": "zone-B",
+      "coordinates": {
+        "x": 32.35,
+        "y": 29.8,
+        "z": 28.2
+      }
+    },
+    "status": "offline",
+    "battery_level": 99,
+    "signal_strength": 83,
+    "last_reading": "2025-09-21T20:00:32.626390",
+    "calibration_date": "2025-07-20T20:01:32.626390",
+    "installation_date": "2025-03-09T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-77 \u00b0C",
+      "accuracy": "\u00b10.2%",
+      "resolution": "0.09 \u00b0C"
+    }
+  },
+  {
+    "_id": "device-0019",
+    "device_id": "DEV-0019",
+    "site_id": "site-001",
+    "name": "Temperature Sensor 19",
+    "type": "temperature",
+    "model": "TEMPERATURE-561",
+    "location": {
+      "zone": "zone-D",
+      "coordinates": {
+        "x": -46.74,
+        "y": -92.89,
+        "z": 27.65
+      }
+    },
+    "status": "active",
+    "battery_level": 74,
+    "signal_strength": 90,
+    "last_reading": "2025-09-21T19:50:32.626390",
+    "calibration_date": "2025-08-12T20:01:32.626390",
+    "installation_date": "2024-12-25T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-388 \u00b0C",
+      "accuracy": "\u00b10.8%",
+      "resolution": "0.06 \u00b0C"
+    }
+  },
+  {
+    "_id": "device-0020",
+    "device_id": "DEV-0020",
+    "site_id": "site-001",
+    "name": "Strain Sensor 20",
+    "type": "strain",
+    "model": "STRAIN-711",
+    "location": {
+      "zone": "zone-E",
+      "coordinates": {
+        "x": -59.58,
+        "y": 42.99,
+        "z": 43.49
+      }
+    },
+    "status": "active",
+    "battery_level": 90,
+    "signal_strength": 78,
+    "last_reading": "2025-09-21T19:54:32.626390",
+    "calibration_date": "2025-06-27T20:01:32.626390",
+    "installation_date": "2024-09-28T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-377 \u03bc\u03b5",
+      "accuracy": "\u00b10.3%",
+      "resolution": "0.06 \u03bc\u03b5"
+    }
+  },
+  {
+    "_id": "device-0021",
+    "device_id": "DEV-0021",
+    "site_id": "site-001",
+    "name": "Strain Sensor 21",
+    "type": "strain",
+    "model": "STRAIN-734",
+    "location": {
+      "zone": "zone-C",
+      "coordinates": {
+        "x": -59.87,
+        "y": 0.68,
+        "z": 8.37
+      }
+    },
+    "status": "active",
+    "battery_level": 95,
+    "signal_strength": 76,
+    "last_reading": "2025-09-21T19:58:32.626390",
+    "calibration_date": "2025-09-14T20:01:32.626390",
+    "installation_date": "2025-06-22T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-178 \u03bc\u03b5",
+      "accuracy": "\u00b10.4%",
+      "resolution": "0.09 \u03bc\u03b5"
+    }
+  },
+  {
+    "_id": "device-0022",
+    "device_id": "DEV-0022",
+    "site_id": "site-001",
+    "name": "Strain Sensor 22",
+    "type": "strain",
+    "model": "STRAIN-233",
+    "location": {
+      "zone": "zone-D",
+      "coordinates": {
+        "x": -61.04,
+        "y": 32.16,
+        "z": 1.95
+      }
+    },
+    "status": "offline",
+    "battery_level": 34,
+    "signal_strength": 88,
+    "last_reading": "2025-09-21T19:59:32.626390",
+    "calibration_date": "2025-09-02T20:01:32.626390",
+    "installation_date": "2025-05-07T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-233 \u03bc\u03b5",
+      "accuracy": "\u00b10.5%",
+      "resolution": "0.09 \u03bc\u03b5"
+    }
+  },
+  {
+    "_id": "device-0023",
+    "device_id": "DEV-0023",
+    "site_id": "site-001",
+    "name": "Strain Sensor 23",
+    "type": "strain",
+    "model": "STRAIN-427",
+    "location": {
+      "zone": "zone-A",
+      "coordinates": {
+        "x": 82.14,
+        "y": -43.8,
+        "z": 43.32
+      }
+    },
+    "status": "active",
+    "battery_level": 44,
+    "signal_strength": 99,
+    "last_reading": "2025-09-21T19:54:32.626390",
+    "calibration_date": "2025-07-30T20:01:32.626390",
+    "installation_date": "2025-03-10T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-451 \u03bc\u03b5",
+      "accuracy": "\u00b10.6%",
+      "resolution": "0.01 \u03bc\u03b5"
+    }
+  },
+  {
+    "_id": "device-0024",
+    "device_id": "DEV-0024",
+    "site_id": "site-001",
+    "name": "Strain Sensor 24",
+    "type": "strain",
+    "model": "STRAIN-535",
+    "location": {
+      "zone": "zone-E",
+      "coordinates": {
+        "x": -94.55,
+        "y": -34.74,
+        "z": 34.37
+      }
+    },
+    "status": "active",
+    "battery_level": 30,
+    "signal_strength": 100,
+    "last_reading": "2025-09-21T19:55:32.626390",
+    "calibration_date": "2025-07-23T20:01:32.626390",
+    "installation_date": "2024-11-25T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-222 \u03bc\u03b5",
+      "accuracy": "\u00b10.4%",
+      "resolution": "0.05 \u03bc\u03b5"
+    }
+  },
+  {
+    "_id": "device-0025",
+    "device_id": "DEV-0025",
+    "site_id": "site-001",
+    "name": "Weather Sensor 25",
+    "type": "weather",
+    "model": "WEATHER-576",
+    "location": {
+      "zone": "zone-B",
+      "coordinates": {
+        "x": 83.54,
+        "y": -42.49,
+        "z": 7.7
+      }
+    },
+    "status": "maintenance",
+    "battery_level": 44,
+    "signal_strength": 80,
+    "last_reading": "2025-09-21T19:43:32.626390",
+    "calibration_date": "2025-06-27T20:01:32.626390",
+    "installation_date": "2025-03-29T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-313 various",
+      "accuracy": "\u00b11.5%",
+      "resolution": "0.03 various"
+    }
+  },
+  {
+    "_id": "device-0026",
+    "device_id": "DEV-0026",
+    "site_id": "site-002",
+    "name": "Strain Sensor 26",
+    "type": "strain",
+    "model": "STRAIN-434",
+    "location": {
+      "zone": "zone-E",
+      "coordinates": {
+        "x": 35.66,
+        "y": -4.58,
+        "z": 18.96
+      }
+    },
+    "status": "active",
+    "battery_level": 41,
+    "signal_strength": 79,
+    "last_reading": "2025-09-21T19:36:32.626390",
+    "calibration_date": "2025-09-04T20:01:32.626390",
+    "installation_date": "2024-11-17T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-198 \u03bc\u03b5",
+      "accuracy": "\u00b10.8%",
+      "resolution": "0.06 \u03bc\u03b5"
+    }
+  },
+  {
+    "_id": "device-0027",
+    "device_id": "DEV-0027",
+    "site_id": "site-002",
+    "name": "Weather Sensor 27",
+    "type": "weather",
+    "model": "WEATHER-827",
+    "location": {
+      "zone": "zone-F",
+      "coordinates": {
+        "x": 19.95,
+        "y": -99.8,
+        "z": 16.29
+      }
+    },
+    "status": "maintenance",
+    "battery_level": 28,
+    "signal_strength": 64,
+    "last_reading": "2025-09-21T19:32:32.626390",
+    "calibration_date": "2025-08-03T20:01:32.626390",
+    "installation_date": "2025-04-15T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-335 various",
+      "accuracy": "\u00b10.4%",
+      "resolution": "0.08 various"
+    }
+  },
+  {
+    "_id": "device-0028",
+    "device_id": "DEV-0028",
+    "site_id": "site-002",
+    "name": "Tilt Sensor 28",
+    "type": "tilt",
+    "model": "TILT-272",
+    "location": {
+      "zone": "zone-D",
+      "coordinates": {
+        "x": 57.51,
+        "y": 72.98,
+        "z": 5.47
+      }
+    },
+    "status": "maintenance",
+    "battery_level": 65,
+    "signal_strength": 83,
+    "last_reading": "2025-09-21T19:47:32.626390",
+    "calibration_date": "2025-07-15T20:01:32.626390",
+    "installation_date": "2024-10-10T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-62 \u00b0",
+      "accuracy": "\u00b10.9%",
+      "resolution": "0.10 \u00b0"
+    }
+  },
+  {
+    "_id": "device-0029",
+    "device_id": "DEV-0029",
+    "site_id": "site-002",
+    "name": "Temperature Sensor 29",
+    "type": "temperature",
+    "model": "TEMPERATURE-750",
+    "location": {
+      "zone": "zone-C",
+      "coordinates": {
+        "x": 82.63,
+        "y": 99.38,
+        "z": 42.7
+      }
+    },
+    "status": "offline",
+    "battery_level": 40,
+    "signal_strength": 81,
+    "last_reading": "2025-09-21T19:48:32.626390",
+    "calibration_date": "2025-07-06T20:01:32.626390",
+    "installation_date": "2025-03-09T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-405 \u00b0C",
+      "accuracy": "\u00b11.5%",
+      "resolution": "0.03 \u00b0C"
+    }
+  },
+  {
+    "_id": "device-0030",
+    "device_id": "DEV-0030",
+    "site_id": "site-002",
+    "name": "Humidity Sensor 30",
+    "type": "humidity",
+    "model": "HUMIDITY-124",
+    "location": {
+      "zone": "zone-D",
+      "coordinates": {
+        "x": 60.5,
+        "y": -19.04,
+        "z": 19.39
+      }
+    },
+    "status": "active",
+    "battery_level": 68,
+    "signal_strength": 89,
+    "last_reading": "2025-09-21T19:32:32.626390",
+    "calibration_date": "2025-07-08T20:01:32.626390",
+    "installation_date": "2025-01-22T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-155 %RH",
+      "accuracy": "\u00b10.4%",
+      "resolution": "0.06 %RH"
+    }
+  },
+  {
+    "_id": "device-0031",
+    "device_id": "DEV-0031",
+    "site_id": "site-002",
+    "name": "Weather Sensor 31",
+    "type": "weather",
+    "model": "WEATHER-639",
+    "location": {
+      "zone": "zone-B",
+      "coordinates": {
+        "x": 96.41,
+        "y": 76.3,
+        "z": 17.67
+      }
+    },
+    "status": "offline",
+    "battery_level": 82,
+    "signal_strength": 100,
+    "last_reading": "2025-09-21T19:47:32.626390",
+    "calibration_date": "2025-07-12T20:01:32.626390",
+    "installation_date": "2025-02-22T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-196 various",
+      "accuracy": "\u00b11.5%",
+      "resolution": "0.07 various"
+    }
+  },
+  {
+    "_id": "device-0032",
+    "device_id": "DEV-0032",
+    "site_id": "site-002",
+    "name": "Vibration Sensor 32",
+    "type": "vibration",
+    "model": "VIBRATION-555",
+    "location": {
+      "zone": "zone-B",
+      "coordinates": {
+        "x": -53.02,
+        "y": -33.92,
+        "z": 0.73
+      }
+    },
+    "status": "active",
+    "battery_level": 63,
+    "signal_strength": 72,
+    "last_reading": "2025-09-21T19:31:32.626390",
+    "calibration_date": "2025-08-22T20:01:32.626390",
+    "installation_date": "2024-10-15T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-168 mm/s",
+      "accuracy": "\u00b10.7%",
+      "resolution": "0.10 mm/s"
+    }
+  },
+  {
+    "_id": "device-0033",
+    "device_id": "DEV-0033",
+    "site_id": "site-002",
+    "name": "Tilt Sensor 33",
+    "type": "tilt",
+    "model": "TILT-962",
+    "location": {
+      "zone": "zone-F",
+      "coordinates": {
+        "x": -25.03,
+        "y": -8.44,
+        "z": 7.77
+      }
+    },
+    "status": "active",
+    "battery_level": 41,
+    "signal_strength": 85,
+    "last_reading": "2025-09-21T20:00:32.626390",
+    "calibration_date": "2025-09-17T20:01:32.626390",
+    "installation_date": "2025-01-04T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-239 \u00b0",
+      "accuracy": "\u00b10.3%",
+      "resolution": "0.06 \u00b0"
+    }
+  },
+  {
+    "_id": "device-0034",
+    "device_id": "DEV-0034",
+    "site_id": "site-002",
+    "name": "Tilt Sensor 34",
+    "type": "tilt",
+    "model": "TILT-677",
+    "location": {
+      "zone": "zone-A",
+      "coordinates": {
+        "x": 5.72,
+        "y": -84.36,
+        "z": 28.24
+      }
+    },
+    "status": "maintenance",
+    "battery_level": 92,
+    "signal_strength": 60,
+    "last_reading": "2025-09-21T19:50:32.626390",
+    "calibration_date": "2025-07-23T20:01:32.626390",
+    "installation_date": "2024-12-24T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-500 \u00b0",
+      "accuracy": "\u00b11.2%",
+      "resolution": "0.06 \u00b0"
+    }
+  },
+  {
+    "_id": "device-0035",
+    "device_id": "DEV-0035",
+    "site_id": "site-002",
+    "name": "Vibration Sensor 35",
+    "type": "vibration",
+    "model": "VIBRATION-343",
+    "location": {
+      "zone": "zone-A",
+      "coordinates": {
+        "x": 81.07,
+        "y": -45.21,
+        "z": 4.57
+      }
+    },
+    "status": "offline",
+    "battery_level": 28,
+    "signal_strength": 80,
+    "last_reading": "2025-09-21T19:52:32.626390",
+    "calibration_date": "2025-08-12T20:01:32.626390",
+    "installation_date": "2024-09-28T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-376 mm/s",
+      "accuracy": "\u00b10.5%",
+      "resolution": "0.08 mm/s"
+    }
+  },
+  {
+    "_id": "device-0036",
+    "device_id": "DEV-0036",
+    "site_id": "site-002",
+    "name": "Weather Sensor 36",
+    "type": "weather",
+    "model": "WEATHER-733",
+    "location": {
+      "zone": "zone-B",
+      "coordinates": {
+        "x": -48.73,
+        "y": -13.14,
+        "z": 44.01
+      }
+    },
+    "status": "active",
+    "battery_level": 37,
+    "signal_strength": 74,
+    "last_reading": "2025-09-21T19:53:32.626390",
+    "calibration_date": "2025-08-14T20:01:32.626390",
+    "installation_date": "2025-03-22T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-199 various",
+      "accuracy": "\u00b11.1%",
+      "resolution": "0.09 various"
+    }
+  },
+  {
+    "_id": "device-0037",
+    "device_id": "DEV-0037",
+    "site_id": "site-002",
+    "name": "Humidity Sensor 37",
+    "type": "humidity",
+    "model": "HUMIDITY-942",
+    "location": {
+      "zone": "zone-B",
+      "coordinates": {
+        "x": 26.79,
+        "y": 11.76,
+        "z": 21.16
+      }
+    },
+    "status": "active",
+    "battery_level": 93,
+    "signal_strength": 83,
+    "last_reading": "2025-09-21T19:38:32.626390",
+    "calibration_date": "2025-06-23T20:01:32.626390",
+    "installation_date": "2025-03-03T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-93 %RH",
+      "accuracy": "\u00b11.2%",
+      "resolution": "0.09 %RH"
+    }
+  },
+  {
+    "_id": "device-0038",
+    "device_id": "DEV-0038",
+    "site_id": "site-002",
+    "name": "Temperature Sensor 38",
+    "type": "temperature",
+    "model": "TEMPERATURE-530",
+    "location": {
+      "zone": "zone-B",
+      "coordinates": {
+        "x": 4.33,
+        "y": -30.42,
+        "z": 1.54
+      }
+    },
+    "status": "active",
+    "battery_level": 57,
+    "signal_strength": 60,
+    "last_reading": "2025-09-21T19:43:32.626390",
+    "calibration_date": "2025-07-17T20:01:32.626390",
+    "installation_date": "2024-10-10T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-348 \u00b0C",
+      "accuracy": "\u00b11.0%",
+      "resolution": "0.06 \u00b0C"
+    }
+  },
+  {
+    "_id": "device-0039",
+    "device_id": "DEV-0039",
+    "site_id": "site-002",
+    "name": "Weather Sensor 39",
+    "type": "weather",
+    "model": "WEATHER-978",
+    "location": {
+      "zone": "zone-B",
+      "coordinates": {
+        "x": -51.81,
+        "y": 96.83,
+        "z": 41.82
+      }
+    },
+    "status": "active",
+    "battery_level": 46,
+    "signal_strength": 69,
+    "last_reading": "2025-09-21T19:43:32.626390",
+    "calibration_date": "2025-08-09T20:01:32.626390",
+    "installation_date": "2025-04-13T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-393 various",
+      "accuracy": "\u00b10.5%",
+      "resolution": "0.06 various"
+    }
+  },
+  {
+    "_id": "device-0040",
+    "device_id": "DEV-0040",
+    "site_id": "site-002",
+    "name": "Weather Sensor 40",
+    "type": "weather",
+    "model": "WEATHER-876",
+    "location": {
+      "zone": "zone-A",
+      "coordinates": {
+        "x": -35.59,
+        "y": -23.39,
+        "z": 21.31
+      }
+    },
+    "status": "offline",
+    "battery_level": 80,
+    "signal_strength": 79,
+    "last_reading": "2025-09-21T19:38:32.626390",
+    "calibration_date": "2025-08-24T20:01:32.626390",
+    "installation_date": "2025-02-18T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-400 various",
+      "accuracy": "\u00b11.0%",
+      "resolution": "0.02 various"
+    }
+  },
+  {
+    "_id": "device-0041",
+    "device_id": "DEV-0041",
+    "site_id": "site-002",
+    "name": "Tilt Sensor 41",
+    "type": "tilt",
+    "model": "TILT-916",
+    "location": {
+      "zone": "zone-B",
+      "coordinates": {
+        "x": -39.66,
+        "y": 17.18,
+        "z": 14.03
+      }
+    },
+    "status": "active",
+    "battery_level": 94,
+    "signal_strength": 64,
+    "last_reading": "2025-09-21T19:42:32.626390",
+    "calibration_date": "2025-07-26T20:01:32.626390",
+    "installation_date": "2025-04-24T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-169 \u00b0",
+      "accuracy": "\u00b11.7%",
+      "resolution": "0.09 \u00b0"
+    }
+  },
+  {
+    "_id": "device-0042",
+    "device_id": "DEV-0042",
+    "site_id": "site-002",
+    "name": "Tilt Sensor 42",
+    "type": "tilt",
+    "model": "TILT-708",
+    "location": {
+      "zone": "zone-B",
+      "coordinates": {
+        "x": -30.62,
+        "y": -35.39,
+        "z": 29.25
+      }
+    },
+    "status": "active",
+    "battery_level": 32,
+    "signal_strength": 66,
+    "last_reading": "2025-09-21T19:38:32.626390",
+    "calibration_date": "2025-07-25T20:01:32.626390",
+    "installation_date": "2024-12-21T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-229 \u00b0",
+      "accuracy": "\u00b10.1%",
+      "resolution": "0.01 \u00b0"
+    }
+  },
+  {
+    "_id": "device-0043",
+    "device_id": "DEV-0043",
+    "site_id": "site-002",
+    "name": "Humidity Sensor 43",
+    "type": "humidity",
+    "model": "HUMIDITY-911",
+    "location": {
+      "zone": "zone-B",
+      "coordinates": {
+        "x": 16.34,
+        "y": 31.62,
+        "z": 36.04
+      }
+    },
+    "status": "active",
+    "battery_level": 89,
+    "signal_strength": 72,
+    "last_reading": "2025-09-21T19:59:32.626390",
+    "calibration_date": "2025-09-05T20:01:32.626390",
+    "installation_date": "2025-03-05T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-299 %RH",
+      "accuracy": "\u00b11.1%",
+      "resolution": "0.08 %RH"
+    }
+  },
+  {
+    "_id": "device-0044",
+    "device_id": "DEV-0044",
+    "site_id": "site-002",
+    "name": "Temperature Sensor 44",
+    "type": "temperature",
+    "model": "TEMPERATURE-779",
+    "location": {
+      "zone": "zone-A",
+      "coordinates": {
+        "x": -93.13,
+        "y": -88.11,
+        "z": 13.5
+      }
+    },
+    "status": "active",
+    "battery_level": 41,
+    "signal_strength": 63,
+    "last_reading": "2025-09-21T19:57:32.626390",
+    "calibration_date": "2025-08-30T20:01:32.626390",
+    "installation_date": "2025-05-02T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-67 \u00b0C",
+      "accuracy": "\u00b10.7%",
+      "resolution": "0.04 \u00b0C"
+    }
+  },
+  {
+    "_id": "device-0045",
+    "device_id": "DEV-0045",
+    "site_id": "site-003",
+    "name": "Humidity Sensor 45",
+    "type": "humidity",
+    "model": "HUMIDITY-292",
+    "location": {
+      "zone": "zone-D",
+      "coordinates": {
+        "x": 60.14,
+        "y": 53.39,
+        "z": 25.83
+      }
+    },
+    "status": "maintenance",
+    "battery_level": 97,
+    "signal_strength": 92,
+    "last_reading": "2025-09-21T19:52:32.626390",
+    "calibration_date": "2025-09-14T20:01:32.626390",
+    "installation_date": "2025-06-17T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-319 %RH",
+      "accuracy": "\u00b10.9%",
+      "resolution": "0.07 %RH"
+    }
+  },
+  {
+    "_id": "device-0046",
+    "device_id": "DEV-0046",
+    "site_id": "site-003",
+    "name": "Tilt Sensor 46",
+    "type": "tilt",
+    "model": "TILT-261",
+    "location": {
+      "zone": "zone-E",
+      "coordinates": {
+        "x": 37.96,
+        "y": -83.22,
+        "z": 25.02
+      }
+    },
+    "status": "active",
+    "battery_level": 65,
+    "signal_strength": 98,
+    "last_reading": "2025-09-21T19:35:32.626390",
+    "calibration_date": "2025-07-01T20:01:32.626390",
+    "installation_date": "2024-10-21T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-198 \u00b0",
+      "accuracy": "\u00b10.2%",
+      "resolution": "0.10 \u00b0"
+    }
+  },
+  {
+    "_id": "device-0047",
+    "device_id": "DEV-0047",
+    "site_id": "site-003",
+    "name": "Tilt Sensor 47",
+    "type": "tilt",
+    "model": "TILT-135",
+    "location": {
+      "zone": "zone-B",
+      "coordinates": {
+        "x": -11.95,
+        "y": 71.92,
+        "z": 32.54
+      }
+    },
+    "status": "maintenance",
+    "battery_level": 69,
+    "signal_strength": 78,
+    "last_reading": "2025-09-21T19:42:32.626390",
+    "calibration_date": "2025-08-28T20:01:32.626390",
+    "installation_date": "2024-10-31T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-446 \u00b0",
+      "accuracy": "\u00b12.0%",
+      "resolution": "0.09 \u00b0"
+    }
+  },
+  {
+    "_id": "device-0048",
+    "device_id": "DEV-0048",
+    "site_id": "site-003",
+    "name": "Vibration Sensor 48",
+    "type": "vibration",
+    "model": "VIBRATION-627",
+    "location": {
+      "zone": "zone-D",
+      "coordinates": {
+        "x": -41.37,
+        "y": -25.68,
+        "z": 7.78
+      }
+    },
+    "status": "active",
+    "battery_level": 49,
+    "signal_strength": 87,
+    "last_reading": "2025-09-21T19:35:32.626390",
+    "calibration_date": "2025-08-21T20:01:32.626390",
+    "installation_date": "2025-04-02T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-53 mm/s",
+      "accuracy": "\u00b10.6%",
+      "resolution": "0.09 mm/s"
+    }
+  },
+  {
+    "_id": "device-0049",
+    "device_id": "DEV-0049",
+    "site_id": "site-003",
+    "name": "Strain Sensor 49",
+    "type": "strain",
+    "model": "STRAIN-349",
+    "location": {
+      "zone": "zone-A",
+      "coordinates": {
+        "x": 13.65,
+        "y": 87.83,
+        "z": 44.66
+      }
+    },
+    "status": "active",
+    "battery_level": 40,
+    "signal_strength": 73,
+    "last_reading": "2025-09-21T19:51:32.626390",
+    "calibration_date": "2025-09-12T20:01:32.626390",
+    "installation_date": "2025-03-30T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-325 \u03bc\u03b5",
+      "accuracy": "\u00b10.6%",
+      "resolution": "0.06 \u03bc\u03b5"
+    }
+  },
+  {
+    "_id": "device-0050",
+    "device_id": "DEV-0050",
+    "site_id": "site-003",
+    "name": "Weather Sensor 50",
+    "type": "weather",
+    "model": "WEATHER-759",
+    "location": {
+      "zone": "zone-D",
+      "coordinates": {
+        "x": 91.13,
+        "y": -0.98,
+        "z": 31.98
+      }
+    },
+    "status": "maintenance",
+    "battery_level": 23,
+    "signal_strength": 94,
+    "last_reading": "2025-09-21T19:31:32.626390",
+    "calibration_date": "2025-07-23T20:01:32.626390",
+    "installation_date": "2025-02-17T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-167 various",
+      "accuracy": "\u00b11.9%",
+      "resolution": "0.04 various"
+    }
+  },
+  {
+    "_id": "device-0051",
+    "device_id": "DEV-0051",
+    "site_id": "site-003",
+    "name": "Strain Sensor 51",
+    "type": "strain",
+    "model": "STRAIN-674",
+    "location": {
+      "zone": "zone-D",
+      "coordinates": {
+        "x": -9.08,
+        "y": -21.79,
+        "z": 7.21
+      }
+    },
+    "status": "active",
+    "battery_level": 69,
+    "signal_strength": 74,
+    "last_reading": "2025-09-21T19:34:32.626390",
+    "calibration_date": "2025-06-24T20:01:32.626390",
+    "installation_date": "2024-12-05T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-52 \u03bc\u03b5",
+      "accuracy": "\u00b10.7%",
+      "resolution": "0.06 \u03bc\u03b5"
+    }
+  },
+  {
+    "_id": "device-0052",
+    "device_id": "DEV-0052",
+    "site_id": "site-003",
+    "name": "Tilt Sensor 52",
+    "type": "tilt",
+    "model": "TILT-377",
+    "location": {
+      "zone": "zone-D",
+      "coordinates": {
+        "x": -46.82,
+        "y": 55.18,
+        "z": 18.83
+      }
+    },
+    "status": "maintenance",
+    "battery_level": 31,
+    "signal_strength": 60,
+    "last_reading": "2025-09-21T19:48:32.626390",
+    "calibration_date": "2025-08-12T20:01:32.626390",
+    "installation_date": "2025-02-14T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-155 \u00b0",
+      "accuracy": "\u00b10.9%",
+      "resolution": "0.06 \u00b0"
+    }
+  },
+  {
+    "_id": "device-0053",
+    "device_id": "DEV-0053",
+    "site_id": "site-003",
+    "name": "Weather Sensor 53",
+    "type": "weather",
+    "model": "WEATHER-592",
+    "location": {
+      "zone": "zone-C",
+      "coordinates": {
+        "x": 30.74,
+        "y": 45.23,
+        "z": 49.89
+      }
+    },
+    "status": "offline",
+    "battery_level": 36,
+    "signal_strength": 67,
+    "last_reading": "2025-09-21T19:58:32.626390",
+    "calibration_date": "2025-07-02T20:01:32.626390",
+    "installation_date": "2025-02-14T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-183 various",
+      "accuracy": "\u00b10.6%",
+      "resolution": "0.08 various"
+    }
+  },
+  {
+    "_id": "device-0054",
+    "device_id": "DEV-0054",
+    "site_id": "site-003",
+    "name": "Vibration Sensor 54",
+    "type": "vibration",
+    "model": "VIBRATION-138",
+    "location": {
+      "zone": "zone-A",
+      "coordinates": {
+        "x": 45.66,
+        "y": -19.74,
+        "z": 30.43
+      }
+    },
+    "status": "active",
+    "battery_level": 72,
+    "signal_strength": 63,
+    "last_reading": "2025-09-21T19:44:32.626390",
+    "calibration_date": "2025-07-28T20:01:32.626390",
+    "installation_date": "2025-04-27T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-172 mm/s",
+      "accuracy": "\u00b10.5%",
+      "resolution": "0.01 mm/s"
+    }
+  },
+  {
+    "_id": "device-0055",
+    "device_id": "DEV-0055",
+    "site_id": "site-003",
+    "name": "Weather Sensor 55",
+    "type": "weather",
+    "model": "WEATHER-677",
+    "location": {
+      "zone": "zone-C",
+      "coordinates": {
+        "x": 62.38,
+        "y": 76.75,
+        "z": 40.8
+      }
+    },
+    "status": "offline",
+    "battery_level": 38,
+    "signal_strength": 72,
+    "last_reading": "2025-09-21T19:46:32.626390",
+    "calibration_date": "2025-08-16T20:01:32.626390",
+    "installation_date": "2024-11-08T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-121 various",
+      "accuracy": "\u00b11.0%",
+      "resolution": "0.04 various"
+    }
+  },
+  {
+    "_id": "device-0056",
+    "device_id": "DEV-0056",
+    "site_id": "site-003",
+    "name": "Strain Sensor 56",
+    "type": "strain",
+    "model": "STRAIN-285",
+    "location": {
+      "zone": "zone-C",
+      "coordinates": {
+        "x": -58.53,
+        "y": -2.92,
+        "z": 13.27
+      }
+    },
+    "status": "offline",
+    "battery_level": 84,
+    "signal_strength": 89,
+    "last_reading": "2025-09-21T19:47:32.626390",
+    "calibration_date": "2025-08-16T20:01:32.626390",
+    "installation_date": "2024-11-11T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-253 \u03bc\u03b5",
+      "accuracy": "\u00b10.5%",
+      "resolution": "0.05 \u03bc\u03b5"
+    }
+  },
+  {
+    "_id": "device-0057",
+    "device_id": "DEV-0057",
+    "site_id": "site-003",
+    "name": "Temperature Sensor 57",
+    "type": "temperature",
+    "model": "TEMPERATURE-909",
+    "location": {
+      "zone": "zone-B",
+      "coordinates": {
+        "x": 41.5,
+        "y": -32.97,
+        "z": 12.8
+      }
+    },
+    "status": "active",
+    "battery_level": 93,
+    "signal_strength": 83,
+    "last_reading": "2025-09-21T19:39:32.626390",
+    "calibration_date": "2025-06-23T20:01:32.626390",
+    "installation_date": "2025-02-26T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-205 \u00b0C",
+      "accuracy": "\u00b10.8%",
+      "resolution": "0.05 \u00b0C"
+    }
+  },
+  {
+    "_id": "device-0058",
+    "device_id": "DEV-0058",
+    "site_id": "site-003",
+    "name": "Humidity Sensor 58",
+    "type": "humidity",
+    "model": "HUMIDITY-240",
+    "location": {
+      "zone": "zone-E",
+      "coordinates": {
+        "x": 92.46,
+        "y": -39.49,
+        "z": 19.04
+      }
+    },
+    "status": "active",
+    "battery_level": 26,
+    "signal_strength": 78,
+    "last_reading": "2025-09-21T19:43:32.626390",
+    "calibration_date": "2025-08-12T20:01:32.626390",
+    "installation_date": "2024-11-08T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-304 %RH",
+      "accuracy": "\u00b11.8%",
+      "resolution": "0.10 %RH"
+    }
+  },
+  {
+    "_id": "device-0059",
+    "device_id": "DEV-0059",
+    "site_id": "site-003",
+    "name": "Humidity Sensor 59",
+    "type": "humidity",
+    "model": "HUMIDITY-187",
+    "location": {
+      "zone": "zone-E",
+      "coordinates": {
+        "x": -66.71,
+        "y": 15.77,
+        "z": 26.53
+      }
+    },
+    "status": "active",
+    "battery_level": 26,
+    "signal_strength": 99,
+    "last_reading": "2025-09-21T19:45:32.626390",
+    "calibration_date": "2025-06-26T20:01:32.626390",
+    "installation_date": "2025-04-16T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-89 %RH",
+      "accuracy": "\u00b11.4%",
+      "resolution": "0.09 %RH"
+    }
+  },
+  {
+    "_id": "device-0060",
+    "device_id": "DEV-0060",
+    "site_id": "site-003",
+    "name": "Weather Sensor 60",
+    "type": "weather",
+    "model": "WEATHER-216",
+    "location": {
+      "zone": "zone-E",
+      "coordinates": {
+        "x": 31.44,
+        "y": -33.29,
+        "z": 6.88
+      }
+    },
+    "status": "offline",
+    "battery_level": 64,
+    "signal_strength": 77,
+    "last_reading": "2025-09-21T19:36:32.626390",
+    "calibration_date": "2025-07-05T20:01:32.626390",
+    "installation_date": "2024-10-14T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-217 various",
+      "accuracy": "\u00b11.7%",
+      "resolution": "0.05 various"
+    }
+  },
+  {
+    "_id": "device-0061",
+    "device_id": "DEV-0061",
+    "site_id": "site-003",
+    "name": "Tilt Sensor 61",
+    "type": "tilt",
+    "model": "TILT-507",
+    "location": {
+      "zone": "zone-B",
+      "coordinates": {
+        "x": -2.45,
+        "y": -51.8,
+        "z": 32.72
+      }
+    },
+    "status": "maintenance",
+    "battery_level": 41,
+    "signal_strength": 97,
+    "last_reading": "2025-09-21T19:57:32.626390",
+    "calibration_date": "2025-07-27T20:01:32.626390",
+    "installation_date": "2025-03-08T20:01:32.626390",
+    "specs": {
+      "measurement_range": "0-325 \u00b0",
+      "accuracy": "\u00b10.9%",
+      "resolution": "0.05 \u00b0"
+    }
+  }
+]

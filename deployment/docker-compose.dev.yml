@@ -1,0 +1,135 @@
+# Development Docker Compose Configuration
+version: '3.8'
+
+services:
+  # MongoDB Database
+  mongodb:
+    image: mongo:7.0
+    container_name: rockfall_mongodb_dev
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: dev_password
+      MONGO_INITDB_DATABASE: rockfall_prediction_dev
+    volumes:
+      - mongodb_dev_data:/data/db
+      - ./scripts/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+    ports:
+      - "27017:27017"
+    networks:
+      - rockfall_dev_network
+
+  # Redis Cache
+  redis:
+    image: redis:7.2-alpine
+    container_name: rockfall_redis_dev
+    restart: unless-stopped
+    command: redis-server --requirepass dev_redis_password
+    volumes:
+      - redis_dev_data:/data
+    ports:
+      - "6379:6379"
+    networks:
+      - rockfall_dev_network
+
+  # FastAPI Backend (Development)
+  backend-dev:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+      target: development
+    container_name: rockfall_backend_dev
+    restart: unless-stopped
+    environment:
+      - ENV=development
+      - DEBUG=true
+      - MONGODB_URL=mongodb://admin:dev_password@mongodb:27017/rockfall_prediction_dev?authSource=admin
+      - REDIS_URL=redis://redis:6379
+      - REDIS_PASSWORD=dev_redis_password
+      - SECRET_KEY=dev-secret-key-not-for-production
+      - JWT_SECRET_KEY=dev-jwt-secret-key-not-for-production
+      - SMTP_SERVER=smtp.gmail.com
+      - SMTP_PORT=587
+      - SMTP_USERNAME=${SMTP_USERNAME:-}
+      - SMTP_PASSWORD=${SMTP_PASSWORD:-}
+    volumes:
+      - ./backend:/app
+      - backend_dev_uploads:/app/uploads
+      - backend_dev_logs:/app/logs
+      - ./data:/app/data:ro
+    ports:
+      - "8000:8000"
+    networks:
+      - rockfall_dev_network
+    depends_on:
+      - mongodb
+      - redis
+    command: ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+
+  # React Frontend (Development)
+  frontend-dev:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      target: development
+    container_name: rockfall_frontend_dev
+    restart: unless-stopped
+    environment:
+      - VITE_API_URL=http://localhost:8000
+      - VITE_ENV=development
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    ports:
+      - "3001:3001"
+    networks:
+      - rockfall_dev_network
+    depends_on:
+      - backend-dev
+    command: ["npm", "run", "dev", "--", "--host", "0.0.0.0", "--port", "3001"]
+
+  # Database Administration (Optional)
+  mongo-express:
+    image: mongo-express:latest
+    container_name: rockfall_mongo_express
+    restart: unless-stopped
+    ports:
+      - "8081:8081"
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: admin
+      ME_CONFIG_MONGODB_ADMINPASSWORD: dev_password
+      ME_CONFIG_MONGODB_URL: mongodb://admin:dev_password@mongodb:27017/
+      ME_CONFIG_BASICAUTH_USERNAME: admin
+      ME_CONFIG_BASICAUTH_PASSWORD: admin
+    networks:
+      - rockfall_dev_network
+    depends_on:
+      - mongodb
+
+  # Redis Administration (Optional)
+  redis-commander:
+    image: rediscommander/redis-commander:latest
+    container_name: rockfall_redis_commander
+    restart: unless-stopped
+    environment:
+      - REDIS_HOSTS=local:redis:6379:0:dev_redis_password
+    ports:
+      - "8082:8081"
+    networks:
+      - rockfall_dev_network
+    depends_on:
+      - redis
+
+volumes:
+  mongodb_dev_data:
+    driver: local
+  redis_dev_data:
+    driver: local
+  backend_dev_uploads:
+    driver: local
+  backend_dev_logs:
+    driver: local
+
+networks:
+  rockfall_dev_network:
+    driver: bridge

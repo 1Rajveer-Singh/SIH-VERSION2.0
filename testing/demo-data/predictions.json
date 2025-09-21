@@ -1,0 +1,2957 @@
+[
+  {
+    "_id": "pred-0001",
+    "site_id": "site-003",
+    "device_ids": [
+      "DEV-0047",
+      "DEV-0061",
+      "DEV-0049",
+      "DEV-0045",
+      "DEV-0053"
+    ],
+    "risk_level": "medium",
+    "risk_score": 0.483,
+    "confidence": 0.898,
+    "created_at": "2025-08-25T20:01:33.000668",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 74.2,
+        "confidence": 0.91
+      },
+      "crack_analysis": {
+        "total_cracks": 28,
+        "critical_cracks": 5,
+        "max_width": 0.9
+      },
+      "structural_analysis": {
+        "weakness_score": 8.2,
+        "stability_index": 0.46
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 5.7,
+        "health_index": 0.54
+      },
+      "risk_factors": [
+        {
+          "factor": "Weathered rock surface",
+          "severity": "High",
+          "confidence": 0.63
+        },
+        {
+          "factor": "Weathered rock surface",
+          "severity": "High",
+          "confidence": 0.85
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-2918",
+      "total_images": 97,
+      "analysis_duration": 429.1,
+      "weather_conditions": "Clear"
+    }
+  },
+  {
+    "_id": "pred-0002",
+    "site_id": "site-003",
+    "device_ids": [
+      "DEV-0053",
+      "DEV-0051",
+      "DEV-0057",
+      "DEV-0046",
+      "DEV-0060"
+    ],
+    "risk_level": "high",
+    "risk_score": 0.821,
+    "confidence": 0.899,
+    "created_at": "2025-08-31T20:01:33.000668",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 76.8,
+        "confidence": 0.91
+      },
+      "crack_analysis": {
+        "total_cracks": 15,
+        "critical_cracks": 4,
+        "max_width": 1.4
+      },
+      "structural_analysis": {
+        "weakness_score": 4.0,
+        "stability_index": 0.7
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 10.7,
+        "health_index": 0.5
+      },
+      "risk_factors": [
+        {
+          "factor": "Weathered rock surface",
+          "severity": "Low",
+          "confidence": 0.61
+        },
+        {
+          "factor": "Weathered rock surface",
+          "severity": "Low",
+          "confidence": 0.66
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-2536",
+      "total_images": 69,
+      "analysis_duration": 387.8,
+      "weather_conditions": "Clear"
+    }
+  },
+  {
+    "_id": "pred-0003",
+    "site_id": "site-002",
+    "device_ids": [
+      "DEV-0040",
+      "DEV-0034",
+      "DEV-0041",
+      "DEV-0036",
+      "DEV-0033"
+    ],
+    "risk_level": "medium",
+    "risk_score": 0.377,
+    "confidence": 0.868,
+    "created_at": "2025-09-18T20:01:33.000668",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 74.8,
+        "confidence": 0.82
+      },
+      "crack_analysis": {
+        "total_cracks": 41,
+        "critical_cracks": 2,
+        "max_width": 2.4
+      },
+      "structural_analysis": {
+        "weakness_score": 5.7,
+        "stability_index": 0.75
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 22.4,
+        "health_index": 0.47
+      },
+      "risk_factors": [
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "Low",
+          "confidence": 0.92
+        },
+        {
+          "factor": "Rainfall saturation",
+          "severity": "Medium",
+          "confidence": 0.69
+        },
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "Medium",
+          "confidence": 0.76
+        },
+        {
+          "factor": "Vertical crack patterns",
+          "severity": "Low",
+          "confidence": 0.84
+        },
+        {
+          "factor": "Minimal vegetation support",
+          "severity": "Low",
+          "confidence": 0.67
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-3606",
+      "total_images": 194,
+      "analysis_duration": 492.2,
+      "weather_conditions": "Clear"
+    }
+  },
+  {
+    "_id": "pred-0004",
+    "site_id": "site-002",
+    "device_ids": [
+      "DEV-0034",
+      "DEV-0038",
+      "DEV-0039",
+      "DEV-0029",
+      "DEV-0042"
+    ],
+    "risk_level": "high",
+    "risk_score": 0.794,
+    "confidence": 0.701,
+    "created_at": "2025-09-04T20:01:33.000668",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 65.1,
+        "confidence": 0.92
+      },
+      "crack_analysis": {
+        "total_cracks": 32,
+        "critical_cracks": 6,
+        "max_width": 1.0
+      },
+      "structural_analysis": {
+        "weakness_score": 7.9,
+        "stability_index": 0.53
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 15.3,
+        "health_index": 0.76
+      },
+      "risk_factors": [
+        {
+          "factor": "Vertical crack patterns",
+          "severity": "Medium",
+          "confidence": 0.69
+        },
+        {
+          "factor": "Minimal vegetation support",
+          "severity": "Low",
+          "confidence": 0.81
+        },
+        {
+          "factor": "Minimal vegetation support",
+          "severity": "Medium",
+          "confidence": 0.69
+        },
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "High",
+          "confidence": 0.74
+        },
+        {
+          "factor": "Minimal vegetation support",
+          "severity": "High",
+          "confidence": 0.84
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-3653",
+      "total_images": 93,
+      "analysis_duration": 266.6,
+      "weather_conditions": "Heavy Rain"
+    }
+  },
+  {
+    "_id": "pred-0005",
+    "site_id": "site-003",
+    "device_ids": [
+      "DEV-0052",
+      "DEV-0051",
+      "DEV-0048",
+      "DEV-0061",
+      "DEV-0059"
+    ],
+    "risk_level": "medium",
+    "risk_score": 0.445,
+    "confidence": 0.931,
+    "created_at": "2025-09-11T20:01:33.000668",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 87.3,
+        "confidence": 0.91
+      },
+      "crack_analysis": {
+        "total_cracks": 38,
+        "critical_cracks": 7,
+        "max_width": 1.6
+      },
+      "structural_analysis": {
+        "weakness_score": 5.4,
+        "stability_index": 0.67
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 13.9,
+        "health_index": 0.48
+      },
+      "risk_factors": [
+        {
+          "factor": "High vibration levels",
+          "severity": "Medium",
+          "confidence": 0.82
+        },
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "High",
+          "confidence": 0.76
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-3891",
+      "total_images": 190,
+      "analysis_duration": 141.6,
+      "weather_conditions": "Clear"
+    }
+  },
+  {
+    "_id": "pred-0006",
+    "site_id": "site-002",
+    "device_ids": [
+      "DEV-0029",
+      "DEV-0030",
+      "DEV-0031",
+      "DEV-0036",
+      "DEV-0039"
+    ],
+    "risk_level": "low",
+    "risk_score": 0.1,
+    "confidence": 0.876,
+    "created_at": "2025-09-20T20:01:33.000668",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 76.8,
+        "confidence": 0.92
+      },
+      "crack_analysis": {
+        "total_cracks": 41,
+        "critical_cracks": 2,
+        "max_width": 2.2
+      },
+      "structural_analysis": {
+        "weakness_score": 4.9,
+        "stability_index": 0.7
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 24.9,
+        "health_index": 0.65
+      },
+      "risk_factors": [
+        {
+          "factor": "Weathered rock surface",
+          "severity": "Low",
+          "confidence": 0.67
+        },
+        {
+          "factor": "High vibration levels",
+          "severity": "Low",
+          "confidence": 0.7
+        },
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "Low",
+          "confidence": 0.93
+        },
+        {
+          "factor": "Rainfall saturation",
+          "severity": "High",
+          "confidence": 0.61
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-8265",
+      "total_images": 182,
+      "analysis_duration": 438.7,
+      "weather_conditions": "Partly Cloudy"
+    }
+  },
+  {
+    "_id": "pred-0007",
+    "site_id": "site-003",
+    "device_ids": [
+      "DEV-0059",
+      "DEV-0051",
+      "DEV-0058",
+      "DEV-0050",
+      "DEV-0048"
+    ],
+    "risk_level": "low",
+    "risk_score": 0.124,
+    "confidence": 0.767,
+    "created_at": "2025-09-15T20:01:33.000668",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 67.3,
+        "confidence": 0.92
+      },
+      "crack_analysis": {
+        "total_cracks": 19,
+        "critical_cracks": 6,
+        "max_width": 0.6
+      },
+      "structural_analysis": {
+        "weakness_score": 4.0,
+        "stability_index": 0.78
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 5.8,
+        "health_index": 0.53
+      },
+      "risk_factors": [
+        {
+          "factor": "Weathered rock surface",
+          "severity": "High",
+          "confidence": 0.6
+        },
+        {
+          "factor": "High vibration levels",
+          "severity": "High",
+          "confidence": 0.69
+        },
+        {
+          "factor": "Weathered rock surface",
+          "severity": "High",
+          "confidence": 0.71
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-9091",
+      "total_images": 127,
+      "analysis_duration": 286.5,
+      "weather_conditions": "Light Rain"
+    }
+  },
+  {
+    "_id": "pred-0008",
+    "site_id": "site-001",
+    "device_ids": [
+      "DEV-0003",
+      "DEV-0017",
+      "DEV-0024",
+      "DEV-0018",
+      "DEV-0004"
+    ],
+    "risk_level": "medium",
+    "risk_score": 0.668,
+    "confidence": 0.948,
+    "created_at": "2025-09-07T20:01:33.000668",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 80.5,
+        "confidence": 0.92
+      },
+      "crack_analysis": {
+        "total_cracks": 32,
+        "critical_cracks": 3,
+        "max_width": 3.0
+      },
+      "structural_analysis": {
+        "weakness_score": 6.2,
+        "stability_index": 0.53
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 24.2,
+        "health_index": 0.44
+      },
+      "risk_factors": [
+        {
+          "factor": "Vertical crack patterns",
+          "severity": "High",
+          "confidence": 0.8
+        },
+        {
+          "factor": "Rainfall saturation",
+          "severity": "Low",
+          "confidence": 0.77
+        },
+        {
+          "factor": "High vibration levels",
+          "severity": "High",
+          "confidence": 0.87
+        },
+        {
+          "factor": "Weathered rock surface",
+          "severity": "High",
+          "confidence": 0.75
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-6143",
+      "total_images": 109,
+      "analysis_duration": 505.9,
+      "weather_conditions": "Heavy Rain"
+    }
+  },
+  {
+    "_id": "pred-0009",
+    "site_id": "site-003",
+    "device_ids": [
+      "DEV-0055",
+      "DEV-0057",
+      "DEV-0049",
+      "DEV-0060",
+      "DEV-0045"
+    ],
+    "risk_level": "low",
+    "risk_score": 0.233,
+    "confidence": 0.937,
+    "created_at": "2025-09-13T20:01:33.000668",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 61.1,
+        "confidence": 0.87
+      },
+      "crack_analysis": {
+        "total_cracks": 30,
+        "critical_cracks": 2,
+        "max_width": 1.2
+      },
+      "structural_analysis": {
+        "weakness_score": 7.5,
+        "stability_index": 0.41
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 6.0,
+        "health_index": 0.46
+      },
+      "risk_factors": [
+        {
+          "factor": "Weathered rock surface",
+          "severity": "Low",
+          "confidence": 0.94
+        },
+        {
+          "factor": "Weathered rock surface",
+          "severity": "Low",
+          "confidence": 0.88
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-6706",
+      "total_images": 188,
+      "analysis_duration": 347.4,
+      "weather_conditions": "Heavy Rain"
+    }
+  },
+  {
+    "_id": "pred-0010",
+    "site_id": "site-002",
+    "device_ids": [
+      "DEV-0040",
+      "DEV-0042",
+      "DEV-0041",
+      "DEV-0031",
+      "DEV-0027"
+    ],
+    "risk_level": "low",
+    "risk_score": 0.147,
+    "confidence": 0.787,
+    "created_at": "2025-09-15T20:01:33.000668",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 80.9,
+        "confidence": 0.89
+      },
+      "crack_analysis": {
+        "total_cracks": 45,
+        "critical_cracks": 4,
+        "max_width": 2.9
+      },
+      "structural_analysis": {
+        "weakness_score": 8.4,
+        "stability_index": 0.4
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 18.6,
+        "health_index": 0.72
+      },
+      "risk_factors": [
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "Low",
+          "confidence": 0.88
+        },
+        {
+          "factor": "High vibration levels",
+          "severity": "Low",
+          "confidence": 0.61
+        },
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "High",
+          "confidence": 0.95
+        },
+        {
+          "factor": "Vertical crack patterns",
+          "severity": "High",
+          "confidence": 0.82
+        },
+        {
+          "factor": "High vibration levels",
+          "severity": "Low",
+          "confidence": 0.9
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-9812",
+      "total_images": 92,
+      "analysis_duration": 204.7,
+      "weather_conditions": "Light Rain"
+    }
+  },
+  {
+    "_id": "pred-0011",
+    "site_id": "site-002",
+    "device_ids": [
+      "DEV-0026",
+      "DEV-0035",
+      "DEV-0036",
+      "DEV-0029",
+      "DEV-0030"
+    ],
+    "risk_level": "high",
+    "risk_score": 0.822,
+    "confidence": 0.815,
+    "created_at": "2025-09-16T20:01:33.000668",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 67.4,
+        "confidence": 0.88
+      },
+      "crack_analysis": {
+        "total_cracks": 16,
+        "critical_cracks": 2,
+        "max_width": 2.5
+      },
+      "structural_analysis": {
+        "weakness_score": 3.1,
+        "stability_index": 0.55
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 18.1,
+        "health_index": 0.43
+      },
+      "risk_factors": [
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "Low",
+          "confidence": 0.68
+        },
+        {
+          "factor": "Vertical crack patterns",
+          "severity": "Medium",
+          "confidence": 0.77
+        },
+        {
+          "factor": "Rainfall saturation",
+          "severity": "Low",
+          "confidence": 0.77
+        },
+        {
+          "factor": "Vertical crack patterns",
+          "severity": "Low",
+          "confidence": 0.61
+        },
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "High",
+          "confidence": 0.86
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-1613",
+      "total_images": 108,
+      "analysis_duration": 238.3,
+      "weather_conditions": "Overcast"
+    }
+  },
+  {
+    "_id": "pred-0012",
+    "site_id": "site-002",
+    "device_ids": [
+      "DEV-0038",
+      "DEV-0036",
+      "DEV-0027",
+      "DEV-0031",
+      "DEV-0035"
+    ],
+    "risk_level": "medium",
+    "risk_score": 0.534,
+    "confidence": 0.807,
+    "created_at": "2025-08-22T20:01:33.000668",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 83.1,
+        "confidence": 0.91
+      },
+      "crack_analysis": {
+        "total_cracks": 28,
+        "critical_cracks": 5,
+        "max_width": 2.3
+      },
+      "structural_analysis": {
+        "weakness_score": 7.2,
+        "stability_index": 0.39
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 19.7,
+        "health_index": 0.78
+      },
+      "risk_factors": [
+        {
+          "factor": "Weathered rock surface",
+          "severity": "High",
+          "confidence": 0.86
+        },
+        {
+          "factor": "High vibration levels",
+          "severity": "Medium",
+          "confidence": 0.83
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-3211",
+      "total_images": 81,
+      "analysis_duration": 572.0,
+      "weather_conditions": "Clear"
+    }
+  },
+  {
+    "_id": "pred-0013",
+    "site_id": "site-003",
+    "device_ids": [
+      "DEV-0060",
+      "DEV-0059",
+      "DEV-0053",
+      "DEV-0048",
+      "DEV-0055"
+    ],
+    "risk_level": "medium",
+    "risk_score": 0.347,
+    "confidence": 0.748,
+    "created_at": "2025-08-25T20:01:33.000668",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 79.3,
+        "confidence": 0.84
+      },
+      "crack_analysis": {
+        "total_cracks": 25,
+        "critical_cracks": 4,
+        "max_width": 0.6
+      },
+      "structural_analysis": {
+        "weakness_score": 3.8,
+        "stability_index": 0.31
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 17.9,
+        "health_index": 0.56
+      },
+      "risk_factors": [
+        {
+          "factor": "Vertical crack patterns",
+          "severity": "Low",
+          "confidence": 0.77
+        },
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "Low",
+          "confidence": 0.83
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-6963",
+      "total_images": 164,
+      "analysis_duration": 285.2,
+      "weather_conditions": "Partly Cloudy"
+    }
+  },
+  {
+    "_id": "pred-0014",
+    "site_id": "site-002",
+    "device_ids": [
+      "DEV-0032",
+      "DEV-0038",
+      "DEV-0033",
+      "DEV-0042",
+      "DEV-0030"
+    ],
+    "risk_level": "high",
+    "risk_score": 0.814,
+    "confidence": 0.907,
+    "created_at": "2025-09-05T20:01:33.000668",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 84.1,
+        "confidence": 0.91
+      },
+      "crack_analysis": {
+        "total_cracks": 45,
+        "critical_cracks": 6,
+        "max_width": 2.8
+      },
+      "structural_analysis": {
+        "weakness_score": 7.4,
+        "stability_index": 0.5
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 17.3,
+        "health_index": 0.76
+      },
+      "risk_factors": [
+        {
+          "factor": "High vibration levels",
+          "severity": "High",
+          "confidence": 0.8
+        },
+        {
+          "factor": "Weathered rock surface",
+          "severity": "Low",
+          "confidence": 0.7
+        },
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "Low",
+          "confidence": 0.64
+        },
+        {
+          "factor": "Weathered rock surface",
+          "severity": "Low",
+          "confidence": 0.75
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-3019",
+      "total_images": 87,
+      "analysis_duration": 226.7,
+      "weather_conditions": "Heavy Rain"
+    }
+  },
+  {
+    "_id": "pred-0015",
+    "site_id": "site-002",
+    "device_ids": [
+      "DEV-0041",
+      "DEV-0033",
+      "DEV-0034",
+      "DEV-0030",
+      "DEV-0038"
+    ],
+    "risk_level": "high",
+    "risk_score": 0.829,
+    "confidence": 0.756,
+    "created_at": "2025-08-27T20:01:33.001683",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 70.9,
+        "confidence": 0.88
+      },
+      "crack_analysis": {
+        "total_cracks": 44,
+        "critical_cracks": 3,
+        "max_width": 2.9
+      },
+      "structural_analysis": {
+        "weakness_score": 8.0,
+        "stability_index": 0.7
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 16.2,
+        "health_index": 0.64
+      },
+      "risk_factors": [
+        {
+          "factor": "Rainfall saturation",
+          "severity": "Low",
+          "confidence": 0.91
+        },
+        {
+          "factor": "High vibration levels",
+          "severity": "Low",
+          "confidence": 0.93
+        },
+        {
+          "factor": "High vibration levels",
+          "severity": "High",
+          "confidence": 0.95
+        },
+        {
+          "factor": "High vibration levels",
+          "severity": "Medium",
+          "confidence": 0.6
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-3316",
+      "total_images": 106,
+      "analysis_duration": 302.6,
+      "weather_conditions": "Light Rain"
+    }
+  },
+  {
+    "_id": "pred-0016",
+    "site_id": "site-001",
+    "device_ids": [
+      "DEV-0007",
+      "DEV-0015",
+      "DEV-0003",
+      "DEV-0024",
+      "DEV-0002"
+    ],
+    "risk_level": "medium",
+    "risk_score": 0.472,
+    "confidence": 0.795,
+    "created_at": "2025-09-11T20:01:33.001683",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 78.1,
+        "confidence": 0.83
+      },
+      "crack_analysis": {
+        "total_cracks": 36,
+        "critical_cracks": 5,
+        "max_width": 2.1
+      },
+      "structural_analysis": {
+        "weakness_score": 4.5,
+        "stability_index": 0.45
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 11.7,
+        "health_index": 0.6
+      },
+      "risk_factors": [
+        {
+          "factor": "Weathered rock surface",
+          "severity": "Low",
+          "confidence": 0.93
+        },
+        {
+          "factor": "Vertical crack patterns",
+          "severity": "Low",
+          "confidence": 0.66
+        },
+        {
+          "factor": "Vertical crack patterns",
+          "severity": "High",
+          "confidence": 0.8
+        },
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "High",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-1655",
+      "total_images": 144,
+      "analysis_duration": 537.9,
+      "weather_conditions": "Heavy Rain"
+    }
+  },
+  {
+    "_id": "pred-0017",
+    "site_id": "site-002",
+    "device_ids": [
+      "DEV-0037",
+      "DEV-0026",
+      "DEV-0044",
+      "DEV-0027",
+      "DEV-0039"
+    ],
+    "risk_level": "medium",
+    "risk_score": 0.421,
+    "confidence": 0.825,
+    "created_at": "2025-09-20T20:01:33.001683",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 78.6,
+        "confidence": 0.82
+      },
+      "crack_analysis": {
+        "total_cracks": 37,
+        "critical_cracks": 8,
+        "max_width": 2.0
+      },
+      "structural_analysis": {
+        "weakness_score": 4.2,
+        "stability_index": 0.71
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 13.7,
+        "health_index": 0.7
+      },
+      "risk_factors": [
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "Low",
+          "confidence": 0.93
+        },
+        {
+          "factor": "Minimal vegetation support",
+          "severity": "Low",
+          "confidence": 0.77
+        },
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "Low",
+          "confidence": 0.9
+        },
+        {
+          "factor": "Minimal vegetation support",
+          "severity": "Low",
+          "confidence": 0.65
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-8899",
+      "total_images": 176,
+      "analysis_duration": 508.2,
+      "weather_conditions": "Light Rain"
+    }
+  },
+  {
+    "_id": "pred-0018",
+    "site_id": "site-003",
+    "device_ids": [
+      "DEV-0052",
+      "DEV-0046",
+      "DEV-0060",
+      "DEV-0061",
+      "DEV-0045"
+    ],
+    "risk_level": "low",
+    "risk_score": 0.109,
+    "confidence": 0.936,
+    "created_at": "2025-09-08T20:01:33.001683",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 62.7,
+        "confidence": 0.87
+      },
+      "crack_analysis": {
+        "total_cracks": 35,
+        "critical_cracks": 5,
+        "max_width": 2.1
+      },
+      "structural_analysis": {
+        "weakness_score": 3.2,
+        "stability_index": 0.42
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 18.9,
+        "health_index": 0.77
+      },
+      "risk_factors": [
+        {
+          "factor": "High vibration levels",
+          "severity": "Low",
+          "confidence": 0.67
+        },
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "High",
+          "confidence": 0.71
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-8569",
+      "total_images": 74,
+      "analysis_duration": 311.7,
+      "weather_conditions": "Partly Cloudy"
+    }
+  },
+  {
+    "_id": "pred-0019",
+    "site_id": "site-002",
+    "device_ids": [
+      "DEV-0042",
+      "DEV-0030",
+      "DEV-0027",
+      "DEV-0034",
+      "DEV-0037"
+    ],
+    "risk_level": "high",
+    "risk_score": 0.835,
+    "confidence": 0.813,
+    "created_at": "2025-09-20T20:01:33.001683",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 61.5,
+        "confidence": 0.93
+      },
+      "crack_analysis": {
+        "total_cracks": 26,
+        "critical_cracks": 8,
+        "max_width": 2.9
+      },
+      "structural_analysis": {
+        "weakness_score": 7.5,
+        "stability_index": 0.44
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 23.0,
+        "health_index": 0.42
+      },
+      "risk_factors": [
+        {
+          "factor": "High vibration levels",
+          "severity": "Medium",
+          "confidence": 0.76
+        },
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "High",
+          "confidence": 0.75
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-5528",
+      "total_images": 123,
+      "analysis_duration": 405.2,
+      "weather_conditions": "Overcast"
+    }
+  },
+  {
+    "_id": "pred-0020",
+    "site_id": "site-001",
+    "device_ids": [
+      "DEV-0002",
+      "DEV-0001",
+      "DEV-0015",
+      "DEV-0017",
+      "DEV-0005"
+    ],
+    "risk_level": "medium",
+    "risk_score": 0.371,
+    "confidence": 0.908,
+    "created_at": "2025-09-17T20:01:33.001683",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 73.5,
+        "confidence": 0.86
+      },
+      "crack_analysis": {
+        "total_cracks": 44,
+        "critical_cracks": 4,
+        "max_width": 1.4
+      },
+      "structural_analysis": {
+        "weakness_score": 4.2,
+        "stability_index": 0.63
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 16.7,
+        "health_index": 0.61
+      },
+      "risk_factors": [
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "Low",
+          "confidence": 0.94
+        },
+        {
+          "factor": "Rainfall saturation",
+          "severity": "Low",
+          "confidence": 0.6
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-2458",
+      "total_images": 67,
+      "analysis_duration": 179.5,
+      "weather_conditions": "Overcast"
+    }
+  },
+  {
+    "_id": "pred-0021",
+    "site_id": "site-001",
+    "device_ids": [
+      "DEV-0015",
+      "DEV-0007",
+      "DEV-0006",
+      "DEV-0020",
+      "DEV-0017"
+    ],
+    "risk_level": "low",
+    "risk_score": 0.205,
+    "confidence": 0.747,
+    "created_at": "2025-09-04T20:01:33.001683",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 62.6,
+        "confidence": 0.94
+      },
+      "crack_analysis": {
+        "total_cracks": 18,
+        "critical_cracks": 5,
+        "max_width": 1.0
+      },
+      "structural_analysis": {
+        "weakness_score": 5.8,
+        "stability_index": 0.42
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 12.4,
+        "health_index": 0.8
+      },
+      "risk_factors": [
+        {
+          "factor": "Minimal vegetation support",
+          "severity": "High",
+          "confidence": 0.93
+        },
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "Medium",
+          "confidence": 0.62
+        },
+        {
+          "factor": "Weathered rock surface",
+          "severity": "Medium",
+          "confidence": 0.66
+        },
+        {
+          "factor": "Vertical crack patterns",
+          "severity": "Low",
+          "confidence": 0.91
+        },
+        {
+          "factor": "High vibration levels",
+          "severity": "Low",
+          "confidence": 0.86
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-4503",
+      "total_images": 67,
+      "analysis_duration": 183.5,
+      "weather_conditions": "Overcast"
+    }
+  },
+  {
+    "_id": "pred-0022",
+    "site_id": "site-002",
+    "device_ids": [
+      "DEV-0042",
+      "DEV-0030",
+      "DEV-0029",
+      "DEV-0035",
+      "DEV-0036"
+    ],
+    "risk_level": "medium",
+    "risk_score": 0.551,
+    "confidence": 0.888,
+    "created_at": "2025-08-28T20:01:33.001683",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 73.1,
+        "confidence": 0.91
+      },
+      "crack_analysis": {
+        "total_cracks": 19,
+        "critical_cracks": 6,
+        "max_width": 1.6
+      },
+      "structural_analysis": {
+        "weakness_score": 7.0,
+        "stability_index": 0.56
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 14.8,
+        "health_index": 0.65
+      },
+      "risk_factors": [
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "Low",
+          "confidence": 0.86
+        },
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "High",
+          "confidence": 0.65
+        },
+        {
+          "factor": "Minimal vegetation support",
+          "severity": "High",
+          "confidence": 0.8
+        },
+        {
+          "factor": "Minimal vegetation support",
+          "severity": "Medium",
+          "confidence": 0.87
+        },
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "Low",
+          "confidence": 0.92
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-4726",
+      "total_images": 54,
+      "analysis_duration": 235.5,
+      "weather_conditions": "Heavy Rain"
+    }
+  },
+  {
+    "_id": "pred-0023",
+    "site_id": "site-001",
+    "device_ids": [
+      "DEV-0017",
+      "DEV-0022",
+      "DEV-0005",
+      "DEV-0023",
+      "DEV-0001"
+    ],
+    "risk_level": "low",
+    "risk_score": 0.184,
+    "confidence": 0.808,
+    "created_at": "2025-09-09T20:01:33.001683",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 76.6,
+        "confidence": 0.85
+      },
+      "crack_analysis": {
+        "total_cracks": 29,
+        "critical_cracks": 4,
+        "max_width": 0.7
+      },
+      "structural_analysis": {
+        "weakness_score": 4.6,
+        "stability_index": 0.36
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 24.7,
+        "health_index": 0.83
+      },
+      "risk_factors": [
+        {
+          "factor": "Rainfall saturation",
+          "severity": "Low",
+          "confidence": 0.91
+        },
+        {
+          "factor": "Rainfall saturation",
+          "severity": "Medium",
+          "confidence": 0.78
+        },
+        {
+          "factor": "High vibration levels",
+          "severity": "High",
+          "confidence": 0.76
+        },
+        {
+          "factor": "Minimal vegetation support",
+          "severity": "Medium",
+          "confidence": 0.89
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-1610",
+      "total_images": 82,
+      "analysis_duration": 379.0,
+      "weather_conditions": "Clear"
+    }
+  },
+  {
+    "_id": "pred-0024",
+    "site_id": "site-001",
+    "device_ids": [
+      "DEV-0012",
+      "DEV-0020",
+      "DEV-0010",
+      "DEV-0006",
+      "DEV-0015"
+    ],
+    "risk_level": "low",
+    "risk_score": 0.292,
+    "confidence": 0.815,
+    "created_at": "2025-09-01T20:01:33.001683",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 65.5,
+        "confidence": 0.89
+      },
+      "crack_analysis": {
+        "total_cracks": 21,
+        "critical_cracks": 6,
+        "max_width": 2.3
+      },
+      "structural_analysis": {
+        "weakness_score": 6.3,
+        "stability_index": 0.31
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 7.7,
+        "health_index": 0.76
+      },
+      "risk_factors": [
+        {
+          "factor": "Minimal vegetation support",
+          "severity": "Low",
+          "confidence": 0.77
+        },
+        {
+          "factor": "High vibration levels",
+          "severity": "Low",
+          "confidence": 0.66
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-3360",
+      "total_images": 156,
+      "analysis_duration": 123.6,
+      "weather_conditions": "Partly Cloudy"
+    }
+  },
+  {
+    "_id": "pred-0025",
+    "site_id": "site-003",
+    "device_ids": [
+      "DEV-0059",
+      "DEV-0047",
+      "DEV-0055",
+      "DEV-0058",
+      "DEV-0057"
+    ],
+    "risk_level": "low",
+    "risk_score": 0.192,
+    "confidence": 0.761,
+    "created_at": "2025-09-13T20:01:33.001683",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 82.7,
+        "confidence": 0.94
+      },
+      "crack_analysis": {
+        "total_cracks": 21,
+        "critical_cracks": 5,
+        "max_width": 2.4
+      },
+      "structural_analysis": {
+        "weakness_score": 6.8,
+        "stability_index": 0.49
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 19.1,
+        "health_index": 0.59
+      },
+      "risk_factors": [
+        {
+          "factor": "Vertical crack patterns",
+          "severity": "Medium",
+          "confidence": 0.73
+        },
+        {
+          "factor": "Vertical crack patterns",
+          "severity": "Medium",
+          "confidence": 0.69
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-4755",
+      "total_images": 193,
+      "analysis_duration": 280.6,
+      "weather_conditions": "Clear"
+    }
+  },
+  {
+    "_id": "pred-0026",
+    "site_id": "site-003",
+    "device_ids": [
+      "DEV-0057",
+      "DEV-0053",
+      "DEV-0059",
+      "DEV-0046",
+      "DEV-0056"
+    ],
+    "risk_level": "medium",
+    "risk_score": 0.384,
+    "confidence": 0.826,
+    "created_at": "2025-08-28T20:01:33.001683",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 80.3,
+        "confidence": 0.85
+      },
+      "crack_analysis": {
+        "total_cracks": 38,
+        "critical_cracks": 4,
+        "max_width": 2.6
+      },
+      "structural_analysis": {
+        "weakness_score": 6.2,
+        "stability_index": 0.61
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 5.6,
+        "health_index": 0.88
+      },
+      "risk_factors": [
+        {
+          "factor": "Weathered rock surface",
+          "severity": "Medium",
+          "confidence": 0.89
+        },
+        {
+          "factor": "High vibration levels",
+          "severity": "Medium",
+          "confidence": 0.91
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-6919",
+      "total_images": 100,
+      "analysis_duration": 157.2,
+      "weather_conditions": "Partly Cloudy"
+    }
+  },
+  {
+    "_id": "pred-0027",
+    "site_id": "site-003",
+    "device_ids": [
+      "DEV-0053",
+      "DEV-0057",
+      "DEV-0054",
+      "DEV-0059",
+      "DEV-0049"
+    ],
+    "risk_level": "medium",
+    "risk_score": 0.681,
+    "confidence": 0.821,
+    "created_at": "2025-09-18T20:01:33.001683",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 71.3,
+        "confidence": 0.93
+      },
+      "crack_analysis": {
+        "total_cracks": 22,
+        "critical_cracks": 5,
+        "max_width": 1.2
+      },
+      "structural_analysis": {
+        "weakness_score": 4.6,
+        "stability_index": 0.33
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 9.2,
+        "health_index": 0.43
+      },
+      "risk_factors": [
+        {
+          "factor": "Rainfall saturation",
+          "severity": "Medium",
+          "confidence": 0.91
+        },
+        {
+          "factor": "Rainfall saturation",
+          "severity": "High",
+          "confidence": 0.69
+        },
+        {
+          "factor": "Rainfall saturation",
+          "severity": "Medium",
+          "confidence": 0.61
+        },
+        {
+          "factor": "Vertical crack patterns",
+          "severity": "High",
+          "confidence": 0.72
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-8013",
+      "total_images": 158,
+      "analysis_duration": 409.9,
+      "weather_conditions": "Overcast"
+    }
+  },
+  {
+    "_id": "pred-0028",
+    "site_id": "site-001",
+    "device_ids": [
+      "DEV-0024",
+      "DEV-0021",
+      "DEV-0012",
+      "DEV-0025",
+      "DEV-0015"
+    ],
+    "risk_level": "medium",
+    "risk_score": 0.65,
+    "confidence": 0.906,
+    "created_at": "2025-09-20T20:01:33.001683",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 80.8,
+        "confidence": 0.91
+      },
+      "crack_analysis": {
+        "total_cracks": 38,
+        "critical_cracks": 7,
+        "max_width": 0.6
+      },
+      "structural_analysis": {
+        "weakness_score": 3.2,
+        "stability_index": 0.78
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 7.4,
+        "health_index": 0.5
+      },
+      "risk_factors": [
+        {
+          "factor": "High vibration levels",
+          "severity": "High",
+          "confidence": 0.82
+        },
+        {
+          "factor": "Minimal vegetation support",
+          "severity": "High",
+          "confidence": 0.89
+        },
+        {
+          "factor": "Weathered rock surface",
+          "severity": "High",
+          "confidence": 0.88
+        },
+        {
+          "factor": "Weathered rock surface",
+          "severity": "Low",
+          "confidence": 0.89
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-7635",
+      "total_images": 111,
+      "analysis_duration": 501.2,
+      "weather_conditions": "Clear"
+    }
+  },
+  {
+    "_id": "pred-0029",
+    "site_id": "site-002",
+    "device_ids": [
+      "DEV-0037",
+      "DEV-0036",
+      "DEV-0042",
+      "DEV-0041",
+      "DEV-0044"
+    ],
+    "risk_level": "low",
+    "risk_score": 0.107,
+    "confidence": 0.727,
+    "created_at": "2025-09-12T20:01:33.001683",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 77.8,
+        "confidence": 0.84
+      },
+      "crack_analysis": {
+        "total_cracks": 33,
+        "critical_cracks": 2,
+        "max_width": 1.7
+      },
+      "structural_analysis": {
+        "weakness_score": 5.6,
+        "stability_index": 0.37
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 23.2,
+        "health_index": 0.4
+      },
+      "risk_factors": [
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "Medium",
+          "confidence": 0.7
+        },
+        {
+          "factor": "High vibration levels",
+          "severity": "High",
+          "confidence": 0.75
+        },
+        {
+          "factor": "Vertical crack patterns",
+          "severity": "Medium",
+          "confidence": 0.95
+        },
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "Low",
+          "confidence": 0.83
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-7653",
+      "total_images": 126,
+      "analysis_duration": 532.2,
+      "weather_conditions": "Clear"
+    }
+  },
+  {
+    "_id": "pred-0030",
+    "site_id": "site-003",
+    "device_ids": [
+      "DEV-0048",
+      "DEV-0059",
+      "DEV-0058",
+      "DEV-0061",
+      "DEV-0055"
+    ],
+    "risk_level": "medium",
+    "risk_score": 0.424,
+    "confidence": 0.836,
+    "created_at": "2025-08-30T20:01:33.001683",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 67.4,
+        "confidence": 0.82
+      },
+      "crack_analysis": {
+        "total_cracks": 39,
+        "critical_cracks": 7,
+        "max_width": 2.7
+      },
+      "structural_analysis": {
+        "weakness_score": 3.5,
+        "stability_index": 0.33
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 13.7,
+        "health_index": 0.89
+      },
+      "risk_factors": [
+        {
+          "factor": "Rainfall saturation",
+          "severity": "High",
+          "confidence": 0.91
+        },
+        {
+          "factor": "Vertical crack patterns",
+          "severity": "Low",
+          "confidence": 0.81
+        },
+        {
+          "factor": "Rainfall saturation",
+          "severity": "Medium",
+          "confidence": 0.86
+        },
+        {
+          "factor": "High vibration levels",
+          "severity": "High",
+          "confidence": 0.87
+        },
+        {
+          "factor": "Weathered rock surface",
+          "severity": "High",
+          "confidence": 0.86
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-5234",
+      "total_images": 59,
+      "analysis_duration": 459.0,
+      "weather_conditions": "Partly Cloudy"
+    }
+  },
+  {
+    "_id": "pred-0031",
+    "site_id": "site-001",
+    "device_ids": [
+      "DEV-0012",
+      "DEV-0021",
+      "DEV-0009",
+      "DEV-0022",
+      "DEV-0008"
+    ],
+    "risk_level": "high",
+    "risk_score": 0.831,
+    "confidence": 0.93,
+    "created_at": "2025-09-20T20:01:33.001683",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 62.9,
+        "confidence": 0.91
+      },
+      "crack_analysis": {
+        "total_cracks": 35,
+        "critical_cracks": 4,
+        "max_width": 1.4
+      },
+      "structural_analysis": {
+        "weakness_score": 8.2,
+        "stability_index": 0.77
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 22.4,
+        "health_index": 0.89
+      },
+      "risk_factors": [
+        {
+          "factor": "Minimal vegetation support",
+          "severity": "Medium",
+          "confidence": 0.77
+        },
+        {
+          "factor": "Vertical crack patterns",
+          "severity": "Medium",
+          "confidence": 0.95
+        },
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "High",
+          "confidence": 0.66
+        },
+        {
+          "factor": "Vertical crack patterns",
+          "severity": "High",
+          "confidence": 0.91
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-2510",
+      "total_images": 103,
+      "analysis_duration": 523.3,
+      "weather_conditions": "Clear"
+    }
+  },
+  {
+    "_id": "pred-0032",
+    "site_id": "site-002",
+    "device_ids": [
+      "DEV-0040",
+      "DEV-0037",
+      "DEV-0034",
+      "DEV-0041",
+      "DEV-0039"
+    ],
+    "risk_level": "medium",
+    "risk_score": 0.583,
+    "confidence": 0.878,
+    "created_at": "2025-09-14T20:01:33.001683",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 84.3,
+        "confidence": 0.8
+      },
+      "crack_analysis": {
+        "total_cracks": 45,
+        "critical_cracks": 6,
+        "max_width": 0.8
+      },
+      "structural_analysis": {
+        "weakness_score": 3.1,
+        "stability_index": 0.76
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 11.2,
+        "health_index": 0.66
+      },
+      "risk_factors": [
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "Medium",
+          "confidence": 0.76
+        },
+        {
+          "factor": "Rainfall saturation",
+          "severity": "Low",
+          "confidence": 0.91
+        },
+        {
+          "factor": "High vibration levels",
+          "severity": "High",
+          "confidence": 0.77
+        },
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "Low",
+          "confidence": 0.72
+        },
+        {
+          "factor": "Vertical crack patterns",
+          "severity": "Low",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-5205",
+      "total_images": 89,
+      "analysis_duration": 315.1,
+      "weather_conditions": "Clear"
+    }
+  },
+  {
+    "_id": "pred-0033",
+    "site_id": "site-002",
+    "device_ids": [
+      "DEV-0031",
+      "DEV-0037",
+      "DEV-0026",
+      "DEV-0043",
+      "DEV-0040"
+    ],
+    "risk_level": "high",
+    "risk_score": 0.712,
+    "confidence": 0.946,
+    "created_at": "2025-09-15T20:01:33.001683",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 61.0,
+        "confidence": 0.91
+      },
+      "crack_analysis": {
+        "total_cracks": 29,
+        "critical_cracks": 2,
+        "max_width": 1.7
+      },
+      "structural_analysis": {
+        "weakness_score": 7.3,
+        "stability_index": 0.72
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 14.0,
+        "health_index": 0.83
+      },
+      "risk_factors": [
+        {
+          "factor": "Vertical crack patterns",
+          "severity": "Medium",
+          "confidence": 0.72
+        },
+        {
+          "factor": "Minimal vegetation support",
+          "severity": "Medium",
+          "confidence": 0.9
+        },
+        {
+          "factor": "Weathered rock surface",
+          "severity": "Medium",
+          "confidence": 0.67
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-9010",
+      "total_images": 136,
+      "analysis_duration": 539.9,
+      "weather_conditions": "Partly Cloudy"
+    }
+  },
+  {
+    "_id": "pred-0034",
+    "site_id": "site-003",
+    "device_ids": [
+      "DEV-0045",
+      "DEV-0060",
+      "DEV-0047",
+      "DEV-0050",
+      "DEV-0059"
+    ],
+    "risk_level": "medium",
+    "risk_score": 0.658,
+    "confidence": 0.767,
+    "created_at": "2025-09-19T20:01:33.001683",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 69.0,
+        "confidence": 0.88
+      },
+      "crack_analysis": {
+        "total_cracks": 41,
+        "critical_cracks": 8,
+        "max_width": 1.3
+      },
+      "structural_analysis": {
+        "weakness_score": 5.6,
+        "stability_index": 0.56
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 12.9,
+        "health_index": 0.79
+      },
+      "risk_factors": [
+        {
+          "factor": "Rainfall saturation",
+          "severity": "High",
+          "confidence": 0.65
+        },
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "Low",
+          "confidence": 0.82
+        },
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "Medium",
+          "confidence": 0.84
+        },
+        {
+          "factor": "Minimal vegetation support",
+          "severity": "High",
+          "confidence": 0.91
+        },
+        {
+          "factor": "Minimal vegetation support",
+          "severity": "High",
+          "confidence": 0.73
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-5045",
+      "total_images": 138,
+      "analysis_duration": 525.5,
+      "weather_conditions": "Partly Cloudy"
+    }
+  },
+  {
+    "_id": "pred-0035",
+    "site_id": "site-001",
+    "device_ids": [
+      "DEV-0025",
+      "DEV-0018",
+      "DEV-0016",
+      "DEV-0001",
+      "DEV-0011"
+    ],
+    "risk_level": "high",
+    "risk_score": 0.912,
+    "confidence": 0.84,
+    "created_at": "2025-08-29T20:01:33.001683",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 84.3,
+        "confidence": 0.89
+      },
+      "crack_analysis": {
+        "total_cracks": 23,
+        "critical_cracks": 2,
+        "max_width": 1.3
+      },
+      "structural_analysis": {
+        "weakness_score": 6.7,
+        "stability_index": 0.65
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 15.1,
+        "health_index": 0.71
+      },
+      "risk_factors": [
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "Low",
+          "confidence": 0.71
+        },
+        {
+          "factor": "Weathered rock surface",
+          "severity": "High",
+          "confidence": 0.68
+        },
+        {
+          "factor": "Minimal vegetation support",
+          "severity": "Low",
+          "confidence": 0.67
+        },
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "Medium",
+          "confidence": 0.68
+        },
+        {
+          "factor": "Minimal vegetation support",
+          "severity": "Medium",
+          "confidence": 0.8
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-5341",
+      "total_images": 84,
+      "analysis_duration": 137.7,
+      "weather_conditions": "Overcast"
+    }
+  },
+  {
+    "_id": "pred-0036",
+    "site_id": "site-001",
+    "device_ids": [
+      "DEV-0013",
+      "DEV-0012",
+      "DEV-0006",
+      "DEV-0002",
+      "DEV-0022"
+    ],
+    "risk_level": "high",
+    "risk_score": 0.948,
+    "confidence": 0.823,
+    "created_at": "2025-09-09T20:01:33.001683",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 62.5,
+        "confidence": 0.86
+      },
+      "crack_analysis": {
+        "total_cracks": 37,
+        "critical_cracks": 8,
+        "max_width": 1.3
+      },
+      "structural_analysis": {
+        "weakness_score": 6.6,
+        "stability_index": 0.8
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 17.1,
+        "health_index": 0.7
+      },
+      "risk_factors": [
+        {
+          "factor": "High vibration levels",
+          "severity": "High",
+          "confidence": 0.69
+        },
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "High",
+          "confidence": 0.74
+        },
+        {
+          "factor": "Minimal vegetation support",
+          "severity": "Medium",
+          "confidence": 0.87
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-4867",
+      "total_images": 57,
+      "analysis_duration": 577.1,
+      "weather_conditions": "Clear"
+    }
+  },
+  {
+    "_id": "pred-0037",
+    "site_id": "site-001",
+    "device_ids": [
+      "DEV-0020",
+      "DEV-0006",
+      "DEV-0002",
+      "DEV-0012",
+      "DEV-0001"
+    ],
+    "risk_level": "high",
+    "risk_score": 0.726,
+    "confidence": 0.942,
+    "created_at": "2025-09-12T20:01:33.001683",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 88.7,
+        "confidence": 0.93
+      },
+      "crack_analysis": {
+        "total_cracks": 29,
+        "critical_cracks": 7,
+        "max_width": 1.4
+      },
+      "structural_analysis": {
+        "weakness_score": 4.2,
+        "stability_index": 0.45
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 11.4,
+        "health_index": 0.41
+      },
+      "risk_factors": [
+        {
+          "factor": "Weathered rock surface",
+          "severity": "Medium",
+          "confidence": 0.77
+        },
+        {
+          "factor": "Rainfall saturation",
+          "severity": "Medium",
+          "confidence": 0.68
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-4719",
+      "total_images": 75,
+      "analysis_duration": 321.1,
+      "weather_conditions": "Heavy Rain"
+    }
+  },
+  {
+    "_id": "pred-0038",
+    "site_id": "site-003",
+    "device_ids": [
+      "DEV-0059",
+      "DEV-0049",
+      "DEV-0047",
+      "DEV-0054",
+      "DEV-0050"
+    ],
+    "risk_level": "medium",
+    "risk_score": 0.333,
+    "confidence": 0.826,
+    "created_at": "2025-08-25T20:01:33.001683",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 65.1,
+        "confidence": 0.85
+      },
+      "crack_analysis": {
+        "total_cracks": 39,
+        "critical_cracks": 6,
+        "max_width": 2.7
+      },
+      "structural_analysis": {
+        "weakness_score": 7.0,
+        "stability_index": 0.5
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 6.4,
+        "health_index": 0.78
+      },
+      "risk_factors": [
+        {
+          "factor": "Rainfall saturation",
+          "severity": "Low",
+          "confidence": 0.93
+        },
+        {
+          "factor": "High vibration levels",
+          "severity": "High",
+          "confidence": 0.65
+        },
+        {
+          "factor": "High vibration levels",
+          "severity": "High",
+          "confidence": 0.86
+        },
+        {
+          "factor": "Weathered rock surface",
+          "severity": "Medium",
+          "confidence": 0.77
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-5973",
+      "total_images": 112,
+      "analysis_duration": 234.3,
+      "weather_conditions": "Heavy Rain"
+    }
+  },
+  {
+    "_id": "pred-0039",
+    "site_id": "site-002",
+    "device_ids": [
+      "DEV-0035",
+      "DEV-0034",
+      "DEV-0042",
+      "DEV-0027",
+      "DEV-0041"
+    ],
+    "risk_level": "medium",
+    "risk_score": 0.685,
+    "confidence": 0.748,
+    "created_at": "2025-09-20T20:01:33.001683",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 80.7,
+        "confidence": 0.94
+      },
+      "crack_analysis": {
+        "total_cracks": 45,
+        "critical_cracks": 5,
+        "max_width": 1.9
+      },
+      "structural_analysis": {
+        "weakness_score": 6.5,
+        "stability_index": 0.44
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 19.7,
+        "health_index": 0.5
+      },
+      "risk_factors": [
+        {
+          "factor": "Weathered rock surface",
+          "severity": "Low",
+          "confidence": 0.72
+        },
+        {
+          "factor": "Weathered rock surface",
+          "severity": "High",
+          "confidence": 0.6
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-2928",
+      "total_images": 122,
+      "analysis_duration": 304.3,
+      "weather_conditions": "Heavy Rain"
+    }
+  },
+  {
+    "_id": "pred-0040",
+    "site_id": "site-002",
+    "device_ids": [
+      "DEV-0040",
+      "DEV-0029",
+      "DEV-0034",
+      "DEV-0037",
+      "DEV-0043"
+    ],
+    "risk_level": "medium",
+    "risk_score": 0.406,
+    "confidence": 0.705,
+    "created_at": "2025-09-04T20:01:33.001683",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 73.9,
+        "confidence": 0.91
+      },
+      "crack_analysis": {
+        "total_cracks": 23,
+        "critical_cracks": 4,
+        "max_width": 2.1
+      },
+      "structural_analysis": {
+        "weakness_score": 4.0,
+        "stability_index": 0.66
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 7.4,
+        "health_index": 0.55
+      },
+      "risk_factors": [
+        {
+          "factor": "Vertical crack patterns",
+          "severity": "High",
+          "confidence": 0.66
+        },
+        {
+          "factor": "Vertical crack patterns",
+          "severity": "Low",
+          "confidence": 0.65
+        },
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "High",
+          "confidence": 0.85
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-2693",
+      "total_images": 185,
+      "analysis_duration": 132.3,
+      "weather_conditions": "Heavy Rain"
+    }
+  },
+  {
+    "_id": "pred-0041",
+    "site_id": "site-001",
+    "device_ids": [
+      "DEV-0001",
+      "DEV-0025",
+      "DEV-0002",
+      "DEV-0021",
+      "DEV-0017"
+    ],
+    "risk_level": "high",
+    "risk_score": 0.943,
+    "confidence": 0.84,
+    "created_at": "2025-09-15T20:01:33.001683",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 79.0,
+        "confidence": 0.86
+      },
+      "crack_analysis": {
+        "total_cracks": 27,
+        "critical_cracks": 4,
+        "max_width": 2.9
+      },
+      "structural_analysis": {
+        "weakness_score": 7.0,
+        "stability_index": 0.61
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 21.9,
+        "health_index": 0.88
+      },
+      "risk_factors": [
+        {
+          "factor": "Minimal vegetation support",
+          "severity": "High",
+          "confidence": 0.85
+        },
+        {
+          "factor": "Weathered rock surface",
+          "severity": "Medium",
+          "confidence": 0.68
+        },
+        {
+          "factor": "Vertical crack patterns",
+          "severity": "High",
+          "confidence": 0.68
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-4233",
+      "total_images": 95,
+      "analysis_duration": 319.6,
+      "weather_conditions": "Light Rain"
+    }
+  },
+  {
+    "_id": "pred-0042",
+    "site_id": "site-001",
+    "device_ids": [
+      "DEV-0016",
+      "DEV-0015",
+      "DEV-0022",
+      "DEV-0002",
+      "DEV-0018"
+    ],
+    "risk_level": "medium",
+    "risk_score": 0.647,
+    "confidence": 0.858,
+    "created_at": "2025-09-17T20:01:33.001683",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 62.5,
+        "confidence": 0.85
+      },
+      "crack_analysis": {
+        "total_cracks": 34,
+        "critical_cracks": 6,
+        "max_width": 0.6
+      },
+      "structural_analysis": {
+        "weakness_score": 6.6,
+        "stability_index": 0.47
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 11.9,
+        "health_index": 0.62
+      },
+      "risk_factors": [
+        {
+          "factor": "Minimal vegetation support",
+          "severity": "Medium",
+          "confidence": 0.91
+        },
+        {
+          "factor": "Minimal vegetation support",
+          "severity": "Medium",
+          "confidence": 0.8
+        },
+        {
+          "factor": "High vibration levels",
+          "severity": "High",
+          "confidence": 0.82
+        },
+        {
+          "factor": "High vibration levels",
+          "severity": "High",
+          "confidence": 0.8
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-6707",
+      "total_images": 123,
+      "analysis_duration": 596.7,
+      "weather_conditions": "Clear"
+    }
+  },
+  {
+    "_id": "pred-0043",
+    "site_id": "site-003",
+    "device_ids": [
+      "DEV-0049",
+      "DEV-0047",
+      "DEV-0060",
+      "DEV-0050",
+      "DEV-0057"
+    ],
+    "risk_level": "high",
+    "risk_score": 0.902,
+    "confidence": 0.822,
+    "created_at": "2025-09-08T20:01:33.001683",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 84.4,
+        "confidence": 0.91
+      },
+      "crack_analysis": {
+        "total_cracks": 44,
+        "critical_cracks": 7,
+        "max_width": 1.1
+      },
+      "structural_analysis": {
+        "weakness_score": 7.7,
+        "stability_index": 0.71
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 16.1,
+        "health_index": 0.83
+      },
+      "risk_factors": [
+        {
+          "factor": "Vertical crack patterns",
+          "severity": "High",
+          "confidence": 0.93
+        },
+        {
+          "factor": "High vibration levels",
+          "severity": "Medium",
+          "confidence": 0.63
+        },
+        {
+          "factor": "Weathered rock surface",
+          "severity": "High",
+          "confidence": 0.61
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-5771",
+      "total_images": 141,
+      "analysis_duration": 182.6,
+      "weather_conditions": "Light Rain"
+    }
+  },
+  {
+    "_id": "pred-0044",
+    "site_id": "site-002",
+    "device_ids": [
+      "DEV-0035",
+      "DEV-0029",
+      "DEV-0037",
+      "DEV-0039",
+      "DEV-0036"
+    ],
+    "risk_level": "high",
+    "risk_score": 0.746,
+    "confidence": 0.856,
+    "created_at": "2025-09-08T20:01:33.001683",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 78.8,
+        "confidence": 0.84
+      },
+      "crack_analysis": {
+        "total_cracks": 31,
+        "critical_cracks": 6,
+        "max_width": 2.2
+      },
+      "structural_analysis": {
+        "weakness_score": 8.9,
+        "stability_index": 0.62
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 19.4,
+        "health_index": 0.46
+      },
+      "risk_factors": [
+        {
+          "factor": "Minimal vegetation support",
+          "severity": "High",
+          "confidence": 0.62
+        },
+        {
+          "factor": "Weathered rock surface",
+          "severity": "Low",
+          "confidence": 0.81
+        },
+        {
+          "factor": "Weathered rock surface",
+          "severity": "Low",
+          "confidence": 0.84
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-6004",
+      "total_images": 105,
+      "analysis_duration": 242.0,
+      "weather_conditions": "Clear"
+    }
+  },
+  {
+    "_id": "pred-0045",
+    "site_id": "site-001",
+    "device_ids": [
+      "DEV-0006",
+      "DEV-0007",
+      "DEV-0012",
+      "DEV-0005",
+      "DEV-0025"
+    ],
+    "risk_level": "low",
+    "risk_score": 0.149,
+    "confidence": 0.872,
+    "created_at": "2025-08-29T20:01:33.001683",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 86.9,
+        "confidence": 0.87
+      },
+      "crack_analysis": {
+        "total_cracks": 34,
+        "critical_cracks": 8,
+        "max_width": 2.2
+      },
+      "structural_analysis": {
+        "weakness_score": 4.6,
+        "stability_index": 0.66
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 21.7,
+        "health_index": 0.68
+      },
+      "risk_factors": [
+        {
+          "factor": "Weathered rock surface",
+          "severity": "Medium",
+          "confidence": 0.71
+        },
+        {
+          "factor": "Vertical crack patterns",
+          "severity": "High",
+          "confidence": 0.71
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-5744",
+      "total_images": 104,
+      "analysis_duration": 433.5,
+      "weather_conditions": "Heavy Rain"
+    }
+  },
+  {
+    "_id": "pred-0046",
+    "site_id": "site-001",
+    "device_ids": [
+      "DEV-0004",
+      "DEV-0024",
+      "DEV-0013",
+      "DEV-0007",
+      "DEV-0014"
+    ],
+    "risk_level": "low",
+    "risk_score": 0.231,
+    "confidence": 0.718,
+    "created_at": "2025-09-07T20:01:33.001683",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 82.4,
+        "confidence": 0.87
+      },
+      "crack_analysis": {
+        "total_cracks": 15,
+        "critical_cracks": 4,
+        "max_width": 1.3
+      },
+      "structural_analysis": {
+        "weakness_score": 7.3,
+        "stability_index": 0.58
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 23.0,
+        "health_index": 0.85
+      },
+      "risk_factors": [
+        {
+          "factor": "Weathered rock surface",
+          "severity": "High",
+          "confidence": 0.68
+        },
+        {
+          "factor": "High vibration levels",
+          "severity": "Medium",
+          "confidence": 0.94
+        },
+        {
+          "factor": "Weathered rock surface",
+          "severity": "Medium",
+          "confidence": 0.78
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-1096",
+      "total_images": 74,
+      "analysis_duration": 138.1,
+      "weather_conditions": "Clear"
+    }
+  },
+  {
+    "_id": "pred-0047",
+    "site_id": "site-003",
+    "device_ids": [
+      "DEV-0060",
+      "DEV-0056",
+      "DEV-0045",
+      "DEV-0051",
+      "DEV-0059"
+    ],
+    "risk_level": "high",
+    "risk_score": 0.701,
+    "confidence": 0.861,
+    "created_at": "2025-08-31T20:01:33.001683",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 73.6,
+        "confidence": 0.85
+      },
+      "crack_analysis": {
+        "total_cracks": 30,
+        "critical_cracks": 8,
+        "max_width": 1.3
+      },
+      "structural_analysis": {
+        "weakness_score": 8.2,
+        "stability_index": 0.41
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 14.7,
+        "health_index": 0.66
+      },
+      "risk_factors": [
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "Low",
+          "confidence": 0.8
+        },
+        {
+          "factor": "Rainfall saturation",
+          "severity": "Medium",
+          "confidence": 0.94
+        },
+        {
+          "factor": "Vertical crack patterns",
+          "severity": "High",
+          "confidence": 0.81
+        },
+        {
+          "factor": "Rainfall saturation",
+          "severity": "Low",
+          "confidence": 0.79
+        },
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "Low",
+          "confidence": 0.69
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-6049",
+      "total_images": 65,
+      "analysis_duration": 277.8,
+      "weather_conditions": "Light Rain"
+    }
+  },
+  {
+    "_id": "pred-0048",
+    "site_id": "site-002",
+    "device_ids": [
+      "DEV-0036",
+      "DEV-0035",
+      "DEV-0041",
+      "DEV-0037",
+      "DEV-0028"
+    ],
+    "risk_level": "medium",
+    "risk_score": 0.322,
+    "confidence": 0.715,
+    "created_at": "2025-08-28T20:01:33.001683",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 71.1,
+        "confidence": 0.89
+      },
+      "crack_analysis": {
+        "total_cracks": 15,
+        "critical_cracks": 8,
+        "max_width": 2.5
+      },
+      "structural_analysis": {
+        "weakness_score": 8.3,
+        "stability_index": 0.63
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 19.5,
+        "health_index": 0.42
+      },
+      "risk_factors": [
+        {
+          "factor": "Vertical crack patterns",
+          "severity": "High",
+          "confidence": 0.74
+        },
+        {
+          "factor": "Weathered rock surface",
+          "severity": "Medium",
+          "confidence": 0.93
+        },
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "Medium",
+          "confidence": 0.68
+        },
+        {
+          "factor": "Vertical crack patterns",
+          "severity": "Low",
+          "confidence": 0.73
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-4110",
+      "total_images": 104,
+      "analysis_duration": 155.9,
+      "weather_conditions": "Partly Cloudy"
+    }
+  },
+  {
+    "_id": "pred-0049",
+    "site_id": "site-002",
+    "device_ids": [
+      "DEV-0044",
+      "DEV-0038",
+      "DEV-0027",
+      "DEV-0043",
+      "DEV-0037"
+    ],
+    "risk_level": "low",
+    "risk_score": 0.234,
+    "confidence": 0.904,
+    "created_at": "2025-08-23T20:01:33.001683",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 72.1,
+        "confidence": 0.86
+      },
+      "crack_analysis": {
+        "total_cracks": 36,
+        "critical_cracks": 5,
+        "max_width": 2.0
+      },
+      "structural_analysis": {
+        "weakness_score": 7.7,
+        "stability_index": 0.61
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 5.1,
+        "health_index": 0.84
+      },
+      "risk_factors": [
+        {
+          "factor": "Minimal vegetation support",
+          "severity": "Low",
+          "confidence": 0.9
+        },
+        {
+          "factor": "Minimal vegetation support",
+          "severity": "Medium",
+          "confidence": 0.81
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-8195",
+      "total_images": 73,
+      "analysis_duration": 162.6,
+      "weather_conditions": "Partly Cloudy"
+    }
+  },
+  {
+    "_id": "pred-0050",
+    "site_id": "site-001",
+    "device_ids": [
+      "DEV-0020",
+      "DEV-0005",
+      "DEV-0018",
+      "DEV-0016",
+      "DEV-0012"
+    ],
+    "risk_level": "medium",
+    "risk_score": 0.489,
+    "confidence": 0.905,
+    "created_at": "2025-09-03T20:01:33.001683",
+    "processed_data": {
+      "rock_exposure_analysis": {
+        "percentage": 72.5,
+        "confidence": 0.87
+      },
+      "crack_analysis": {
+        "total_cracks": 23,
+        "critical_cracks": 8,
+        "max_width": 1.5
+      },
+      "structural_analysis": {
+        "weakness_score": 3.8,
+        "stability_index": 0.36
+      },
+      "vegetation_analysis": {
+        "coverage_percentage": 17.9,
+        "health_index": 0.63
+      },
+      "risk_factors": [
+        {
+          "factor": "Vertical crack patterns",
+          "severity": "Low",
+          "confidence": 0.88
+        },
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "Low",
+          "confidence": 0.75
+        },
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "Low",
+          "confidence": 0.89
+        },
+        {
+          "factor": "Temperature fluctuations",
+          "severity": "Low",
+          "confidence": 0.79
+        }
+      ]
+    },
+    "metadata": {
+      "drone_mission_id": "mission-3505",
+      "total_images": 137,
+      "analysis_duration": 289.8,
+      "weather_conditions": "Clear"
+    }
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "import_date": "2025-09-21T09:16:50.145622",
+  "database_name": "rockfall_prediction",
+  "collections": {
+    "sites": 3,
+    "sensors": 11,
+    "sensor_readings": 31680,
+    "dem_files": 3,
+    "drone_imagery": 38,
+    "environmental_data": 30,
+    "historical_events": 49,
+    "users": 3,
+    "predictions": 21
+  },
+  "total_documents": 31838
+}

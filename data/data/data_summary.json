@@ -1,0 +1,12 @@
+{
+  "generation_date": "2025-09-21T09:14:31.847864",
+  "total_sites": 3,
+  "total_sensors": 11,
+  "total_sensor_readings": 31680,
+  "total_dem_files": 3,
+  "total_drone_flights": 38,
+  "environmental_data_days": 30,
+  "historical_events": 49,
+  "data_period_days": 30,
+  "sensor_reading_interval_minutes": 15
+}

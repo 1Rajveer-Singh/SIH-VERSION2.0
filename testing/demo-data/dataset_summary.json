@@ -1,0 +1,11 @@
+{
+  "generated_at": "2025-09-21T20:01:33.821690",
+  "total_sites": 3,
+  "total_devices": 61,
+  "total_sensor_readings": 83456,
+  "total_predictions": 50,
+  "total_alerts": 42,
+  "data_timespan_days": 30,
+  "high_risk_predictions": 15,
+  "active_alerts": 19
+}
