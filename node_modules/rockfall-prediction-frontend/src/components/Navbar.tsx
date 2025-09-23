@@ -328,6 +328,14 @@ function Navbar() {
                     🔧 Services
                   </Link>
                   
+                  <Link
+                    to="/training"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
+                    onClick={() => setShowProfileDropdown(false)}
+                  >
+                    🤖 Model Training
+                  </Link>
+                  
                   <hr className="my-1" />
                   
                   <button

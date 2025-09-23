@@ -9,7 +9,7 @@ from contextlib import asynccontextmanager
 import logging
 
 from app.database.connection import connect_to_mongo, close_mongo_connection
-from app.routers import auth, sites, devices, predictions, predictions_enhanced, dashboard
+from app.routers import auth, sites, devices, predictions, predictions_enhanced, dashboard, training
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -140,6 +140,7 @@ app.include_router(sites.router, prefix="/api/sites", tags=["Mining Sites"])
 app.include_router(devices.router, prefix="/api/devices", tags=["Devices"])
 app.include_router(predictions.router, prefix="/api/predictions", tags=["Predictions"])
 app.include_router(predictions_enhanced.router, prefix="/api/predictions/enhanced", tags=["Enhanced Predictions"])
+app.include_router(training.router, prefix="/api/training", tags=["Model Training"])
 
 # Root endpoint
 @app.get("/")

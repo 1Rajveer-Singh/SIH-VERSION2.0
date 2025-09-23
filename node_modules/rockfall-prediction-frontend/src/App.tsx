@@ -14,6 +14,7 @@ import DeviceManagerPage from './pages/DeviceManagerPage'
 import SettingsPage from './pages/SettingsPage'
 import HelpPage from './pages/HelpPage'
 import ServicesPage from './pages/ServicesPage'
+import ModelTrainingPage from './pages/ModelTrainingPage'
 import LoadingSpinner from './components/LoadingSpinner'
 
 function App() {
@@ -73,6 +74,10 @@ function App() {
         <Route 
           path="/services" 
           element={state.isAuthenticated ? <ServicesPage /> : <Navigate to="/" />} 
+        />
+        <Route 
+          path="/training" 
+          element={state.isAuthenticated ? <ModelTrainingPage /> : <Navigate to="/" />} 
         />
       </Routes>
     </div>

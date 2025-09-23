@@ -27,57 +27,21 @@ async def get_database():
 
 async def connect_to_mongo():
     """Create database connection"""
-    # Try different MongoDB connection URLs
-    connection_urls = [
-        "mongodb://localhost:27017/rockfall_prediction",  # No auth
-        "mongodb://admin:rockfall123@localhost:27017/rockfall_prediction?authSource=admin",  # With auth
-        os.getenv("DATABASE_URL", "mongodb://localhost:27017/rockfall_prediction")
-    ]
+    # MongoDB connection URL
+    mongo_url = os.getenv("DATABASE_URL", "mongodb://admin:rockfall123@localhost:27017/rockfall_prediction?authSource=admin")
     
-    connected = False
-    for mongo_url in connection_urls:
-        logger.info(f"Attempting to connect to MongoDB: {mongo_url.split('@')[1] if '@' in mongo_url else mongo_url}")
-        
-        try:
-            # Create Motor client
-            db.client = AsyncIOMotorClient(mongo_url)
-            
-            # Get database
-            db.database = db.client.rockfall_prediction
-            
-            # Test connection
-            await db.client.admin.command('ping')
-            logger.info("Successfully connected to MongoDB!")
-            connected = True
-            break
-            
-        except Exception as e:
-            logger.warning(f"Failed to connect with {mongo_url}: {e}")
-            if db.client:
-                db.client.close()
-                db.client = None
-            continue
-    
-    if not connected:
-        raise Exception("Could not connect to MongoDB with any connection string")
+    logger.info(f"Connecting to MongoDB: {mongo_url.split('@')[1] if '@' in mongo_url else mongo_url}")
     
     try:
-        # Drop existing indexes to avoid conflicts (for development)
-        try:
-            collections = await db.database.list_collection_names()
-            for collection_name in collections:
-                collection = db.database[collection_name]
-                # Drop all indexes except _id
-                indexes = await collection.list_indexes().to_list(length=None)
-                for index in indexes:
-                    if index['name'] != '_id_':
-                        try:
-                            await collection.drop_index(index['name'])
-                            logger.info(f"Dropped index {index['name']} from {collection_name}")
-                        except Exception as e:
-                            logger.debug(f"Could not drop index {index['name']}: {e}")
-        except Exception as e:
-            logger.debug(f"Index cleanup warning: {e}")
+        # Create Motor client
+        db.client = AsyncIOMotorClient(mongo_url)
+        
+        # Get database
+        db.database = db.client.rockfall_prediction
+        
+        # Test connection
+        await db.client.admin.command('ping')
+        logger.info("Successfully connected to MongoDB!")
         
         # Initialize Beanie with document models
         await init_beanie(
@@ -99,7 +63,7 @@ async def connect_to_mongo():
         await create_initial_data()
         
     except Exception as e:
-        logger.error(f"Failed to initialize database: {e}")
+        logger.error(f"Failed to connect to MongoDB: {e}")
         raise e
 
 async def close_mongo_connection():
